@@ -7,14 +7,14 @@ import SEO from "../components/seo"
 import Nav from '../components/NavBar.js';
 import Header from './FrontPage/Header'
 import Main from './FrontPage/Main'
-
+import global from '../styles/styles.module.css'
 const IndexPage = () => (
-  <Layout>
+  <section className={global.global}>
     <SEO title="Home" />
     <Nav />
     <Header />
     <Main />
-  </Layout>
+  </section>
 )
 
 export default IndexPage

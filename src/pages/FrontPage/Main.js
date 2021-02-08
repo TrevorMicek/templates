@@ -35,7 +35,6 @@ return (
         </div> 
         </section>
       </section>
-      
       <section className={styles.secondSection}>
         
         <div>

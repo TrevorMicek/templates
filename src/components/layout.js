@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          fontFamily: 'sans-serif, Arial, Helvetica'
         }}
       >
         <main>{children}</main>
