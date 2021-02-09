@@ -1,26 +1,24 @@
 import React from 'react';
-import styles from '../../styles/FrontPage/mainStyles.module.css'
+
+import styles from '../../styles/SecondaryPages/mainStyles.module.css';
 
 const userIcon = require('../../images/user.svg')
 const qualityIcon = require('../../images//quality.svg')
 const optimizeIcon = require('../../images/optimization.svg')
 const responsiveIcon = require('../../images/responsive-design.svg')
 
+const Main = () => (
 
-const Main = () => {
-
-return (
-<main className={styles.mainWrapper}>
-    
+    <main>
       <section className={styles.firstSection}>
-    
+  
         <section className={styles.firstSectionWrapper}>
           
        
         <div className={styles.firstSectionTitle}>
-          <img src={qualityIcon} className={styles.firstSectionGraphic} />
+          
           <h3>
-            Focused On Quality<br /> &  Ease-of-use
+           <span>$0</span> Down, <span>$195</span> per month
             
           </h3>
         </div>
@@ -39,7 +37,7 @@ return (
       <section className={styles.secondSection}>
         
         <div>
-          <img src={responsiveIcon} />
+          <img src={responsiveIcon} className={styles.firstGraphic} />
           <h3 className={styles.FirstTitle}>
             Mobile-First Design
           </h3>
@@ -48,7 +46,7 @@ return (
           </p>
         </div>
         <div>
-          <img src={optimizeIcon} />
+          <img src={optimizeIcon} className={styles.secondGraphic} />
           <h3 className={styles.SecondTitle}>
             Optimization
           </h3>
@@ -57,7 +55,7 @@ return (
           </p>
         </div>
         <div>
-          <img src={userIcon} />
+          <img src={userIcon} className={styles.thirdGraphic} />
           <h3 className={styles.ThirdTitle}>
             User-Friendly
           </h3>
@@ -71,5 +69,4 @@ return (
      
     </main>
 )
-    }
-    export default Main;
+export default Main;

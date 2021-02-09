@@ -4,8 +4,8 @@ import React from "react"
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
-import Header from './FrontPage/Header'
-import Main from './FrontPage/Main'
+import Header from './ServicesPage/Header'
+import Main from './ServicesPage/Main'
 
 const IndexPage = () => (
   <Layout>
