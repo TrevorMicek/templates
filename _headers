@@ -1,8 +1,8 @@
  
- [[headers]]
+  [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    Content-Security-Policy = "default-src 'self' https://www.netlify.com *.https://www.netlify.com"
+    Content-Security-Policy = "default-src 'self'; https://www.netlify.com *.https://www.netlify.com"
