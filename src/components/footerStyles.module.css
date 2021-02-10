@@ -1,17 +1,18 @@
-.container {
+
+.waveContainer {
     position: relative;
     transform: rotate(180deg);
     background: #2c3e50;
     height: 30vh;
     z-index: -1;
     width: 100vw;
-    top: 30vh;
+    top: 5vh;
+
 }
 .wave {
-    
     position: absolute;
     height: 70px;
-    min-width: 100%;
+    min-width: 100%;    bottom: 30vh;
     background: #2c3e50;
     bottom: 0;
 }
@@ -26,7 +27,7 @@ border-radius: 100% 50%;
 .wave::before {
     width: 55%;
     height: 109%;
-    background-color: white;
+    background-color: #fafafa;
     right: -1.5%;
     top: 60%;
 
@@ -38,19 +39,25 @@ border-radius: 100% 50%;
     background-color: #2c3e50;
     left: -1.5%;
     top: 40%;
-  
+
 }
 .footerContainer {
     line-height: 1;
    min-height: 30vh;
    margin-top: 0vh;
+   position: relative;
+   bottom: 25vh;
 
 }
 
 footer {
+    max-height: 30vh;
     min-width: 100%;
-   
-    overflow: hidden;
+
+    background-color: #fafafa;
+    position: relative;
+    z-index: -2;
+overflow: hidden;
 }
 
 .footerTop {
@@ -60,10 +67,11 @@ footer {
    justify-content: space-between;
 }
 .leftSideFooter {
+
     position: relative;
     top: 3vh;
     left: 4vw;
-    
+
 }
 .leftSideFooter > div {
     margin-left: 1vw;
@@ -75,7 +83,7 @@ footer {
    color: white;
    text-shadow: 1px 1px black;
    font-family: sans-serif, Arial, Helvetica;
-   
+
 }
 .rightSideFooter > h4 {
    color: white;
@@ -108,7 +116,8 @@ footer {
 .footerBottom {
 text-align: center;
 position: relative;
-top: 4vh;
+
+
 }
 .footerBottom >  ul {
    list-style-type: none;

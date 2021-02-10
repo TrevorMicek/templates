@@ -2,24 +2,16 @@ import React from 'react';
 
 import styles from '../../styles/SecondaryPages/mainStyles.module.css';
 
-const userIcon = require('../../images/user.svg')
-const qualityIcon = require('../../images//quality.svg')
-const optimizeIcon = require('../../images/optimization.svg')
-const responsiveIcon = require('../../images/responsive-design.svg')
+
+const checkmark = require('../../images/checkmark.jpg')
 
 const Main = () => (
-
     <main>
       <section className={styles.firstSection}>
-  
         <section className={styles.firstSectionWrapper}>
-          
-       
         <div className={styles.firstSectionTitle}>
-          
           <h3>
            <span>$0</span> Down, <span>$195</span> per month
-            
           </h3>
         </div>
         <div>
@@ -34,39 +26,64 @@ const Main = () => (
         </div> 
         </section>
       </section>
+
       <section className={styles.secondSection}>
-        
         <div>
-          <img src={responsiveIcon} className={styles.firstGraphic} />
+          <div className={styles.serviceWrapper}>
+          <img src={checkmark} className={styles.firstGraphic} />
           <h3 className={styles.FirstTitle}>
-            Mobile-First Design
+            Hosting Free Included
           </h3>
+          </div>
           <p className={styles.FirstText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
         <div>
-          <img src={optimizeIcon} className={styles.secondGraphic} />
+        <div className={styles.serviceWrapper}>
+          <img src={checkmark} className={styles.secondGraphic} />
           <h3 className={styles.SecondTitle}>
-            Optimization
+            Unlimited Edits
           </h3>
+          </div>
           <p className={styles.SecondText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           </p>
         </div>
         <div>
-          <img src={userIcon} className={styles.thirdGraphic} />
+        <div className={styles.serviceWrapper}>
+          <img src={checkmark} className={styles.thirdGraphic} />
           <h3 className={styles.ThirdTitle}>
-            User-Friendly
+            Web Design & Development
           </h3>
+          </div>
           <p className={styles.thirdText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
           </p>
-          
         </div>
-        
+        <div>
+        <div className={styles.serviceWrapper}>
+          <img src={checkmark} className={styles.thirdGraphic} />
+          <h3 className={styles.ThirdTitle}>
+            24/7 Customer Service
+          </h3>
+          </div>
+          <p className={styles.thirdText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          </p>
+        </div>
+        <div>
+        <div className={styles.serviceWrapper}>
+          <img src={checkmark} className={styles.thirdGraphic} />
+          <h3 className={styles.ThirdTitle}>
+            Google Analytics
+          </h3>
+          </div>
+          <p className={styles.thirdText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          </p>
+        </div>
       </section>
-     
     </main>
 )
 export default Main;

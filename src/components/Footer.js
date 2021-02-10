@@ -5,10 +5,11 @@ import styles from './footerStyles.module.css'
 const Footer = () => (
 
 
-<footer className={styles.footer}>
-      <div className={styles.container}>
+<footer className={styles.footer}>      
+        <div className={styles.waveContainer}>
         <div className={styles.wave}></div>
-      </div>
+        </div>
+  
       <div className={styles.footerContainer}>
       
         <div className={styles.footerTop}>
@@ -42,6 +43,7 @@ const Footer = () => (
      
       </section>
      
+    
     </div>
     </footer>
     )
