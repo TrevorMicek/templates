@@ -10,12 +10,10 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleDropDown = () => setIsOpen(!isOpen)
 
-
-  const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
   useEffect((() => {
 
   
-   
+    const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
     closeMenu.addEventListener("change", (e) => {
         if (e.matches) {
           setIsOpen(false)
