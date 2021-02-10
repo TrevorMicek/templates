@@ -10,10 +10,12 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleDropDown = () => setIsOpen(!isOpen)
 
+
+  const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
   useEffect((() => {
 
   
-    const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
+   
     closeMenu.addEventListener("change", (e) => {
         if (e.matches) {
           setIsOpen(false)
@@ -42,7 +44,8 @@ const Nav = () => {
       </div>
         <div className={styles.mobileListItems}>
           <ul className={styles.mobileNavList}>
-            <li onClick={toggleDropDown}><Link to="/">Home</Link></li>
+            <li onClick={toggleDropDown}>
+              <Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
             <li><Link to="/page-2">About</Link></li>
             <li><Link to="/index.js">Blog</Link></li>
@@ -64,7 +67,11 @@ const Nav = () => {
      </div>
       <div className={styles.listItems}>
       <ul className={styles.navList}>
-        <li><Link to="index.js">Home</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/page-2">About</Link></li>
+            <li><Link to="/index.js">Blog</Link></li>
+            <li><Link to="/index.js">Contact</Link></li>
    
       </ul>
     </div>
