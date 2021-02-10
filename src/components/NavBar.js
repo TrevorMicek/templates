@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "gatsby"
 
 
@@ -10,7 +10,9 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleDropDown = () => setIsOpen(!isOpen)
 
-  if (typeof window !== 'undefined') {
+  useEffect((() => {
+
+  
     const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
     closeMenu.addEventListener("change", (e) => {
         if (e.matches) {
@@ -20,6 +22,7 @@ const Nav = () => {
         }
     })
   }
+  ), [closeMenu])
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>
