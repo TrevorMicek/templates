@@ -4,8 +4,6 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
-    Content-Type = "application/javascript; charset=utf-8"
-    Content-Type = "text/html; charset=utf-8"
-   
+
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = "default-src 'self';"
