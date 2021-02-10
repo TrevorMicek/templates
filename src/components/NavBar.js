@@ -22,7 +22,7 @@ const Nav = () => {
         }
     })
   }
-  ), [closeMenu])
+  ), [])
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>
