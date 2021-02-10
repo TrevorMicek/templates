@@ -10,6 +10,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleDropDown = () => setIsOpen(!isOpen)
 
+  if (typeof window !== 'undefined') {
     const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
     closeMenu.addEventListener("change", (e) => {
         if (e.matches) {
@@ -18,6 +19,7 @@ const Nav = () => {
             setIsOpen(false)
         }
     })
+  }
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>
