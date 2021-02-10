@@ -4,17 +4,8 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-<<<<<<< HEAD
-<<<<<<< HEAD
     Content-Type = "application/javascript;charset=utf-8"
     Content-Type = "text/css;charset=utf-8"
     Content-Type = "text/html;charset=utf-8"
-=======
->>>>>>> 30c42094e3444f59cf242bab727ed57034c4edb8
-=======
-      Content-Type = "application/javascript;charset=utf-8"
-    Content-Type = "text/css;charset=utf-8"
-    Content-Type = "text/html;charset=utf-8"
->>>>>>> bf4643f475d2c8fb63c8602b29d7624f17098c92
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = "default-src 'self';"
