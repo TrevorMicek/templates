@@ -7,7 +7,13 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
     default-src 'self';
-    style-src 'self' https://netlify.com
-    
+    script-src 'self';
+    style-src 'self';
+    object-src 'none';
+    img-src 'self';
+    media-src 'none';
+    frame-src 'none';
+    font-src 'self';
+    connect-src 'none';
     
     '''
