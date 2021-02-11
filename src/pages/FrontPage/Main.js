@@ -44,7 +44,7 @@ return (
             Subscription-Based
           </h3>
           <p className={styles.FirstText}>
-          <b>NO SETUP FEE</b>, <span>$195</span> per month Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          <b>NO SETUP FEE</b>, <span>$195</span> per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Cancel anytime,
           </p>
         </div>
        
@@ -54,7 +54,7 @@ return (
             Optimization
           </h3>
           <p className={styles.SecondText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+            Website speed is our driving force for a quality site because the number one reason visitors will leave your website is if it's too slow.
           </p>
         </div>
         <div>
@@ -63,7 +63,7 @@ return (
             Mobile-First Design
           </h3>
           <p className={styles.FirstText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+           We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive.
           </p>
         </div>
         <div>
@@ -72,7 +72,7 @@ return (
             User-Friendly
           </h3>
           <p className={styles.thirdText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+           A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use.
           </p>
           
         </div>
