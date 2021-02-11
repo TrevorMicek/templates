@@ -2,13 +2,13 @@
     min-height: 100vh;
    
     margin-bottom: 10vh;
-    background: #fafafa;
     line-height: 1;
    
  }
  .firstSection {
-    margin-top: 12.5vh;
-    margin-bottom: 6vh;
+    padding-top: 12.5vh;
+    padding-bottom: 6vh;
+    background: #fafafa;
 }
 
  .firstSectionWrapper {
@@ -63,44 +63,54 @@
     flex-direction: column;
     align-items: left;
     text-shadow: 1px 1px lightgray;
+    background: #fafafa;
  }
  .secondSection > div > .firstGraphic {
     position: relative;
     top: 1vh;
  }
- .secondSection > div > div > img {
-    max-width: 9vw;
-    min-height: 7vh;
+ .secondSection > div > img {
     position: relative;
-    margin: 0 auto;
-
+    margin: 1vh auto;
+ }
+ .imgWrapper {
+    min-width: 8vw;
+    min-height: 6vh;
+     margin: 1vh 1vw 1vh auto;
  }
  .serviceWrapper {
+    max-height: 16vh;
      display: flex;
-     flex-direction: row;
-     flex-flow: flex-start; 
+     flex-direction: column;
+     flex-flow: flex-start;
 }
  .secondSection > div {
+     display: flex;
+     flex-direction: row;
+     
     margin: 2.5vh 7.5vw;
     min-width: 55vw;
     margin-bottom: 0;
     text-align: center;
-    max-width: 50vw;
+    max-width: 55vw;
  }
 
- .FirstTitle, .SecondTitle, .ThirdTitle {
+ .SecondSectionTitle {
      font-size: 1rem;
    margin: 2vh auto;
   
   text-align: left;
     min-width: 45vw;
+    max-height: 4vh;
     position: relative;
     color: #1a1a1a;
  }
- .secondSection > div > p {
+ .secondSection > div > div > p {
      color: #1a1a1a;
-   margin: 5vh 4.5vw 0 4.5vw;
-   min-width: 30vw;
+   margin: 3vh auto 3vh 1vw;
+   min-width: 45vw;
+ 
+
    position: relative;
    text-align: left;
     bottom: 3.5vh;
@@ -112,7 +122,6 @@
      min-height: 50vh;
      
  }
- 
  
  @media only screen and (min-width: 320px) and (max-width: 450px) {
  

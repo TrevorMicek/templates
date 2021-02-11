@@ -7,7 +7,7 @@
     z-index: -1;
     width: 100vw;
     top: 5vh;
-
+    padding-top: 10vh;
 }
 .wave {
     position: absolute;
@@ -53,11 +53,11 @@ border-radius: 100% 50%;
 footer {
     max-height: 30vh;
     min-width: 100%;
-
     background-color: #fafafa;
     position: relative;
     z-index: -2;
-overflow: hidden;
+    overflow: hidden;
+
 }
 
 .footerTop {

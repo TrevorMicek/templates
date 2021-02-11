@@ -5,7 +5,7 @@ const userIcon = require('../../images/user.svg')
 const qualityIcon = require('../../images//quality.svg')
 const optimizeIcon = require('../../images/optimization.svg')
 const responsiveIcon = require('../../images/responsive-design.svg')
-
+const subscriptionIcon = require('../../images/subscription.svg')
 
 const Main = () => {
 
@@ -66,27 +66,19 @@ return (
           </p>
           
         </div>
+         
+        <div>
+          <img src={subscriptionIcon} />
+          <h3 className={styles.FirstTitle}>
+            Subscription-Based
+          </h3>
+          <p className={styles.FirstText}>
+          <span>$0</span> Down, <span>$195</span> per month Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
         
       </section>
-      <section className={styles.thirdSection}>
-        <section className={styles.thirdSectionWrapper}>
-        <div className={styles.thirdSectionTitle}>
-          <h3>
-           <span>$0</span> Down, <span>$195</span> per month
-          </h3>
-        </div>
-        <div>
-          <article className={styles.thirdSectionText}>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              
-            </p>
-          </article>
-        </div> 
-        </section>
-      </section>
+     
     </main>
 )
     }
