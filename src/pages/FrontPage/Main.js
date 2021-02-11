@@ -37,22 +37,32 @@ return (
         </section>
       </section>
       <section className={styles.secondSection}>
-        
-        <div>
-          <img src={responsiveIcon} />
+          
+      <div>
+          <img src={subscriptionIcon} />
           <h3 className={styles.FirstTitle}>
-            Mobile-First Design
+            Subscription-Based
           </h3>
           <p className={styles.FirstText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          <b>NO SETUP FEE</b>, <span>$195</span> per month Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
           </p>
         </div>
+       
         <div>
           <img src={optimizeIcon} />
           <h3 className={styles.SecondTitle}>
             Optimization
           </h3>
           <p className={styles.SecondText}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div>
+          <img src={responsiveIcon} />
+          <h3 className={styles.FirstTitle}>
+            Mobile-First Design
+          </h3>
+          <p className={styles.FirstText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
           </p>
         </div>
@@ -66,16 +76,7 @@ return (
           </p>
           
         </div>
-         
-        <div>
-          <img src={subscriptionIcon} />
-          <h3 className={styles.FirstTitle}>
-            Subscription-Based
-          </h3>
-          <p className={styles.FirstText}>
-          <span>$0</span> Down, <span>$195</span> per month Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </div>
+       
         
       </section>
      
