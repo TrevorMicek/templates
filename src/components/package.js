@@ -24,11 +24,10 @@ const Package = (props) => (
            </h3>
            </div>
            <div className={styles.benefits}>
-       <Benefits title={'Unlimited edits'} />
-       <Benefits title={'24/7 Customer Support'} />
-          <Benefits title={'includes hosting'} />
-          <Benefits title={'lifetime updates'} />
-          
+           <Benefits title={props.benefitOne}  />
+           <Benefits title={props.benefitTwo} />
+           <Benefits title={props.benefitThree} />
+           <Benefits title={props.benefitFour} />
           </div>
        </div>
 )

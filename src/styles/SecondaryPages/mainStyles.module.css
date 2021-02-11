@@ -167,25 +167,25 @@
      font-size: .7rem;
      right: 1vw
  }
- .imgWrapper {
-    max-width: 8vw;
-     margin: 0vh 1vw 1vh auto;
- }
- .benefits > div {
-    display: flex;
-    flex-direction: row;
-    margin: 0vh 10vw;
-    max-height: 8vh;
- }
+
 
  .pricingWrapper {
-    
-    max-height: 16vh;
+
+    min-width: 10vw;
+ 
 
 }
+.pricingTitle {
+    display: flex;
+    flex-direction: column;
+     font-size: 1rem;
+   margin: 0vh auto 2vh auto;
+  text-align: center;
+    min-width: 45vw;
+    position: relative;
+    color: #1a1a1a;
+ }
  .pricingSection > div {
-    
-
      align-items: center;
      border: 1px solid #89cccc;
     margin: 0 auto;
@@ -196,16 +196,22 @@
     min-height: 50vh;
  }
 
- .pricingTitle {
-    display: flex;
-    flex-direction: column;
-     font-size: 1rem;
-   margin: 0vh auto 2vh auto;
-  text-align: center;
-    min-width: 45vw;
-    position: relative;
-    color: #1a1a1a;
+ .imgWrapper {
+    max-width: 8vw;
+     margin: 0vh 1vw 1vh 0;
+
+  
  }
+ .benefits > div {
+    display: flex;
+    flex-direction: row;
+    margin: 0vh 0vw;
+    margin-left: 7vw;
+    max-width: 60vw;
+    max-height: 8vh;
+
+ }
+
  .benefitTitle {
 
      font-size: .9rem;

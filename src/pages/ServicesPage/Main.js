@@ -2,10 +2,12 @@ import React from 'react';
 
 import styles from '../../styles/SecondaryPages/mainStyles.module.css';
 import Package from '../../components/package'
-
+import pricing from '../../components/PricingInfo'
 const checkmark = require('../../images/checkmark.jpg')
 
-const Main = () => (
+const Main = () => {
+
+  return (
     <main>
       <section className={styles.firstSection}>
         <section className={styles.firstSectionWrapper}>
@@ -138,13 +140,15 @@ const Main = () => (
         </div> 
         </section>
       </section>
+      
        <section className={styles.pricingSection}>
-      <Package title={'standard'} pages={'5 pages'} price={'195'} />
-      <Package title={'standard+Ecommerce'} pages={'6 pages'} price={'295'} />
-      <Package title={'brochure'} pages={'1 page'} price={'50'} />
+      <Package {...pricing.tierOne} />
+      <Package {...pricing.tierTwo} />
+      <Package {...pricing.tierThree} />
           </section>
       </section>
       
     </main>
-)
+  )
+}
 export default Main;
