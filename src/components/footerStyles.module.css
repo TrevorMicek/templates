@@ -163,9 +163,7 @@ bottom: 2vh;
        max-width: 25vw;
       
    }
-   .footerBottom {
-       top: 7vh;
-   }
+
    .footerBottom > ul > li > a {
        font-size: .9rem;
        
