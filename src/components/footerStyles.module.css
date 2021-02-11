@@ -116,7 +116,7 @@ footer {
 .footerBottom {
 text-align: center;
 position: relative;
-
+bottom: 2vh;
 
 }
 .footerBottom >  ul {

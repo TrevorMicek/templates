@@ -3,7 +3,7 @@ import styles from '../styles/SecondaryPages/mainStyles.module.css';
 const checkmark = require('../images/checkmark.jpg')
 
 const Benefits = (props) => {
-  const benefit = () => {
+  
     return (
       props.title === undefined ? null : 
       <div>
@@ -19,9 +19,6 @@ const Benefits = (props) => {
         </div>
     )
         
-  }
-      return (
-        benefit()
-      )
+
       }
 export default Benefits;

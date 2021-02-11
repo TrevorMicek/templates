@@ -134,8 +134,7 @@
      line-height: 1.15;
  }
  .thirdSection {
-     
-    
+        background: #fafafa;
      min-height: 50vh;
  }
  .pricingSection > div > img {
@@ -197,10 +196,11 @@
  }
 
  .imgWrapper {
-    max-width: 8vw;
+    max-width: 4vw;
      margin: 0vh 1vw 1vh 0;
-
-  
+ }
+ .imgWrapper > img {
+     max-width: 7vw;
  }
  .benefits > div {
     display: flex;
@@ -224,7 +224,7 @@
     color: #1a1a1a;
  }
  .pricingTitle > span:nth-child(1) {
-     font-size: 1.4rem;
+     font-size: 1.1rem;
      background: #89cccc;
     padding: 2vh 0;
 

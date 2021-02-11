@@ -1,7 +1,7 @@
 const pricingInfo = {
 
 tierOne : {
-    title: 'standard',
+    title: 'STANDARD',
     pages: '5 pages',
     price: '195',
     benefitOne: 'Unlimited Edits',
@@ -10,7 +10,7 @@ tierOne : {
     benefitFour: 'Lifetime Updates'
   },
   tierTwo : {
-    title: 'standard+ecommerce',
+    title: 'STANDARD+ECOMMERCE',
     pages: '6 pages',
     price: '349',
     benefitOne: 'Online Inventory Management',
@@ -18,7 +18,7 @@ tierOne : {
     benefitThree: 'Easy Payment Gateway',
   },
   tierThree : {
-    title: 'brochure',
+    title: 'BROCHURE',
     pages: '1 page',
     price: '50',
     benefitOne: 'Unlimited Edits',
