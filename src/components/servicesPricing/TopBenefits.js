@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from '../styles/SecondaryPages/mainStyles.module.css'
-const checkmark = require('../images/checkmark.jpg')
+import styles from '../../styles/SecondaryPages/mainStyles.module.css'
+const checkmark = require('../../images/checkmark.jpg')
 
 const Benefits = (props) => (
     <div>

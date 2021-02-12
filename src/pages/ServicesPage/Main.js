@@ -1,10 +1,10 @@
 import React from 'react';
 
 import styles from '../../styles/SecondaryPages/mainStyles.module.css';
-import Package from '../../components/package';
-import pricing from '../../components/PricingInfo';
-import Benefit from '../../components/TopBenefits';
-import BenefitData from '../../components/BenefitData'
+import Package from '../../components/servicesPricing/package';
+import pricing from '../../components/servicesPricing/PricingInfo';
+import Benefit from '../../components/servicesPricing/TopBenefits';
+import BenefitData from '../../components/servicesPricing/BenefitData'
 
 const Main = () => {
 
@@ -23,7 +23,7 @@ const Main = () => {
            <ul className={styles.firstSectionList}>
              <li>
             
-            <span>Speed: </span> <span>2x-4x Faster Than WordPress</span>
+            <span>Speed: </span> <span> 2x-4x Faster Than WordPress</span>
             
       
              </li>

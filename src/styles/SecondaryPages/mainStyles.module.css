@@ -61,13 +61,22 @@
  .firstSectionList > li > span:nth-child(1) {
     font-weight: bold;
     font-size: 1.1rem; 
+ 
  }
+ .firstSectionList > li > span:nth-child(even) {
+   margin-left: 1vw;
+
+ }
+
  .firstSectionList > li {
+     display: flex;
+     flex-direction: row;
+     align-items: bottom;
      font-size: .9rem;
-     
+     min-height: 7vh;
  }
 .firstSectionList {
-    
+   
     text-indent: 1px;
     margin-left: -1px;
 }
