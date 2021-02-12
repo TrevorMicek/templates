@@ -13,7 +13,7 @@ const Header = () => (
   <h1 className={styles.headerTitle}>
       <span>Small Business Web Design</span><span> & Development</span>
   </h1>
-  <h2 className={styles.headerText}>Lorem ipsum dolor sit amet</h2>
+  <h2 className={styles.headerText}>Websites By Trevor</h2>
   </div>
   
 </section>

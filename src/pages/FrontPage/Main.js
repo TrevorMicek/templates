@@ -20,16 +20,14 @@ return (
         <div className={styles.firstSectionTitle}>
           <img src={qualityIcon} className={styles.firstSectionGraphic} />
           <h3>
-            Focused On Quality<br /> &  Ease-of-use
+            Websites Done Uniquely
             
           </h3>
         </div>
         <div>
           <article className={styles.firstSectionText}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being;
               
             </p>
           </article>

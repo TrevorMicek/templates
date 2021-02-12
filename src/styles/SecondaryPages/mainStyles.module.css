@@ -7,8 +7,7 @@
  }
  .firstSection {
     margin-left: 2vw;
-    padding-top: 12.5vh;
-    padding-bottom: 6vh;
+    padding-top: 10vh;
     background: #fafafa;
 }
 
@@ -90,6 +89,7 @@
     margin: 1vh auto;
  }
  .imgWrapper {
+     padding-top: 1vh;
     min-width: 8vw;
     min-height: 6vh;
      margin: 1vh 1vw 1vh auto;
@@ -137,6 +137,18 @@
         background: #fafafa;
      min-height: 50vh;
  }
+ .thirdSectionText {
+
+    position: relative;
+      text-shadow: 1px 1px lightgray;
+      font-size: 1.05rem;
+      line-height: 3.5vh;
+      max-width: 75vw;
+       left: 0;
+       margin-top: 7vh;
+       padding-bottom: 7vh;
+       color: #1a1a1a;
+   }
  .pricingSection > div > img {
     position: relative;
     margin: 1vh auto;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from '../styles/SecondaryPages/mainStyles.module.css';
-import Benefits from './Benefits';
+import Benefits from './TierBenefits';
 
 const checkmark = require('../images/checkmark.jpg')
 

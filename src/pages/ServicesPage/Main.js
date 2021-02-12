@@ -1,9 +1,10 @@
 import React from 'react';
 
 import styles from '../../styles/SecondaryPages/mainStyles.module.css';
-import Package from '../../components/package'
-import pricing from '../../components/PricingInfo'
-const checkmark = require('../../images/checkmark.jpg')
+import Package from '../../components/package';
+import pricing from '../../components/PricingInfo';
+import Benefit from '../../components/TopBenefits';
+import BenefitData from '../../components/BenefitData'
 
 const Main = () => {
 
@@ -13,7 +14,7 @@ const Main = () => {
         <section className={styles.firstSectionWrapper}>
         <div className={styles.firstSectionTitle}>
           <h3>
-           Websites Done Uniquely
+          Focused On Quality<br /> &  Ease-of-use
            
           </h3>
         </div>
@@ -45,79 +46,12 @@ const Main = () => {
       </section>
 
       <section className={styles.secondSection}>
-        <div>
-         <div className={styles.imgWrapper}>
-          <img src={checkmark} className={styles.firstGraphic} />
-          </div>
-          <div className={styles.serviceWrapper}>
-          <h3 className={styles.SecondSectionTitle}>
-            Hosting Fees Included
-          </h3>
-          <p className={styles.FirstText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          </div>
-        </div>
-        <div>
-      
-        <div className={styles.imgWrapper}>
-          <img src={checkmark} className={styles.secondGraphic} />
-          </div>
-          <div className={styles.serviceWrapper}>
-          <h3 className={styles.SecondSectionTitle}>
-            Fully Customized Site
-          </h3>
-          
-          <p className={styles.SecondText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          </p>
-          </div>
-        </div>
-        <div>
-      
-        <div className={styles.imgWrapper}>
-          <img src={checkmark} className={styles.thirdGraphic} />
-          </div>
-          <div className={styles.serviceWrapper}>
-          <h3 className={styles.SecondSectionTitle}>
-            Web Design & Development
-          </h3>
-          
-          <p className={styles.thirdText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-          </p>
-          </div>
-        </div>
-        <div>
+        <Benefit {...BenefitData.one} />
+        <Benefit {...BenefitData.two} />
+        <Benefit {...BenefitData.three} />
+        <Benefit {...BenefitData.four} />
+        <Benefit {...BenefitData.five} />
         
-        <div className={styles.imgWrapper}>
-          <img src={checkmark} className={styles.thirdGraphic} />
-          </div>
-          <div className={styles.serviceWrapper}>
-          <h3 className={styles.SecondSectionTitle}>
-            24/7 Customer Service
-          </h3>
-          
-          <p className={styles.thirdText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          </p>
-          </div>
-        </div>
-        <div>
-        
-        <div className={styles.imgWrapper}>
-          <img src={checkmark} className={styles.thirdGraphic} />
-          </div>
-          <div className={styles.serviceWrapper}>
-          <h3 className={styles.SecondSectionTitle}>
-            Google Analytics
-          </h3>
-          
-          <p className={styles.thirdText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-          </p>
-          </div>
-        </div>
       </section>
 
       <section className={styles.thirdSection}>
@@ -129,11 +63,11 @@ const Main = () => {
           </h3>
         </div>
         <div>
-          <article className={styles.firstSectionText}>
+          <article className={styles.thirdSectionText}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Alongside these benefits, we offer highly customized packages 
+              that include everything you need. Every small business is different but 
+              we have found that these packages suit most businesses needs. Our main goal is to handle all of your website concerns so we are more than happy to adjust your subscription as needed.
               
             </p>
           </article>

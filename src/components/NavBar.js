@@ -26,8 +26,8 @@ const Nav = () => {
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>
-        Trevor's <br />
-        Web Design
+        Websites <br />
+        By Trevor
       </div>
       
       
