@@ -15,11 +15,11 @@
  .dollarsign {
      position: relative;
      bottom: 2vh;
-    font-size: .7rem;
+    font-size: 1rem;
  }
  .month {
      position: relative;
-     font-size: .7rem;
+     font-size: .9rem;
      right: 1vw
  }
 .pricingTitle {

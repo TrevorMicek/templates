@@ -10,12 +10,13 @@ tierOne : {
     benefitFour: 'Lifetime Updates'
   },
   tierTwo : {
-    title: 'STANDARD+ECOMMERCE',
+    title: 'ECOMMERCE',
     pages: '6 pages',
     price: '349',
-    benefitOne: 'Online Inventory Management',
-    benefitTwo: 'Secures Sensitive Data',
-    benefitThree: 'Easy Payment Gateway',
+    benefitOne: 'standard features, plus:',
+    benefitTwo: 'Online Inventory Management',
+    benefitThree: 'Secures Sensitive Data',
+    benefitFour: 'Easy Payment Gateway'
   },
   tierThree : {
     title: 'BROCHURE',
