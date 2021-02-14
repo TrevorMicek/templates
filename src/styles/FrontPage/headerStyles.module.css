@@ -28,15 +28,15 @@
 }
 
 .headerPictureWrapper {
-
-    min-height: 75vh;
+background: #fafafa;
+    padding-bottom: 30vh;
  
-    margin: auto 7.5vw;
+
  
  }
  .headerBorder {
     min-height: 50vh;
-   
+    margin: auto 7.5vw;
 }
 .headerTitle > span {
     display: block;

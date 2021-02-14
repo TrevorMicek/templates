@@ -1,0 +1,57 @@
+
+
+
+ .imgWrapper {
+    max-width: 4vw;
+     margin: 0vh 2.5vw 1vh 0;
+ }
+ .imgWrapper > img {
+     max-width: 6vw;
+ }
+ .benefits > div {
+    display: flex;
+    flex-direction: row;
+    margin: 0vh 0vw;
+    margin-left: 7vw;
+    max-width: 60vw;
+    max-height: 8vh;
+
+ }
+
+ .benefitTitle {
+
+     font-size: .9rem;
+   margin: 1vh auto;
+
+  text-align: left;
+
+    
+    position: relative;
+    color: #1a1a1a;
+ }
+ .pricingTitle > span:nth-child(1) {
+     font-size: 1.1rem;
+     background: #89cccc;
+    padding: 2vh 0;
+
+}
+ .pricingTitle > span:nth-child(2) {
+     margin-top: 2vh;
+ }
+ .pricingSection > div > div > p {
+     color: #1a1a1a;
+   margin: 3vh auto 3vh 1vw;
+   min-width: 45vw;
+ 
+
+   position: relative;
+   text-align: left;
+    bottom: 3.5vh;
+     font-size: .9rem;
+     line-height: 1.15;
+ }
+
+
+
+
+

@@ -1,9 +1,10 @@
 import React from 'react';
 
-import styles from '../../styles/SecondaryPages/mainStyles.module.css'
+import styles from './topBenefits.module.css'
 const checkmark = require('../../images/checkmark.jpg')
 
 const Benefits = (props) => (
+  <section className={styles.secondSection}>
     <div>
     <div className={styles.imgWrapper}>
      <img src={checkmark} className={styles.firstGraphic} />
@@ -17,5 +18,6 @@ const Benefits = (props) => (
      </p>
      </div>
    </div>
+   </section>
 )
 export default Benefits;

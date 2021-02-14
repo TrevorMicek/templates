@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from '../../styles/SecondaryPages/mainStyles.module.css';
+import styles from './tierBenefits.module.css';
 const checkmark = require('../../images/checkmark.jpg')
 
 const Benefits = (props) => {
   
     return (
       props.title === undefined ? null : 
+      <div className={styles.benefits}>
       <div>
     <div className={styles.imgWrapper}>
      
@@ -15,6 +16,7 @@ const Benefits = (props) => {
         <h3 className={styles.benefitTitle}>
           {props.title}
         </h3>
+        </div>
         </div>
         </div>
     )

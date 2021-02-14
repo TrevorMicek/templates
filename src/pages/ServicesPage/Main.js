@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../../styles/SecondaryPages/mainStyles.module.css';
+import styles from '../../styles/ServicesPage/mainStyles.module.css';
 import Package from '../../components/servicesPricing/package';
 import pricing from '../../components/servicesPricing/PricingInfo';
 import Benefit from '../../components/servicesPricing/TopBenefits';
@@ -51,8 +51,8 @@ const Main = () => {
         <Benefit {...BenefitData.three} />
         <Benefit {...BenefitData.four} />
         <Benefit {...BenefitData.five} />
-        
-      </section>
+        </section>
+      
 
       <section className={styles.thirdSection}>
       <section className={styles.firstSection}>
@@ -75,11 +75,11 @@ const Main = () => {
         </section>
       </section>
       
-       <section className={styles.pricingSection}>
+      <section>
       <Package {...pricing.tierOne} />
       <Package {...pricing.tierTwo} />
       <Package {...pricing.tierThree} />
-          </section>
+      </section>
       </section>
       
     </main>

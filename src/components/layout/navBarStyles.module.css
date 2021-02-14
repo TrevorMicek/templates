@@ -36,7 +36,7 @@
    box-shadow: none;
 }
 .navList > li > a {
-    background: white;
+
     margin: auto 1vw;
   position: relative;
   box-shadow: lightgrey 2px 4px 7px;
@@ -59,6 +59,7 @@
 }
 
 .navList {
+    
    list-style-type: none;
    min-height: 8vh;
    padding: 0;
@@ -97,7 +98,7 @@ padding: 0;
 .mobileNavList > li {
     text-align: center;
     margin: 3vh auto;
-
+    background: white;
  }
  .mobileNavList > li:active {
     top: .5vh;
