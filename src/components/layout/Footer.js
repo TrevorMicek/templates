@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import styles from './footerStyles.module.css'
-const Footer = () => (
+const Footer = () => {
+  var year = new Date()
 
 
+return (
 <footer className={styles.footer}>      
         <div className={styles.waveContainer}>
         <div className={styles.wave}></div>
@@ -23,9 +25,7 @@ const Footer = () => (
         </div>
       </section>
       <section className={styles.rightSideFooter}>
-        <h4>
-        hand coded demo site
-        </h4>
+        
         <div className={styles.flaticon}>
         <div>Icons made by <a href={'www.flaticon.com/authors/flat-icons'} title={'Flat Icons'}>Flat Icons</a> from <a href={'www.flaticon.com/'} title={'Flaticon'}>www.flaticon.com</a></div>
         </div>
@@ -40,11 +40,18 @@ const Footer = () => (
           <li><Link to="/">Contact</Link></li>
           
         </ul>
-     
+        <div className={styles.copyright}>
+        <h4>
+        © {
+          year.getFullYear()
+        }, Websites By Trevor LLC
+        </h4>
+        </div>
       </section>
      
     
     </div>
     </footer>
     )
+      }
     export default Footer;

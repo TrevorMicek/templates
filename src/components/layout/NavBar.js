@@ -42,20 +42,14 @@ const Nav = () => {
       </div>
         <div className={styles.mobileListItems}>
           <ul className={styles.mobileNavList}>
-            <li onClick={toggleDropDown}>
-              <Link to="/">Home</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/templates">Templates</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            
-     
+            <li onClick={toggleDropDown}><Link to="/">Home</Link></li>
+            <li onClick={toggleDropDown}><Link to="/services">Services</Link></li>
+            <li onClick={toggleDropDown}><Link to="/about">About</Link></li>
+            <li onClick={toggleDropDown}><Link to="/templates">Templates</Link></li>
+            <li onClick={toggleDropDown}><Link to="/contact">Contact</Link></li>
           </ul>
-       
       </div> 
-      </> :
-      
-     
+      </> :     
       <>
        <div className={styles.mobileNav}>
        <div className={styles.hamburger}>

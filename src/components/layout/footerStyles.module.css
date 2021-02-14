@@ -90,7 +90,8 @@ footer {
    text-shadow: 1px 1px black;
    font-family: sans-serif, Arial, Helvetica;
    margin: 2vh 0;
-
+font-size: .8rem;
+font-weight: 100;
 }
 .rightSideFooter {
   
@@ -114,16 +115,16 @@ footer {
    font-size: .7rem;
 }
 .footerBottom {
+    max-height: 10vh;
 text-align: center;
 position: relative;
-bottom: 2vh;
 
 }
 .footerBottom >  ul {
    list-style-type: none;
    color: white;
    text-shadow: 1px 1px black;
-    margin: 0 auto;
+    margin: 2vh auto 1vh auto;
 
    padding: 0;
 }
@@ -133,9 +134,25 @@ bottom: 2vh;
    margin-right: 1vw;
    
 }
+
 .footerBottom > ul > li {
    display: inline;
   
+}
+.copyright { 
+    background: #1e2b38;
+   border-top: 1px solid #415569;
+    max-height: 6vh;
+    min-height: 6vh;
+}
+.footerBottom > div > h4 {
+   
+  
+  margin-top: 3vh;
+    color: white;
+    font-size: .8rem;
+    font-weight: 350;
+    
 }
 @media only screen and (min-width: 320px) and (max-width: 450px) {
  
