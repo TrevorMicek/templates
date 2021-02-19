@@ -5,15 +5,17 @@ import Layout from "../components/layout/layout"
 
 import SEO from "../components/layout/seo"
 import Header from '../components/layout/Header'
-import Main from './AboutPage/Main'
+import Main from './TemplatesPage/Main'
+import NavBar from './TemplatesPage/NavBar'
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-  
-    <Header title="Templates" />
+    <NavBar />
+    <Header title="Template Home Page" />
     <Main />
-  </Layout>
+    
+  </>
 )
 
 export default IndexPage

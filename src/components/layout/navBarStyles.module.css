@@ -21,10 +21,10 @@
 }
 .navWrapper > .rightsideNav {
    font-size: .9rem;
-
    text-align: justify;
-   height: auto;
-   
+
+   height: 5vh;   
+
 }
 .navList > li {
    text-align: center;
@@ -75,13 +75,14 @@
     z-index: 5;
     min-height: 5vh;
     max-height: 5vh;
-
+    cursor: pointer;
+   
 }
 .dropDown > img {
     z-index: 5;
     min-height: 5vh;
     max-height: 5vh;
- 
+    cursor: pointer;
 }
 
 
@@ -131,19 +132,17 @@ padding: 0;
  .mobileNavList {
     list-style-type: none;
     min-height: 8vh;
-    padding-top: 1vh;
-   
-   
+    padding-top: 1vh;  
  }
 .mobileNav {
+    
    display: inline;
-    max-height: 6vh;
-    max-width: 7vw;
    margin-right: 5vw;
+    max-height: 5vh;
     position: absolute;
     right: 3vw;
     top: 4vh;
-    cursor: pointer;
+   
 }
 
 

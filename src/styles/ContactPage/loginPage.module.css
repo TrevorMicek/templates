@@ -1,0 +1,50 @@
+
+.title {
+    
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+font-size: 1.1rem;
+
+}
+.login {
+    
+    text-align: center;
+    border: 3px solid #000;
+    width: 25vw;
+    margin: 15vh auto;
+    z-index: 8; 
+   width: 75vw;
+  
+}
+.wrapper {
+    margin: 0 11vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label {
+    text-align: left;
+}
+.label > div > textarea {
+   
+    min-height: 20vh;
+ 
+}
+.input {
+    margin-bottom: 2vh;
+    height: 3vh;
+    
+}
+.btn {
+   
+   position: relative;
+    padding: .5vh 2vw;
+    margin-bottom: 3vh;
+
+}
+.btn:active {
+    top: .25vh;
+}
+.loginSection {
+    z-index: 7;
+}

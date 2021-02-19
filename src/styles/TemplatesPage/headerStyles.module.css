@@ -1,0 +1,38 @@
+.headerPictureWrapper {
+    background-image:  linear-gradient(to left, #990033, #006666 );
+    min-height: 40vh;
+    max-height: 40vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.headerOverlay { 
+   
+    background: rgba(0,0,0,.25);
+    min-height: 40vh;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.headerBorder {
+   margin: auto 0;
+   
+}
+
+
+.headerTitle {
+   
+    color: #fafafa;
+    display: inline;
+    font-size: 1.75rem;
+    text-shadow: 1px 1px black;
+    min-width: 60vw;
+    max-height: 6vh;
+    position: relative;
+    bottom: 2vh;
+    z-index: 4;
+    font-family: sans-serif, Arial, Helvetica;
+ 
+ }

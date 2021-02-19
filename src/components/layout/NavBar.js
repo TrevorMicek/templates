@@ -8,7 +8,7 @@ const xImg = require('../../images/X.svg')
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const toggleDropDown = () => setIsOpen(!isOpen)
+ const toggleOpen = () => setIsOpen(!isOpen)
 
   useEffect((() => {
 
@@ -36,25 +36,25 @@ const Nav = () => {
     <>
       <div className={styles.mobileNav}>
         <div className={styles.dropDown}>
-          <img src={xImg} alt={"close drop down menu"} onClick={toggleDropDown} />
+          <img src={xImg} alt={"close drop down menu"} onClick={toggleOpen} />
          
         </div>
       </div>
         <div className={styles.mobileListItems}>
           <ul className={styles.mobileNavList}>
-            <li onClick={toggleDropDown}><Link to="/">Home</Link></li>
-            <li onClick={toggleDropDown}><Link to="/services">Services</Link></li>
-            <li onClick={toggleDropDown}><Link to="/about">About</Link></li>
-            <li onClick={toggleDropDown}><Link to="/templates">Templates</Link></li>
-            <li onClick={toggleDropDown}><Link to="/contact">Contact</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/templates">Templates</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
       </div> 
       </> :     
       <>
        <div className={styles.mobileNav}>
        <div className={styles.hamburger}>
-       <img src={hamburger} alt={"open drop down menu"} onClick={toggleDropDown} />
-       {console.log(isOpen)}
+       <img src={hamburger} alt={"open drop down menu"}  onClick={toggleOpen} />
+    
      </div>
      </div>
       <div className={styles.listItems}>

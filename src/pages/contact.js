@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 
 import SEO from "../components/layout/seo"
 import Header from '../components/layout/Header'
-import Main from './AboutPage/Main'
+import Main from './ContactPage/Main'
 
 const IndexPage = () => (
   <Layout>
