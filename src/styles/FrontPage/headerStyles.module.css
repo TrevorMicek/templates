@@ -75,7 +75,7 @@ background: #fafafa;
     
  
  }
- @media only screen and (min-width: 320px) and (max-width: 450px) {
+ @media only screen and (min-width: 320px) and (max-width: 415px) {
  
     .firstTransition, .firstSectionOverlay {
         height: 60vh;
