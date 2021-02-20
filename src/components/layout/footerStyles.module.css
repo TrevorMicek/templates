@@ -154,7 +154,7 @@ position: relative;
     font-weight: 350;
     
 }
-@media only screen and (min-width: 320px) and (max-width: 450px) {
+@media only screen and (min-width: 320px) and (max-width: 415px) {
  
     .container {
         top: 32vh;
@@ -176,7 +176,10 @@ position: relative;
        font-size: .9rem;
        
    } 
+   .footerBottom {
+       top: 3vh;
+   }
    .footerBottom > div > h4 {
-       margin-top: 2vh;
+       margin-top: 1vh;
    }
 }
