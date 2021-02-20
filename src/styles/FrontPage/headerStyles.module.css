@@ -77,16 +77,23 @@ background: #fafafa;
  }
  @media only screen and (min-width: 320px) and (max-width: 450px) {
  
- 
-    .headerBorder {
-        min-width: 85vw;
+    .firstTransition, .firstSectionOverlay {
+        height: 60vh;
     }
+    .headerBorder {
+        min-width: 100vw;
+        min-height: 25vh;
+        margin: auto 3vw;
+    }
+   
     .headerTitle {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        
   
     }
     .headerText {
-        font-size: 1rem;
+        font-size: 1.15rem;
+      
     }
 }
 
