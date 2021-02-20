@@ -12,30 +12,16 @@
 }
 
  .firstSectionWrapper {
+    
+     margin: auto 0vw auto 7.5vw;
+ }
 
-     margin: auto 0vw auto 9vw;
- }
- .firstSectionGraphic {
-    position: relative;
- 
-     max-width: 22.5vw;
-    top: 0vh;
-    left: 0vw;
- }
  .firstSectionTitle {
     text-align: left;
-
-    
 }
 .firstSectionTitle > h3 > span {
     color: rgb(30, 123, 245);
-
 }
- .firstSectionTitle {
-    max-height: 25vh;
- display: flex;
- justify-content: space-between;
- }
  .firstSectionTitle > h3 {
      font-size: 1.4rem;
      margin: auto 0;
@@ -44,10 +30,7 @@
      text-shadow: 1px 1px lightgray;
      font-family: sans-serif, Arial, Helvetica;
  }
- 
- 
- .firstSectionText {
-
+  .firstSectionText {
   position: relative;
     text-shadow: 1px 1px lightgray;
     font-size: 1.05rem;
@@ -90,9 +73,11 @@
  .thirdSection {
         background: #fafafa;
      min-height: 50vh;
+    
+     min-width: 100%;
  }
  .thirdSectionText {
-
+    
     position: relative;
       text-shadow: 1px 1px lightgray;
       font-size: 1.05rem;
@@ -107,7 +92,7 @@
  
  .firstSectionTitle > h3 {
      font-size: 1.3rem;
-     margin-left: 6vw;
+     
  }
  .firstSectionText {
      margin-top: 4vh;

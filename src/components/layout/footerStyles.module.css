@@ -3,7 +3,7 @@
     position: relative;
     transform: rotate(180deg);
     background: #2c3e50;
-    height: 30vh;
+    height: 36vh;
     z-index: -1;
     width: 100vw;
     top: 5vh;
@@ -43,7 +43,7 @@ border-radius: 100% 50%;
 }
 .footerContainer {
     line-height: 1;
-   min-height: 30vh;
+   min-height: 36vh;
    margin-top: 0vh;
    position: relative;
    bottom: 25vh;
@@ -51,7 +51,7 @@ border-radius: 100% 50%;
 }
 
 footer {
-    max-height: 30vh;
+    max-height: 36vh;
     min-width: 100%;
     background-color: #fafafa;
     position: relative;
@@ -142,13 +142,13 @@ position: relative;
 .copyright { 
     background: #1e2b38;
    border-top: 1px solid #415569;
-    max-height: 6vh;
+
     min-height: 6vh;
 }
 .footerBottom > div > h4 {
    
   
-  margin-top: 3vh;
+  margin-top: 1vh;
     color: white;
     font-size: .8rem;
     font-weight: 350;
@@ -159,33 +159,24 @@ position: relative;
     .container {
         top: 32vh;
     }
-   .leftSideFooter > div > h4 {
-       margin-top: 8vh;
-       font-size: .95rem;
-    
+   .leftSideFooter {
+       top: 0vh;
    }
    .rightSideFooter {
-      top: 3vh;
+   
      
      max-width: 30vw;
    }
-   .rightSideFooter > h4 {
-       font-size: .95rem;
-      display: inline;
-     
-   }
+ 
    .flaticon {
-       bottom: 3vh;
-     
-       max-width: 25vw;
-      
+       max-width: 30vw;
    }
-   .footerBottom {
-       top: 4vh;
-   }
+ 
    .footerBottom > ul > li > a {
        font-size: .9rem;
        
+   } 
+   .footerBottom > div > h4 {
+       margin-top: 2vh;
    }
-   
 }

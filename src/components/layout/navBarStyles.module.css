@@ -151,18 +151,8 @@ padding: 0;
     .navWrapper > .leftsideNav {
       font-size: .9rem;
       min-width: 25vw;
-        margin-left: 2vw;
-   
   }
-
-  .hamburger > img, .dropDown > img {
-    min-width: 6vw;
-    min-height: 6vh;
-}
-
 .mobileNav {
-
-  top: 4vh;
   right: 8vw;
 }
 }
