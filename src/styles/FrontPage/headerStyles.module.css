@@ -99,7 +99,7 @@ background: #fafafa;
 @media only screen and (min-width: 400px) and (max-width: 600px) {
     .headerBorder {
 
-        min-height: 45vh;
+        min-height: 35vh;
         
     }
 }
