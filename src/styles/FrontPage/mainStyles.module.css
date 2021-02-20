@@ -23,8 +23,10 @@
  
  }
  .firstSectionTitle > h3 {
+    
      font-size: 1.4rem;
      margin: auto 0;
+     margin-left: 10vw;
      color: #1a1a1a;
      max-width: 60vw;
      text-shadow: 1px 1px lightgray;
@@ -97,7 +99,7 @@
     color: #3171b1;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 450px) {
+@media only screen and (min-width: 320px) and (max-width: 400px) {
 
     .firstSectionTitle > h3 {
         font-size: 1.2rem;
