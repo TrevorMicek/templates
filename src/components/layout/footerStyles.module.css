@@ -142,9 +142,10 @@ position: relative;
 .copyright { 
     background: #1e2b38;
    border-top: 1px solid #415569;
-
+   padding-top: 1vh;
     min-height: 6vh;
 }
+
 .footerBottom > div > h4 {
    
   
