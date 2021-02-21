@@ -18,7 +18,7 @@
     margin: auto 0;
  }
  .firstSectionTitle {
-  
+    max-height: 15vh;
    border: 1px solid red;
  display: flex;
     justify-content:left;
