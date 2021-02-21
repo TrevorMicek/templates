@@ -17,11 +17,11 @@ return (
           
        
         <div className={styles.firstSectionTitle}>
-          <img src={qualityIcon} className={styles.firstSectionGraphic} />
+          
           <h3>
             Websites Done Uniquely
-            
           </h3>
+          <img src={qualityIcon} className={styles.firstSectionGraphic} />
         </div>
         <div>
           <article className={styles.firstSectionText}>

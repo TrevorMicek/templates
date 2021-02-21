@@ -3,6 +3,8 @@
     min-height: 100vh;
     background: #fafafa;
     line-height: 1;
+    padding-top: 5vh;
+    
  }
  
  
@@ -11,24 +13,22 @@
  }
  .firstSectionGraphic {
     position: relative;
- 
      max-width: 22.5vw;
-    top: 0vh;
-    left: 0vw;
+    margin: auto 0;
  }
  .firstSectionTitle {
     max-height: 25vh;
+    
  display: flex;
- justify-content: space-between;
- 
+    justify-content:left;
+
  }
  .firstSectionTitle > h3 {
-    
      font-size: 1.4rem;
      margin: auto 0;
-     
+   
      color: #1a1a1a;
-     max-width: 60vw;
+     max-width: 40vw;
      text-shadow: 1px 1px lightgray;
  }
  
@@ -41,7 +41,7 @@
     line-height: 3.5vh;
     max-width: 75vw;
      left: 0;
-     margin-top: 7vh;
+     margin-top: 5vh;
      color: #1a1a1a;
    
  }
@@ -57,13 +57,14 @@
  .secondSection > div > .firstGraphic {
     position: relative;
     top: 1vh;
- 
+  
  }
  .secondSection > div > img {
     max-width: 9vw;
     min-height: 7vh;
   
     margin: 0 auto;
+   
  }
  .secondSection > div {
     margin: 7.5vh auto;
@@ -106,7 +107,7 @@
 
     .firstSectionTitle > h3 {
         font-size: 1.3rem;
-        margin-left: 6vw;
+      
     }
     .firstSectionText {
         margin-top: 0vh;
@@ -127,12 +128,7 @@
      }
     }
     
-    @media only screen and (min-width: 400px) and (max-width: 600px) {
-        .firstSectionTitle > h3 {
-            font-size: 1.5rem;
-            margin-left: 6vw;
-        }
-    }
+
     @media only screen and (min-width: 1030px) {
         .firstSectionTitle > h3 {
             left: 0vw;
