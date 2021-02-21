@@ -138,6 +138,9 @@
     }
     
 @media only screen and (min-width: 400px) {
+    .firstSectionTitle > h3 {
+        font-size: 1.4rem;
+    }
     .secondSection > div > p {
         font-size: 1.1rem;
     }
