@@ -3,8 +3,8 @@
     min-height: 100vh;
     background: #fafafa;
     line-height: 1.25;
-    padding-top: 12.5vh;
-    border: 1px solid red;
+    padding-top: 7.5vh;
+   
  }
  
  
@@ -19,7 +19,7 @@
  }
  .firstSectionTitle {
     max-height: 15vh;
-   border: 1px solid red;
+  
  display: flex;
     justify-content:left;
 
@@ -35,7 +35,7 @@
  
  
  .firstSectionText {
-    border: 1px solid red;
+    
   position: relative;
     text-shadow: 1px 1px lightgray;
     font-size: 1.1rem;
