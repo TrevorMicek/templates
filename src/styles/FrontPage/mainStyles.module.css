@@ -155,8 +155,23 @@
      
      }
     
-     @media only screen and (max-width: 400px) {
+     @media only screen and (min-width: 410px) and (max-width: 412px) {
          .firstSectionTitle > h3 {
             border: 1px solid red;
          }
      }
+     @media only screen and (min-width: 405px) and (max-width: 409px){
+        .firstSectionTitle > h3 {
+           border: 1px solid purple;
+        }
+    }
+    @media only screen and (min-width: 412px) and (max-width: 414px){
+        .firstSectionTitle > h3 {
+           border: 1px solid green;
+        }
+    }
+    @media only screen and (min-width: 415px) {
+        .firstSectionTitle > h3 {
+           border: 1px solid blue;
+        }
+    }
