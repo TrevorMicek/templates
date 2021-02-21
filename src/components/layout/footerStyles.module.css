@@ -114,7 +114,7 @@ font-weight: 100;
    font-size: .7rem;
 }
 .footerBottom {
-    margin-top: 4vh;
+    margin-top: 5vh;
     text-align: center;
    
     font-size: 1.1rem;
@@ -149,7 +149,7 @@ font-weight: 100;
 .footerBottom > div > h4 {
    
   
-  margin-top: 2vh;
+  margin-top: 1vh;
     color: white;
     font-size: .8rem;
     font-weight: 350;
