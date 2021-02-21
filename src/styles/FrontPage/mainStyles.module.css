@@ -100,8 +100,11 @@
      line-height: 1.15;
      
  }
-
-.secondSection > div > p > span {
+.secondSection > div > p > span:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+.secondSection > div > p > span:nth-child(2) {
     color: #3171b1;
 }
 
@@ -139,7 +142,7 @@
         font-size: 1.1rem;
     }
     .secondSection > div > h3 {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 }
     @media only screen and (min-width: 1030px) {
