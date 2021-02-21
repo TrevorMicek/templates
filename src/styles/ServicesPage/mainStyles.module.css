@@ -2,7 +2,7 @@
     min-height: 100vh;
 
     margin-bottom: 10vh;
-    line-height: 1;
+
    
  }
  .firstSection {
@@ -23,7 +23,7 @@
     color: rgb(30, 123, 245);
 }
  .firstSectionTitle > h3 {
-     font-size: 1.4rem;
+     font-size: 1.6rem;
      margin: auto 0;
      color: #1a1a1a;
      min-width: 60vw;
@@ -33,7 +33,7 @@
   .firstSectionText {
   position: relative;
     text-shadow: 1px 1px lightgray;
-    font-size: 1.05rem;
+    
     line-height: 3.5vh;
     min-width: 80vw;
      left: 0;
@@ -43,7 +43,7 @@
 
  .firstSectionList > li > span:nth-child(1) {
     font-weight: bold;
-    font-size: 1.1rem; 
+    font-size: 1.3rem; 
  
  }
  .firstSectionList > li > span:nth-child(even) {
@@ -55,7 +55,7 @@
      display: flex;
      flex-direction: row;
      align-items: bottom;
-     font-size: .9rem;
+     font-size: 1.1rem;
      min-height: 7vh;
  }
 .firstSectionList {
@@ -88,7 +88,7 @@
        padding-bottom: 7vh;
        color: #1a1a1a;
    }
- @media only screen and (min-width: 320px) and (max-width: 450px) {
+ @media only screen and (min-width: 320px) and (max-width: 410px) {
  
  .firstSectionTitle > h3 {
      font-size: 1.3rem;

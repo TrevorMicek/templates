@@ -23,7 +23,7 @@
 
  .SecondSectionTitle {
    
-     font-size: 1rem;
+     font-size: 1.2rem;
    margin: 1.5vh auto 2vh 1vw;
   text-align: left;
     min-width: 45vw;
@@ -37,6 +37,6 @@
      position: relative;
    text-align: left;
     bottom: 3.5vh;
-     font-size: .9rem;
-     line-height: 1.15;
+     font-size: 1.1rem;
+     line-height: 1.25;
  }
