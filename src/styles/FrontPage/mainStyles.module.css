@@ -156,9 +156,12 @@
      }
     
   
-    @media only screen and (min-width: 413px) and (max-width: 414px){
+    @media only screen and (min-width: 416px){
         .firstSectionTitle > h3 {
            border: 1px solid green;
         }
     }
+    /*
+    between 413-
+    */
  
