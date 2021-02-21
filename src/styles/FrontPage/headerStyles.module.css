@@ -35,20 +35,19 @@ background: #fafafa;
  
  }
  .headerBorder {
-    min-height: 50vh;
-    margin: auto 7.5vw;
+    min-height: 35vh;
+    margin: auto 5vw;
 }
 .headerTitle > span {
     display: block;
     position: relative;
     z-index: 4;
-   
 }
 
 .headerTitle {
    color: #fafafa;
    display: inline;
-   font-size: 1.5em;
+   font-size: 1.65rem;
    text-shadow: 1px 1px black;
    min-width: 60vw;
    max-height: 6vh;
@@ -62,7 +61,7 @@ background: #fafafa;
 .headerText {
     color: #ECECEC;
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: normal;
     text-shadow: 1px 1px black;
     z-index: 4;
@@ -75,7 +74,7 @@ background: #fafafa;
     
  
  }
- @media only screen and (min-width: 320px) and (max-width: 400px) {
+ @media only screen and (min-width: 320px) and (max-width: 410px) {
  
     .firstTransition, .firstSectionOverlay {
         height: 60vh;

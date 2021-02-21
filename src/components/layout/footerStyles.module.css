@@ -79,7 +79,7 @@ footer {
 
 }
 .leftSideFooter > div > h4 {
-   margin: 1vh 0 auto 0;;
+   margin-bottom: 7.5vh;
    color: white;
    text-shadow: 1px 1px black;
    font-family: sans-serif, Arial, Helvetica;
@@ -102,12 +102,11 @@ font-weight: 100;
     max-width: 25vw;
 }
 .flaticon {
-    max-width: 20vw;
+    min-width: 35vw;
    position: relative;
    margin-top: 7.5vh;
-   
-   bottom: 4vh;
-   right: 0vw;
+   bottom: 6vh;
+   right: 6vw;
 }
 .flaticon, .flaticon > div > a {
    
@@ -115,9 +114,10 @@ font-weight: 100;
    font-size: .7rem;
 }
 .footerBottom {
-    max-height: 10vh;
-text-align: center;
-position: relative;
+    margin-top: 4vh;
+    text-align: center;
+   
+    font-size: 1.1rem;
 
 }
 .footerBottom >  ul {
@@ -130,7 +130,7 @@ position: relative;
 }
 .footerBottom > ul > li > a {
    color: white;
-   font-size: .9rem;
+   
    margin-right: 1vw;
    
 }
@@ -142,20 +142,20 @@ position: relative;
 .copyright { 
     background: #1e2b38;
    border-top: 1px solid #415569;
-   padding-top: 1vh;
+  
     min-height: 6vh;
 }
 
 .footerBottom > div > h4 {
    
   
-  margin-top: 1vh;
+  margin-top: 2vh;
     color: white;
     font-size: .8rem;
     font-weight: 350;
     
 }
-@media only screen and (min-width: 320px) and (max-width: 415px) {
+@media only screen and (min-width: 320px) and (max-width: 410px) {
  
     .container {
         top: 32vh;

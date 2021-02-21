@@ -2,7 +2,7 @@
 .mainWrapper {
     min-height: 100vh;
     background: #fafafa;
-    line-height: 1;
+    line-height: 1.25;
     padding-top: 5vh;
     
  }
@@ -10,6 +10,7 @@
  
  .firstSectionWrapper {
      margin: auto 12.5vw;
+   
  }
  .firstSectionGraphic {
     position: relative;
@@ -18,17 +19,17 @@
  }
  .firstSectionTitle {
     max-height: 25vh;
-    
+   
  display: flex;
     justify-content:left;
 
  }
  .firstSectionTitle > h3 {
-     font-size: 1.4rem;
+    font-size: 1.6rem;
      margin: auto 0;
    
      color: #1a1a1a;
-     max-width: 40vw;
+     max-width: 45vw;
      text-shadow: 1px 1px lightgray;
  }
  
@@ -37,21 +38,21 @@
     
   position: relative;
     text-shadow: 1px 1px lightgray;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
    
     max-width: 75vw;
      left: 0;
-     margin-top: 5vh;
+     margin-top: 3vh;
      color: #1a1a1a;
    
  }
  .secondSection {
-    
+     padding-top: 5vh;
     padding-bottom: 15vh;
     min-height: 30vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: space-between;
     text-shadow: 1px 1px lightgray;
  }
  .secondSection > div > .firstGraphic {
@@ -67,20 +68,18 @@
    
  }
  .secondSection > div {
-    margin: 7.5vh auto;
+    margin: 0 auto 7.5vh auto;
     min-width: 65vw;
     padding-top: 2vh;
-    margin-bottom: 0;
     text-align: center;
     max-width: 65vw;
-   
     border: 1px solid lightgray;
     border-radius: 5%;
     box-shadow: 1px 1px 8px 2px gray;
     background: white;
  }
  .FirstTitle, .SecondTitle, .ThirdTitle {
-     font-size: 1.15rem;
+    font-size: 1.3rem;
    margin: 1.5vh auto;
   
     position: relative;
@@ -92,12 +91,11 @@
  .secondSection > div > p {
      color: #1a1a1a;
    margin: 6vh 5vw 1vh 5vw;
-  
+   font-size: 1.1rem;
 
    position: relative;
     bottom: 3.5vh;
-   
-     line-height: 1.15;
+
      
  }
 .secondSection > div > p > span:nth-child(1) {
@@ -108,7 +106,7 @@
     color: #3171b1;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 450px) {
+@media only screen and (min-width: 320px) and (max-width: 410px) {
 .mainWrapper {
     padding-top: 0;
 }
@@ -136,32 +134,9 @@
          min-width: 12.5vw;
      }
     }
-    
-@media only screen and (min-width: 400px) {
-    .firstSectionTitle > h3 {
-        font-size: 1.4rem;
-    }
-    .secondSection > div > p {
-        font-size: 1.1rem;
-    }
-    .secondSection > div > h3 {
-        font-size: 1.3rem;
-    }
-}
     @media only screen and (min-width: 1030px) {
         .firstSectionTitle > h3 {
             left: 0vw;
         }
      
      }
-    
-  
-    @media only screen and (min-width: 414px){
-        .firstSectionTitle > h3 {
-           border: 1px solid green;
-        }
-    }
-    /*
-    between 413-414
-    */
- 
