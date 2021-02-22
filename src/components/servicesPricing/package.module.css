@@ -5,11 +5,12 @@
  }
  .price {
      min-height: 20vh;
+     margin-bottom: 5vh;
  }
  .price > h3 {
     font-family: sans-serif;
     font-weight: 100;
-     font-size: 2.2rem;
+     font-size: 2.5rem;
  }
 
  .dollarsign {
@@ -44,13 +45,14 @@
     background: white;
  }
  .pricingTitle > span:nth-child(1) {
-     font-size: 1.4rem;
+     font-size: 1.5rem;
      background: #89cccc;
     padding: 2vh 0;
 
 }
  .pricingTitle > span:nth-child(2) {
      margin-top: 2vh;
+     font-size: 1.25rem;
  }
  @media only screen and (min-width: 320px) and (max-width: 450px) {
      .pricingSection > div {

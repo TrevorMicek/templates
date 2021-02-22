@@ -5,7 +5,7 @@
      margin: .5vh 0vw 1vh auto;
  }
  .serviceWrapper {
-  border: 1px solid red;
+
     min-width: 70vw;
     
      display: flex;
@@ -15,7 +15,7 @@
  .secondSection > div {
      display: flex;
      flex-direction: row;
-     border: 1px solid red;
+   
     margin: 0vh 5vw 2.5vh 5vw;
    
     margin-bottom: 0;
@@ -24,7 +24,7 @@
  }
 
  .SecondSectionTitle {
-  border: 1px solid red;
+
      font-size: 1.2rem;
    margin: 1.5vh auto 2vh 1vw;
   text-align: left;
@@ -38,8 +38,9 @@
    margin: 3vh auto 0vh 1vw;
      position: relative;
    text-align: left;
+   max-width: 57vw;
     bottom: 3.5vh;
      font-size: 1.1rem;
      line-height: 1.25;
-  
+    
  }
