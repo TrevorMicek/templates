@@ -34,7 +34,7 @@
   position: relative;
     text-shadow: 1px 1px lightgray;
     
-    line-height: 3.5vh;
+    line-height: 1.25;
     min-width: 80vw;
      left: 0;
      margin-top: 7vh;
@@ -44,19 +44,21 @@
  .firstSectionList > li > span:nth-child(1) {
     font-weight: bold;
     font-size: 1.3rem; 
- 
+
  }
  .firstSectionList > li > span:nth-child(even) {
    margin-left: 1vw;
+    margin-bottom: 2.25vh;
 
  }
 
  .firstSectionList > li {
      display: flex;
      flex-direction: row;
-     align-items: bottom;
+     
      font-size: 1.1rem;
      min-height: 7vh;
+    
  }
 .firstSectionList {
    
