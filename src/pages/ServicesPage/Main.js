@@ -58,8 +58,8 @@ const Main = () => {
 
       <section className={styles.thirdSection}>
       <section className={styles.firstSection}>
-        <section className={styles.firstSectionWrapper}>
-        <div className={styles.firstSectionTitle}>
+        <section className={styles.thirdSectionWrapper}>
+        <div className={styles.thirdSectionTitle}>
           <h3>
            Customized Packages
           </h3>
@@ -69,7 +69,7 @@ const Main = () => {
             <p>
               Alongside these benefits, we offer highly customized packages 
               that include everything you need. Every small business is different but 
-              we have found that these packages suit most businesses needs. Our main goal is to handle all of your website concerns so we are more than happy to adjust your subscription as needed.
+              we have found that these packages suit most businesses needs.
               
             </p>
           </article>

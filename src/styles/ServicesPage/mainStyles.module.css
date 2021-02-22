@@ -83,16 +83,27 @@
     
      min-width: 100%;
  }
- .thirdSectionText {
+ .thirdSectionWrapper {
+    margin: auto 0vw auto 7.5vw;
+ }
+ .thirdSectionTitle > h3 {
+    font-size: 1.5rem;
+    margin: auto 0;
+    color: #1a1a1a;
+  
    
+    font-family: sans-serif, Arial, Helvetica;
+ }
+    .thirdSectionText {
+  
     position: relative;
-      text-shadow: 1px 1px lightgray;
-      font-size: 1.05rem;
+      
+     font-size: 1.1rem;
       line-height: 3.5vh;
-      max-width: 75vw;
+      max-width: 82.5vw;
        left: 0;
-       margin-top: 7vh;
-       padding-bottom: 7vh;
+       margin-top: 3vh;
+       padding-bottom: 3vh;
        color: #1a1a1a;
    }
  @media only screen and (min-width: 320px) and (max-width: 410px) {
