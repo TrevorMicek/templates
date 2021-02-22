@@ -13,7 +13,7 @@ tierOne : {
     title: 'ECOMMERCE',
     pages: '6 pages',
     price: '349',
-    benefitOne: 'standard features, plus:',
+    benefitOne: 'Standard Features, Plus:',
     benefitTwo: 'Online Inventory Management',
     benefitThree: 'Secures Sensitive Data',
     benefitFour: 'Easy Payment Gateway'

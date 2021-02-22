@@ -1,19 +1,19 @@
 const data = {
     one : {
-        title: 'Hosting Fees Included',
-        text: 'All hosting fees are built right into the subscription'
+        title: 'Fully Maintained Site',
+        text: "We do constant maintenance, so you don't have to worry about anything"
     },
     two : {
-        title: 'Fully Customized Site',
-        text: 'Every website is built from scratch, so we can customize every aspect of your website'
+        title: 'Hosting Fees Included',
+        text: 'All hosting fees are built right into the subscription'
     },
     three : {
         title: 'Web Design & Development',
         text: 'Websites are built with over 50 hours of design, development, and testing'
     },
     four : {
-        title: '24/7 Customer Service',
-        text: 'Call day or night, no automated messages, always direct and personal responses'
+        title: 'Fully Customized Site',
+        text: 'Since every website is hand coded, we can customize every aspect of your website'
     },
     five : {
         title: 'Google Analytics',

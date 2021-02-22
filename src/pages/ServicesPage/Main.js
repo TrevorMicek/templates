@@ -21,14 +21,15 @@ const Main = () => {
         <div>
           <article className={styles.firstSectionText}>
            <ul className={styles.firstSectionList}>
-             <li>
-            
+             
+            <span>
+              <li>
             <span>Speed: </span> <span> 2x-4x Faster Than WordPress</span>
             
       
              </li>
              <li>
-               <span>
+               <span className={styles.cost}>
               Cost: 
                </span> <span> No Setup Fee, Affordable Monthly Subscription</span>
             
@@ -39,6 +40,7 @@ const Main = () => {
                  </span>
                 <span> Quality Websites Lead To More Organic Growth</span>
              </li>
+             </span>
            </ul>
           </article>
         </div> 
