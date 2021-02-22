@@ -71,6 +71,7 @@
     align-items: left;
     text-shadow: 1px 1px lightgray;
     background: #fafafa;
+    border: 1px solid red;
   }
  .thirdSection {
         background: #fafafa;
@@ -79,7 +80,7 @@
      min-width: 100%;
  }
  .thirdSectionText {
-    
+   
     position: relative;
       text-shadow: 1px 1px lightgray;
       font-size: 1.05rem;

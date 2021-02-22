@@ -3,10 +3,10 @@
 
  .imgWrapper {
     max-width: 4vw;
-     margin: 0vh 2.5vw 1vh 0;
+     margin: 0vh 4.5vw 1vh 0;
  }
  .imgWrapper > img {
-     max-width: 6vw;
+     max-width: 8vw;
  }
  .benefits > div {
     
@@ -21,8 +21,8 @@
 
  .benefitTitle {
 
-     font-size: .9rem;
-   margin: 1vh auto;
+     font-size: 1.2rem;
+   margin: 1.5vh auto;
 
   text-align: left;
 
@@ -32,6 +32,7 @@
  }
  .pricingTitle > span:nth-child(1) {
      font-size: 1.1rem;
+    
      background: #89cccc;
     padding: 2vh 0;
 

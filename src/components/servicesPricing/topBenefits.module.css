@@ -5,7 +5,9 @@
      margin: .5vh 0vw 1vh auto;
  }
  .serviceWrapper {
-    max-height: 16vh;
+  
+    min-width: 70vw;
+    
      display: flex;
      flex-direction: column;
      flex-flow: flex-start;
@@ -13,11 +15,11 @@
  .secondSection > div {
      display: flex;
      flex-direction: row;
-     
-    margin: 2.5vh 7.5vw;
-    min-width: 55vw;
+   
+    margin: 0vh 5vw 2.5vh 5vw;
+   
     margin-bottom: 0;
-    max-width: 70vw;
+    max-width: 77vw;
    
  }
 
@@ -33,10 +35,11 @@
  }
  .secondSection > div > div > p {
      color: #1a1a1a;
-   margin: 3vh auto 3vh 1vw;
+   margin: 3vh auto 0vh 1vw;
      position: relative;
    text-align: left;
     bottom: 3.5vh;
      font-size: 1.1rem;
      line-height: 1.25;
+  
  }
