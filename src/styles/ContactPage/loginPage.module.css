@@ -29,6 +29,9 @@ font-size: 1.1rem;
     min-height: 20vh;
  
 }
+.validation {
+    color: red;
+}
 .input {
     margin-bottom: 2vh;
     height: 3vh;
@@ -43,6 +46,34 @@ font-size: 1.1rem;
 }
 .btn:active {
     top: .25vh;
+}
+.confirmation {
+    position: absolute;
+    background: white;
+    z-index: 6;
+    width: 70vw;
+    height: 70vh;
+   
+    
+}
+.confirmedTitle {
+    margin: 0 auto;
+   
+    border: 1px solid red;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.confirmedTitle > h2 {
+    margin: 0 auto;
+    
+}
+.confirmedTitle > img {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    max-width: 5vw;
+   cursor: pointer;
 }
 .loginSection {
     z-index: 7;
