@@ -37,7 +37,7 @@ const LoginForm = (props) => {
         <input type="text" id="email" value={email} onChange={handleChange} name="email" key='email'  placeholder="Enter email..." className={styles.input}/><br />
         <label>Name:</label>
         <input type="text" id="name" value={name} onChange={handleChange} name="name" key='name' placeholder="Enter name..." className={styles.input}/><br />
-        <label>Message:</label>
+        <label>Message:</label><br />
         <textarea type="text" rows="10" id="message" value={message} onChange={handleChange} name="message" key='message' placeholder="Enter message..." className={styles.input}/>
         </div>
         )

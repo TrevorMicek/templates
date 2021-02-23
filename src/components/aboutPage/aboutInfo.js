@@ -7,7 +7,7 @@ const aboutInfo = {
       },
       sectionTwo : {
         title: 'Tech Goals',
-        firstP: "My main goal in tech is to constantly be learning new things because there's constantly new technologies, and additions to languages.",
+        firstP: "My main goal in tech is to always be learning new things because there's constantly new technologies, and additions to languages.",
         secondP: "I also want to be able to use my knowledge of programming to help people somehow.",
         thirdP: "My favorite areas of IT, are web development, and AI, so I see myself utilizing both in the future."
       },

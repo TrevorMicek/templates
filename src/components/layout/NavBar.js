@@ -9,7 +9,7 @@ const xImg = require('../../images/X.svg')
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
  const toggleOpen = () => setIsOpen(!isOpen)
-
+/*
   useEffect((() => {
 
   
@@ -23,6 +23,7 @@ const Nav = () => {
     })
   }
   ), [])
+  */
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>

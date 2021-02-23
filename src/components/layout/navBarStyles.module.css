@@ -14,7 +14,6 @@
 .navWrapper > .leftsideNav {
     color: #212121;
    margin: 4vh 1vw 3vh 7vw;
-   font-size: .8rem;
    min-width: 20vw;
    max-width: 20vw;
    min-height: 7vh;
@@ -109,8 +108,8 @@ padding: 0;
  .mobileNavList > li > a {
      margin: auto 1vw;
    position: relative;
-   box-shadow: lightgrey 2px 4px 7px;
-   border: 1px solid black;
+ 
+   border: 1px solid lightgray;
      display: block;
      min-width: 60vw;
      padding: 3vh 1vw;
@@ -140,13 +139,13 @@ padding: 0;
    margin-right: 5vw;
     max-height: 5vh;
     position: absolute;
-    right: 3vw;
+    right: 5vw;
     top: 4vh;
    
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 450px) {
+@media only screen and (min-width: 320px) and (max-width: 410px) {
  
     .navWrapper > .leftsideNav {
       font-size: .9rem;

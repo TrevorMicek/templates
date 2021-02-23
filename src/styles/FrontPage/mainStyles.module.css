@@ -75,7 +75,7 @@
     max-width: 65vw;
     border: 1px solid lightgray;
     border-radius: 5%;
-    box-shadow: 1px 1px 8px 2px gray;
+    box-shadow: 2px 2px 4px 2px lightgray;
     background: white;
  }
  .FirstTitle, .SecondTitle, .ThirdTitle {

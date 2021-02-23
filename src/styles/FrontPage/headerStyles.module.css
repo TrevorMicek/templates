@@ -39,7 +39,7 @@ background: #fafafa;
     margin: auto 5vw;
 }
 .headerTitle > span {
-    display: inline;
+    display: block;
     position: relative;
     z-index: 4;
 }
