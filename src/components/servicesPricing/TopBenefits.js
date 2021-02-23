@@ -7,7 +7,7 @@ const Benefits = (props) => (
   <section className={styles.secondSection}>
     <div>
     <div className={styles.imgWrapper}>
-     <img src={checkmark} className={styles.firstGraphic} />
+     <img src={checkmark} alt="small blue checkmark icon" className={styles.firstGraphic} width="30px" height="30px" />
      </div>
      <div className={styles.serviceWrapper}>
      <h3 className={styles.SecondSectionTitle}>

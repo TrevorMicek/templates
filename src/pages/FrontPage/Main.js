@@ -21,7 +21,7 @@ return (
           <h3>
             Websites Done Uniquely
           </h3>
-          <img src={qualityIcon} className={styles.firstSectionGraphic} />
+          <img src={qualityIcon} alt="colorful desktop icon" className={styles.firstSectionGraphic} width="100px" height="100px" />
         </div>
         <div>
           <article className={styles.firstSectionText}>

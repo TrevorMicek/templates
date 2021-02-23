@@ -10,7 +10,7 @@ const Benefits = (props) => {
       <div>
     <div className={styles.imgWrapper}>
      
-        <img src={checkmark} className={styles.thirdGraphic} />
+        <img src={checkmark} alt={"mid-sized blue checkmark icon"} className={styles.thirdGraphic} width="35px" height="35px" />
         </div>
     <div className={styles.pricingWrapper}>
         <h3 className={styles.benefitTitle}>

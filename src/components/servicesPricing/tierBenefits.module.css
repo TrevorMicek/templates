@@ -2,12 +2,10 @@
 
 
  .imgWrapper {
-    max-width: 4vw;
-     margin: 0vh 4.5vw 1vh 0;
+    
+     margin: 0vh 0vw 1vh 0;
  }
- .imgWrapper > img {
-     max-width: 8vw;
- }
+
  .benefits > div {
     
     display: flex;

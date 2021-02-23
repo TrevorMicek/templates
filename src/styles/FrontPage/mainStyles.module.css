@@ -14,7 +14,7 @@
  }
  .firstSectionGraphic {
     position: relative;
-     max-width: 22.5vw;
+    
     margin: auto 0;
  }
  .firstSectionTitle {
@@ -61,11 +61,7 @@
   
  }
  .secondSection > div > img {
-    max-width: 9vw;
-    min-height: 7vh;
-  
     margin: 0 auto;
-   
  }
  .secondSection > div {
     margin: 0 auto 7.5vh auto;
@@ -80,7 +76,7 @@
  }
  .FirstTitle, .SecondTitle, .ThirdTitle {
     font-size: 1.3rem;
-   margin: 1.5vh auto;
+    margin: 1vh auto;
   
     position: relative;
     bottom: 0vh;
@@ -125,8 +121,6 @@
           padding-bottom: 8vh;
       }
       .secondSection > div {
-     
-       margin-bottom: 0;
        min-width: 70vw;
        }
      
