@@ -33,9 +33,9 @@ const LoginForm = (props) => {
     )
 
     
-
+    /*
     const setURL = () => setSendEmail("http://localhost:4000/api/send-email")
-
+    */
     const useInput = (props) => {
         const handleChange = (e) => {
             switch(e.target.name) {
