@@ -95,10 +95,39 @@ background: #fafafa;
       
     }
 }
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (min-width: 668px) {
+    .firstSectionOverlay, .firstTransition {
+        min-height: 80vh;
+    max-height: 80vh;
+    }
     .headerBorder {
-
-        min-height: 35vh;
+        min-height: 45vh;
+        
+    }
+}
+@media only screen and (min-width: 800px) {
+    .firstSectionOverlay, .firstTransition {
+        min-height: 85vh;
+    max-height: 85vh;
+    }
+    .headerBorder {
+        min-height: 50vh;
+        margin-top: 5vh;
+    }
+}
+@media only screen and (min-width: 968px) {
+    .headerTitle {
+        font-size: 1.8rem;
+    }
+    .headerText {
+        font-size: 1.55rem;
+    }
+    .firstSectionOverlay, .firstTransition {
+        min-height: 90vh;
+    max-height: 90vh;
+    }
+    .headerBorder {
+        min-height: 55vh;
         
     }
 }

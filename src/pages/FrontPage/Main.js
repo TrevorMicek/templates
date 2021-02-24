@@ -34,12 +34,14 @@ return (
         </section>
       </section>
       <section className={styles.secondSection}>
-          
+        <span>
       <Benefit {...info.one} />
        <Benefit {...info.two} />
+       </span>
+       <span>
        <Benefit {...info.three} />
        <Benefit {...info.four} />
-
+      </span>
        
        
         

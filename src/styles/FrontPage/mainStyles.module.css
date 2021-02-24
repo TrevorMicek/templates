@@ -47,7 +47,6 @@
    
  }
  .secondSection {
-     border: 1px solid red;
      padding-top: 5vh;
     padding-bottom: 5vh;
     min-height: 30vh;
@@ -56,15 +55,15 @@
     align-content: space-between;
     text-shadow: 1px 1px lightgray;
  }
- .secondSection > div > .firstGraphic {
+ .secondSection > span > div > .firstGraphic {
     position: relative;
     top: 1vh;
   
  }
- .secondSection > div > img {
+ .secondSection > span > div > img {
     margin: 0 auto;
  }
- .secondSection > div {
+ .secondSection > span > div {
     margin: 0 auto 7.5vh auto;
     padding-top: 2vh;
     text-align: center;
@@ -83,7 +82,7 @@
     
  }
 
- .secondSection > div > p {
+ .secondSection > span > div > p {
      color: #1a1a1a;
    margin: 6vh 5vw 1vh 5vw;
    font-size: 1.1rem;
@@ -93,11 +92,11 @@
 
      
  }
-.secondSection > div > p > span:nth-child(1) {
+.secondSection > span > div > p > span:nth-child(1) {
     font-weight: bold;
     font-size: 1.05rem;
 }
-.secondSection > div > p > span:nth-child(2) {
+.secondSection > span > div > p > span:nth-child(2) {
     color: #3171b1;
 }
 
@@ -119,13 +118,37 @@
       .secondSection {
           padding-bottom: 8vh;
       }
-      .secondSection > div {
+      .secondSection > span > div {
        min-width: 70vw;
        }
      
-     .secondSection > div > img {
+     .secondSection > span > div > img {
          min-width: 12.5vw;
      }
+    }
+    @media only screen and (min-width: 668px) {
+        .firstSectionWrapper {
+            width: 65vw;
+        }
+        .firstSectionTitle > h3 {
+            max-width: 30vw; 
+            margin-right: 20vw;
+        }
+        .secondSection > span > div {
+            width: 50vw;
+        }
+    }
+    @media only screen and (min-width: 860px) {
+        .secondSection {
+            flex-direction: row;
+        }
+        .secondSection > span > div {
+            max-width: 40vw;
+            margin-bottom: 5vh;
+        }
+        .secondSection > span {
+            margin: 0 auto;
+        }
     }
     @media only screen and (min-width: 1030px) {
         .firstSectionTitle > h3 {
