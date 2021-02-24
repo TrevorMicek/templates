@@ -45,6 +45,9 @@
     max-width: 55vw;
     min-height: 50vh;
     background: white;
+    min-width: 75vw;
+    min-height: 60vh;
+    margin-bottom: 5vh;
  }
  .pricingTitle > span:nth-child(1) {
      font-size: 1.5rem;
@@ -55,11 +58,4 @@
  .pricingTitle > span:nth-child(2) {
      margin-top: 2vh;
      font-size: 1.25rem;
- }
- @media only screen and (min-width: 320px) and (max-width: 450px) {
-     .pricingSection > div {
-         min-width: 75vw;
-         min-height: 60vh;
-         margin-bottom: 5vh;
-     }
  }
