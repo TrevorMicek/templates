@@ -47,6 +47,7 @@
    
  }
  .secondSection {
+     border: 1px solid red;
      padding-top: 5vh;
     padding-bottom: 5vh;
     min-height: 30vh;
@@ -67,7 +68,7 @@
     margin: 0 auto 7.5vh auto;
     padding-top: 2vh;
     text-align: center;
-    min-width: 65vw;
+    
     border: 1px solid lightgray;
     border-radius: 5%;
     box-shadow: 2px 2px 4px 2px lightgray;
