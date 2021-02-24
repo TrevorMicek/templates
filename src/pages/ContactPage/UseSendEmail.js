@@ -1,6 +1,6 @@
  
 import React from 'react';
-
+/*
 const UseSendEmail = (name, email, message) => fetch('http://localhost:4000/api/send-email',  {
     method: 'post', 
     mode: 'cors', 
@@ -23,3 +23,4 @@ const UseSendEmail = (name, email, message) => fetch('http://localhost:4000/api/
     
   )
   export default UseSendEmail;
+  */
