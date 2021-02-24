@@ -12,18 +12,20 @@
  }
 
  .benefits > div {
-  
+    
     display: flex;
     flex-direction: row;
-    margin: 1vh 0vw;
+    margin: 0;
+    margin-left: 3vw;
+  
     
-    
+  
     max-height: 8vh;
   
  }
 
  .benefitTitle {
-   
+  
      font-size: 1.1rem;
    margin: 1.5vh auto;
   text-align: left;
@@ -31,9 +33,8 @@
   
     color: #1a1a1a;
  }
- .pricingTitle > span:nth-child(1) {
+ .pricingTitle > span:nth-child(1){
      font-size: 1.1rem;
-    
      background: #89cccc;
     padding: 2vh 0;
 
