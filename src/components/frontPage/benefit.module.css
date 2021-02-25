@@ -1,0 +1,86 @@
+.secondSection {
+    padding-top: 5vh;
+   padding-bottom: 5vh;
+   min-height: 30vh;
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+   text-shadow: 1px 1px lightgray;
+}
+.benefitWrapper > .firstGraphic {
+   position: relative;
+   top: 1vh;
+ 
+}
+.benefitWrapper > img {
+   margin: 0 auto;
+}
+.benefitWrapper {
+   margin: 0 auto 7.5vh auto;
+   padding-top: 2vh;
+   text-align: center;
+   width: 67vw;
+   border: 1px solid lightgray;
+   border-radius: 5%;
+   box-shadow: 2px 2px 4px 2px lightgray;
+   background: white;
+}
+.FirstTitle, .SecondTitle, .ThirdTitle {
+   font-size: 1.3rem;
+   margin: 1vh auto;
+   position: relative;
+   bottom: 0vh;
+   color: #1a1a1a;
+   
+}
+
+.benefitWrapper > p {
+    color: #1a1a1a;
+  margin: 6vh 5vw 1vh 5vw;
+  font-size: 1.1rem;
+
+  position: relative;
+   bottom: 3.5vh;
+
+    
+}
+.benefitWrapper > p > span:nth-child(1) {
+   font-weight: bold;
+   font-size: 1.05rem;
+}
+.benefitWrapper > p > span:nth-child(2) {
+   color: #3171b1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+     .secondSection {
+         padding-bottom: 8vh;
+     }
+     .benefitWrapper {
+      min-width: 70vw;
+      }
+    
+    .benefitWrapper > img {
+        min-width: 12.5vw;
+    }
+   }
+
+   @media only screen and (min-width: 668px) {
+   
+       .benefitWrapper {
+           width: 50vw;
+       }
+   }
+   @media only screen and (min-width: 860px) {
+           .secondSection {
+           flex-direction: row;
+
+       }
+       .benefitWrapper {
+           max-width: 40vw;
+           margin-bottom: 5vh;
+       }
+       .secondSection > span {
+           margin: 0 auto;
+       }
+   }

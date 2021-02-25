@@ -1,0 +1,82 @@
+.firstSectionWrapper {
+    margin: auto 12.5vw;
+  
+    
+}
+.firstSectionGraphic {
+   position: relative;
+
+   margin: auto 0;
+}
+.firstSectionTitle {
+  
+   max-height: 15vh;
+
+display: flex;
+   justify-content:left;
+
+}
+.firstSectionTitle > h3 {
+   font-size: 1.6rem;
+    margin: auto 0;
+  
+    color: #1a1a1a;
+    max-width: 45vw;
+    text-shadow: 1px 1px lightgray;
+}
+
+
+.firstSectionText {
+   
+ position: relative;
+   text-shadow: 1px 1px lightgray;
+   font-size: 1.1rem;
+  
+   max-width: 75vw;
+    left: 0;
+    margin-top: 4vh;
+    color: #1a1a1a;
+  
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+        .firstSectionTitle > h3 {
+            font-size: 1.3rem;
+          
+        }
+        .firstSectionText {
+            margin-top: 0vh;
+            font-size: 1.1rem;
+        }
+          .firstSectionGraphic {
+              max-width: 25vw;
+          }
+        }
+        @media only screen and (min-width: 668px) {
+            .firstSectionWrapper {
+                max-width: 400px;
+            }
+           
+          
+        }
+        @media only screen and (min-width: 860px) {
+            .firstSectionWrapper {
+                max-width: 500px;
+            }
+            .firstSectionTitle > h3 {
+                font-size: 1.75rem;
+            }
+            .firstSectionText {
+                font-size: 1.2rem;
+            }
+        }
+        @media only screen and (min-width: 1030px) {
+            .firstSectionWrapper {
+                max-width: 600px;
+            }
+            .firstSectionTitle > h3 {
+                left: 0vw;
+            }
+         
+         }

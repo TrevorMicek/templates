@@ -1,10 +1,12 @@
 import React from 'react';
 
 import styles from '../../styles/ServicesPage/mainStyles.module.css';
+import info from './pageData'
+import SecondSectionTitle from '../../components/commonComps/MainSectionTitle'
 import Package from '../../components/servicesPricing/package';
 import pricing from '../../components/servicesPricing/PricingInfo';
 import Benefit from '../../components/servicesPricing/TopBenefits';
-import BenefitData from '../../components/servicesPricing/BenefitData'
+import BenefitData from '../../components/servicesPricing/BenefitData';
 
 const Main = () => {
 
@@ -62,27 +64,9 @@ const Main = () => {
       
 
       <section className={styles.thirdSection}>
-      <section className={styles.firstSection}>
-        <section className={styles.thirdSectionWrapper}>
-        <div className={styles.thirdSectionTitle}>
-          <h3>
-           Customized Packages
-          </h3>
-        </div>
-        <div>
-          <article className={styles.thirdSectionText}>
-            <p>
-              Alongside these benefits, we offer highly customized packages 
-              that include everything you need. Every small business is different but 
-              we have found that these packages suit most businesses needs.
-              
-            </p>
-          </article>
-        </div> 
-        </section>
-      </section>
+      <SecondSectionTitle {...info} />
       
-      <section>
+      <section className={styles.packageWrapper}>
       <Package {...pricing.tierOne} />
       <Package {...pricing.tierTwo} />
       <Package {...pricing.tierThree} />

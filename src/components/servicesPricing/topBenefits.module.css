@@ -43,9 +43,3 @@
      line-height: 1.25;
     
  }
- @media only screen and (min-width: 768) {
-  .secondSection > div > div > p {
-   
-      border: 1px solid red;
-  }
-}

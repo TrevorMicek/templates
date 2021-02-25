@@ -1,9 +1,9 @@
 import React from 'react';
 
-const userIcon = require('../images/user.svg')
-const optimizeIcon = require('../images/optimization.svg')
-const responsiveIcon = require('../images/responsive-design.svg')
-const subscriptionIcon = require('../images/subscription.svg')
+const userIcon = require('../../images/user.svg')
+const optimizeIcon = require('../../images/optimization.svg')
+const responsiveIcon = require('../../images/responsive-design.svg')
+const subscriptionIcon = require('../../images/subscription.svg')
 
 const subscriptionText = () => {
     return (

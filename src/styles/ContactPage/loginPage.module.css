@@ -53,8 +53,14 @@ font-size: 1.1rem;
     z-index: 6;
     width: 70vw;
     height: 70vh;
-   
-    
+   display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.confirmedDone > button {
+    width: 12vw;
+    height: 5vh;
 }
 .confirmedTitle {
     margin: 0 auto;

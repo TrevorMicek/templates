@@ -62,3 +62,9 @@
         min-width: 300px;
     }
 }
+@media only screen and (min-width: 950px) {
+    .pricingSection > div {
+        margin: auto 1vw;
+        min-width: 285px;
+    }
+}

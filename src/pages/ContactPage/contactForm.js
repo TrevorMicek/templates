@@ -24,10 +24,16 @@ const LoginForm = (props) => {
     const ConfirmationSuccess = () => (
         <section className={styles.confirmation}>
             <div className={styles.confirmedTitle}>
-            <h2>confirmed!</h2>
+            <h2>Thank you for getting in touch!</h2>
             
             <img src={xImg} alt={"close confirmation page"} onClick={closeConfirmation} />
             
+            </div>
+            <div className={styles.confirmedMessage}>
+                We appreciate you contacting Websites By Trevor. Have a great day!
+            </div>
+            <div className={styles.confirmedDone}>
+                <button onClick={closeConfirmation}>done</button>
             </div>
         </section>
     )
@@ -88,7 +94,7 @@ const LoginForm = (props) => {
             case name:
                 setValidateName(errorMessage)
                 break;
-            case name:
+            case message:
                 setValidateMessage(errorMessage)
                 break;
        }
