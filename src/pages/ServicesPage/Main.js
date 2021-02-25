@@ -48,11 +48,16 @@ const Main = () => {
       </section>
 
       <section className={styles.secondSection}>
+        <span>
         <Benefit {...BenefitData.one} />
         <Benefit {...BenefitData.two} />
+        <Benefit {...BenefitData.two} />
+        </span>
+        <span>
         <Benefit {...BenefitData.three} />
         <Benefit {...BenefitData.four} />
         <Benefit {...BenefitData.five} />
+        </span>
         </section>
       
 

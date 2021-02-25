@@ -1,6 +1,6 @@
 
  .imgWrapper {
-  
+    min-width: 4vw;
      margin: .5vh 0vw 1vh auto;
  }
  .serviceWrapper {
@@ -37,9 +37,15 @@
    margin: 3vh auto 0vh 1vw;
      position: relative;
    text-align: left;
-   max-width: 57vw;
+   max-width: 250px;
     bottom: 3.5vh;
      font-size: 1.1rem;
      line-height: 1.25;
     
  }
+ @media only screen and (min-width: 768) {
+  .secondSection > div > div > p {
+   
+      border: 1px solid red;
+  }
+}
