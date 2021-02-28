@@ -3,6 +3,7 @@ import styles from '../../styles/AboutPage/mainStyles.module.css'
 
 import Section from '../../components/aboutPage/aboutSection'
 import info from '../../components/aboutPage/aboutInfo';
+import CreateComponent from '../../components/commonComps/createComponent'
 
 
 const Main = () => {
@@ -37,9 +38,7 @@ return (
         </section>
       </section>
       <section className={styles.secondSection}>
-          <Section {...info.sectionOne} />
-          <Section {...info.sectionTwo} />
-          <Section {...info.sectionThree} />
+          <CreateComponent component={Section} data={info} />
       </section>
     </main>
 )

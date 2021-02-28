@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import styles from '../../styles/ServicesPage/mainStyles.module.css';
 import info from './pageData'
@@ -7,7 +7,7 @@ import Package from '../../components/servicesPricing/package';
 import pricing from '../../components/servicesPricing/PricingInfo';
 import Benefit from '../../components/servicesPricing/TopBenefits';
 import BenefitData from '../../components/servicesPricing/BenefitData';
-
+import CreateComponent from '../../components/commonComps/createComponent'
 const Main = () => {
 
   return (
@@ -37,7 +37,6 @@ const Main = () => {
             
              </li>
              <li>
-               
                  <span>Benefit: 
                  </span>
                 <span> Quality Websites Lead To More Organic Growth</span>
@@ -50,26 +49,18 @@ const Main = () => {
       </section>
 
       <section className={styles.secondSection}>
-        <span>
-        <Benefit {...BenefitData.one} />
-        <Benefit {...BenefitData.two} />
-        <Benefit {...BenefitData.two} />
-        </span>
-        <span>
-        <Benefit {...BenefitData.three} />
-        <Benefit {...BenefitData.four} />
-        <Benefit {...BenefitData.five} />
-        </span>
+       
+       <CreateComponent component={Benefit} data={BenefitData} />
+    
         </section>
-      
-
       <section className={styles.thirdSection}>
+        <section className={styles.firstSection}>
       <SecondSectionTitle {...info} />
-      
+      </section>
       <section className={styles.packageWrapper}>
-      <Package {...pricing.tierOne} />
-      <Package {...pricing.tierTwo} />
-      <Package {...pricing.tierThree} />
+     
+     <CreateComponent component={Package} data={pricing} />
+     
       </section>
       </section>
       

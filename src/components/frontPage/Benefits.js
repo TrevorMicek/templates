@@ -2,6 +2,7 @@ import React from 'react';
 
 import info from '../../components/frontPage/benefitData';
 import styles from '../../components/frontPage/benefit.module.css'
+import CreateComponent from '../commonComps/createComponent';
 
 
 const Benefit = (props) => (
@@ -17,14 +18,9 @@ const Benefit = (props) => (
 )
 const BenefitSection = () => (
     <section className={styles.secondSection}>
-    <span>
-  <Benefit {...info.one} />
-   <Benefit {...info.two} />
-   </span>
-   <span>
-   <Benefit {...info.three} />
-   <Benefit {...info.four} />
-  </span>
+
+  <CreateComponent component={Benefit} data={info} />
+
    
    
     

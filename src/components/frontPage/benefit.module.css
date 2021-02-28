@@ -16,6 +16,7 @@
    margin: 0 auto;
 }
 .benefitWrapper {
+
    margin: 0 auto 7.5vh auto;
    padding-top: 2vh;
    text-align: center;
@@ -74,9 +75,11 @@
    @media only screen and (min-width: 860px) {
            .secondSection {
            flex-direction: row;
+           flex-wrap: wrap;
 
        }
        .benefitWrapper {
+           min-width: 40vw;
            max-width: 40vw;
            margin-bottom: 5vh;
        }
