@@ -71,9 +71,9 @@ const LoginForm = (props) => {
         return(
         <div>
        
-        <label>Email:</label> {validateEmail}
+        <label>Email:</label> {validateEmail} <br />
         <input type="text" id="email" value={email} onChange={handleChange} name="email" key='email'  placeholder="Enter email..." className={styles.input}/><br />
-        <label>Name:</label> {validateName}
+        <label>Name:</label> {validateName}  <br />
         <input type="text" id="name" value={name} onChange={handleChange} name="name" key='name' placeholder="Enter name..." className={styles.input}/><br />
         <label>Message:</label><br /> {validateMessage}
         <textarea type="text" rows="10" id="message" value={message} onChange={handleChange} name="message" key='message' placeholder="Enter message..." className={styles.input}/>

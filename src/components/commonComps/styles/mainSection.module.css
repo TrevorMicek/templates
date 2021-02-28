@@ -19,9 +19,8 @@ display: flex;
 .firstSectionTitle > h3 {
    font-size: 1.6rem;
     margin: auto 0;
-  
     color: #1a1a1a;
-    max-width: 45vw;
+    
     text-shadow: 1px 1px lightgray;
 }
 

@@ -5,7 +5,7 @@
  .firstSection {
      
     padding-top: 10vh;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
     background: #fafafa;
 }
 
@@ -15,6 +15,7 @@
  }
 
  .firstSectionTitle {
+     
     text-align: left;
     margin-left: 3vw;
 }
@@ -77,6 +78,7 @@
   }
 
  .thirdSection {
+     
         background: #fafafa;
      min-height: 50vh;
      min-width: 100%;
@@ -85,6 +87,7 @@
     margin: auto 0vw auto 7.5vw;
  }
  .thirdSectionTitle > h3 {
+     
     font-size: 1.5rem;
     margin: auto 0;
     color: #1a1a1a;
