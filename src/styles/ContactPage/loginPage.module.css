@@ -25,17 +25,16 @@ font-size: 1.1rem;
 }
 
 .label > div > textarea {
-   
+    resize: none;
     min-height: 20vh;
- 
+    min-width: 250px;
 }
 .validation {
     color: red;
 }
-.input {
-    margin-bottom: 2vh;
-    height: 3vh;
-    
+.input{
+   
+    max-width: 40vw;  
 }
 .btn {
    
