@@ -60,6 +60,7 @@
     grid-row-start: fourth;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5vh;
  }
 .packageWrapper {
     display: flex;

@@ -24,7 +24,9 @@ const LoginForm = () => {
         <section className={styles.confirmation}>
             <div className={styles.confirmedTitle}>
                 <h2>Thank you for getting in touch!</h2>
-                <img src={xImg} alt={"close confirmation page"} onClick={closeConfirmation} />
+                <button onClick={closeConfirmation} onKeyDown={closeConfirmation}>
+                    <img src={xImg} alt={"close confirmation page"} />
+                </button>
             </div>
             <div className={styles.confirmedMessage}>
                 We appreciate you contacting Websites By Trevor. Have a great day!
@@ -62,11 +64,11 @@ const LoginForm = () => {
           }
         return(
         <div>
-            <label>Name:</label> {validateName}  <br />
+            <label htmlFor="name">Name:</label> {validateName}  <br />
             <input type="text" id="name" value={name} onChange={handleChange} name="name" key='name' placeholder="Enter name..." className={styles.nameInput}/><br />
-            <label>Email:</label> {validateEmail} <br />
+            <label htmlFor="email">Email:</label> {validateEmail} <br />
             <input type="text" id="email" value={email} onChange={handleChange} name="email" key='email'  placeholder="Enter email..." className={styles.emailInput}/><br />
-            <label>Message:</label> {validateMessage} <br />
+            <label htmlFor="message">Message:</label> {validateMessage} <br />
             <textarea type="text" rows="5" id="message" value={message} onChange={handleChange} name="message" key='message' placeholder="Enter message..." className={styles.messageInput}/>
         </div>
         )

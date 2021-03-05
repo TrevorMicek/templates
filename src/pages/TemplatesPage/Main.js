@@ -3,7 +3,6 @@ import styles from '../../styles/AboutPage/mainStyles.module.css'
 
 import Section from '../../components/aboutPage/aboutSection'
 import info from '../../components/aboutPage/aboutInfo';
-const qualityIcon = require('../../images//quality.svg')
 
 
 const Main = () => {
