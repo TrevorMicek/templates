@@ -31,13 +31,11 @@ const Nav = () => {
         <div className={styles.rightsideNav}>
           {isOpen ?
     <>
-      
-        <button className={styles.dropDown}  onClick={toggleOpen} onKeyDown={toggleOpen}>
-        <div className={styles.mobileNav}>
+    <button className={styles.dropDown}  onClick={toggleOpen} onKeyDown={toggleOpen}>
+      <div className={styles.mobileNav}>
           <img src={xImg} alt={"close drop down menu"} width="40px" height="30px" />
         </div>
         </button>
-  
         <div className={styles.mobileListItems}>
           <ul className={styles.mobileNavList}>
             <li><Link to="/">Home</Link></li>
@@ -49,11 +47,12 @@ const Nav = () => {
       </div> 
       </> :     
       <>
-       <div className={styles.mobileNav}>
-        <button className={styles.hamburger}  onClick={toggleOpen}>
-          <img src={hamburger} alt={"open drop down menu"} width="40px" height="35px" />
-        </button>
-     </div>
+        <div className={styles.hamburger}>
+          <button className={styles.mobileNav} onClick={toggleOpen} onKeyDown={toggleOpen}>
+            <img src={hamburger} alt={"open drop down menu"} width="40px" height="35px" />
+           </button>
+        </div>
+       
       <div className={styles.listItems}>
       <ul className={styles.navList}>
             <li><Link to="/">Home</Link></li>
