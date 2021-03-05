@@ -1,19 +1,14 @@
 import React from "react"
 
-
 import Layout from "../components/layout/layout"
-
 import SEO from "../components/layout/seo"
-import Header from '../components/layout/Header'
-import Main from './ContactPage/Main'
+
+import Main from './ContactPage/contactForm'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout title="Contact Us">
     <SEO title="Home" />
-  
-    <Header title="Contact Us" />
     <Main />
   </Layout>
 )
-
 export default IndexPage

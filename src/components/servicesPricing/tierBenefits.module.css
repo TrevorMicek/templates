@@ -1,66 +1,24 @@
-
-
-
- .imgWrapper {
-     max-width: 9vw;
-     
- }
- .imgWrapper > img {
-     position: relative;
-     right: 0vw;
- }
-
- .benefits > div {
-    
+.benefits > div {   
     display: flex;
     flex-direction: row;
-    margin: 0;
     margin-left: 3vw;
-  
-    
-  
     max-height: 8vh;
-  
- }
+}
 .benefitTitle {
-  
-     font-size: 1.1rem;
-   margin: 1.5vh auto;
-  text-align: left;
-    position: relative;
+    font-size: 1.1rem;
+    margin: 1.5vh auto;
+    text-align: left;
     color: #1a1a1a;
  }
- .pricingTitle > span:nth-child(1){
-     font-size: 1.1rem;
-     background: #89cccc;
-    padding: 2vh 0;
-
-}
- .pricingTitle > span:nth-child(2) {
-     margin-top: 2vh;
- }
- .pricingSection > div > div > p {
-     color: #1a1a1a;
-   margin: 3vh auto 3vh 1vw;
-   min-width: 45vw;
- 
-
-   position: relative;
-   text-align: left;
-    bottom: 3.5vh;
-     font-size: .9rem;
-     line-height: 1.15;
- }
-
 @media only screen and (min-width: 320px) and (max-width: 410px) {
-    .benefits > div {
-        max-height: 7vh;
-        margin-left: 3vw;
-        max-width: 70vw;
-    }
+.benefits > div {
+    max-height: 7vh;
+    margin-left: 3vw;
+    max-width: 70vw;
+}
 }
 @media only screen and (min-width: 950px) {
-    .benefits > div {
-        margin-left: 1vw;
-    }
+.benefits > div {
+    margin-left: 1vw;
+}
 }

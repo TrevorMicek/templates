@@ -8,11 +8,9 @@ const xImg = require('../../images/X.svg')
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
- const toggleOpen = () => setIsOpen(!isOpen)
-/*
-  useEffect((() => {
+  const toggleOpen = () => setIsOpen(!isOpen)
 
-  
+  useEffect((() => {
     const closeMenu = window.matchMedia('only screen and (min-width: 769px)');
     closeMenu.addEventListener("change", (e) => {
         if (e.matches) {
@@ -23,15 +21,13 @@ const Nav = () => {
     })
   }
   ), [])
-  */
+  
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.leftsideNav}>
         Websites <br />
         By Trevor
       </div>
-      
-      
         <div className={styles.rightsideNav}>
           {isOpen ?
     <>
@@ -55,23 +51,19 @@ const Nav = () => {
        <div className={styles.mobileNav}>
        <div className={styles.hamburger}>
        <img src={hamburger} alt={"open drop down menu"}  onClick={toggleOpen} />
-    
      </div>
      </div>
       <div className={styles.listItems}>
       <ul className={styles.navList}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
-            <li><Link to="/page-2">About</Link></li>
-            <li><Link to="/index.js">Blog</Link></li>
-            <li><Link to="/index.js">Contact</Link></li>
-   
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/templates">Templates</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
     </>}
       </div>
-  
-      
     </nav>
   )
 }

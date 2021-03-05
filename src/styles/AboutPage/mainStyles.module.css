@@ -1,52 +1,25 @@
-
-.mainWrapper {
-    min-height: 100vh;
-    background: #fafafa;
-    line-height: 1;
- }
- 
- .firstSection {
-     
-    padding-top: 10vh;
-    min-height: 40vh;
- }
- .firstSectionWrapper {
-     margin: auto 9vw;
- }
-
- .firstSectionTitle > h3 {
-     font-size: 1.6rem;
-     
-     
-     color: #1a1a1a;
-     
-    
- }
- 
- 
+.firstSection {
+    grid-column-start: left;
+    grid-column-end: right-gutter;
+    grid-row-start: first;
+}
+.firstSectionTitle > h3 {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+}
  .firstSectionText {
- 
-  position: relative;
-    
     font-size: 1.1rem;
     line-height: 1.25;
-    max-width: 75vw;
-     left: 0;
-     margin-top: 7vh;
-     color: #1a1a1a;
+    margin-top: 7vh;
+    color: #1a1a1a;
  }
  .secondSection {
-    padding-bottom: 15vh;
-    min-height: 30vh;
+    grid-column-start: left;
+    grid-column-end: right-gutter;
+    grid-row-start: second;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
- }
- .secondSection > div > .firstGraphic {
-    position: relative;
-    top: 1vh;
- 
  }
  .secondSection > div > img {
     max-width: 9vw;
@@ -57,66 +30,56 @@
  }
  .secondSection > div {
     margin: 7.5vh auto;
-    min-width: 70vw;
     margin-bottom: 0;
     text-align: center;
-    max-width: 50vw;
-    
-    background: white;
+    max-width: 300px;
+    height: 100%;
+    padding-right: 5vw;
  }
  .FirstTitle {
-     font-size: 1.3rem;
-   margin: 3vh auto;
-    position: relative;
-    bottom: 0vh;
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 7vh 0 3vh 0;
     color: #1a1a1a;
-    
  }
  .secondSection > div > div {
      margin: 7vh 0 3vh 0;
+     max-width: 300px;
  }
  .secondSection > div > div >  p {
-     color: #1a1a1a;
-   margin: 3vh 7.5vw 0 7.5vw;
-   text-align: left;
-   min-width: 30vw;
-   position: relative;
-    bottom: 3.5vh;
-     font-size: 1rem;
-     line-height: 1.15;
+    color: #1a1a1a;
+    margin: 7vh 0 3vh 0;
+    text-align: left;
+    min-width: 30vw;
+    font-size: 1rem;
+    line-height: 1.15;
  }
-
-.secondSection > div > p > span {
-    color: #3171b1;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 410px) {
-
-    .firstSectionTitle > h3 {
-        font-size: 1.3rem;
-    }
-    .firstSectionText {
-        margin-top: 4vh;
-    }
-      .firstSectionGraphic {
-          max-width: 25vw;
-      }
-    
-      .secondSection > div {
-     
-       margin-bottom: 0;
-       min-width: 60vw;
-       }
-     .secondSection > div > img {
-         min-width: 12.5vw;
-     }
-    }
-    
-    
-    @media only screen and (min-width: 1030px) {
-        .firstSectionTitle > h3 {
-            left: 0vw;
-        }
-     
-     }
-    
+.firstSectionTitle > h3 {
+    font-size: 1.3rem;
+}
+.firstSectionText {
+    margin-top: 4vh;
+}
+.firstSectionGraphic {
+    max-width: 25vw;
+}
+.secondSection > div > img {
+    min-width: 12.5vw;
+}
+}
+@media only screen and (min-width: 668px) {
+.firstSection {
+    grid-column-start: left-gutter;
+    grid-column-end: right;
+}
+}   
+@media only screen and (min-width: 950px) {
+.secondSection {
+    grid-column-start: left;
+    flex-direction: row; 
+}
+.secondSection > div > div >  p {
+    min-width: 25vw;
+}
+}

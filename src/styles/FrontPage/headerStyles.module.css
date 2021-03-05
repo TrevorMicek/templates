@@ -1,4 +1,3 @@
-
 .firstTransition {
     position: absolute;
     top: 0;
@@ -12,28 +11,22 @@
     transform: skewY(6deg);
     transform-origin: top-right;
 }
-
 .firstSectionOverlay {
     background-color: rgba(0,0,0,.25);
-
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 75vh;
- 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
     z-index: 3;
     transform: skewY(6deg);
     transform-origin: top-right;
 }
-
 .headerPictureWrapper {
-background: #fafafa;
-    padding-bottom: 30vh;
- 
-
- 
- }
+    grid-column: span 5;
+    grid-row-start: header;
+    grid-row-end: main;
+}
  .headerBorder {
     min-height: 35vh;
     margin: auto 5vw;
@@ -43,100 +36,71 @@ background: #fafafa;
     position: relative;
     z-index: 4;
 }
-
 .headerTitle {
-   color: #fafafa;
-   display: inline;
-   font-size: 1.65rem;
-   text-shadow: 1px 1px black;
-   min-width: 60vw;
-   max-height: 6vh;
-   position: relative;
-   z-index: 4;
-   top: 10vh;
-   font-family: sans-serif, Arial, Helvetica;
-  
+    color: #fafafa;
+    display: inline;
+    font-size: 1.65rem;
+    position: relative;
+    z-index: 4;
+    top: 10vh;
+    font-family: sans-serif, Arial, Helvetica;
 }
-
 .headerText {
     color: #ECECEC;
     display: block;
     font-size: 1.4rem;
     font-weight: normal;
-    text-shadow: 1px 1px black;
     z-index: 4;
     position: relative;
- 
-    left: 0%;
-    overflow: hidden;
     top: 15vh;
-    white-space: nowrap;
-    
- 
  }
  @media only screen and (min-width: 320px) and (max-width: 410px) {
- 
     .firstTransition, .firstSectionOverlay {
         height: 60vh;
     }
     .headerBorder {
-
-        min-height: 25vh;
         margin: auto 3vw;
     }
-   
     .headerTitle {
-        font-size: 1.3rem;
-        
-  
+        font-size: 1.5rem;
     }
     .headerText {
-        font-size: 1.15rem;
-      
+        font-size: 1.35rem;
     }
 }
 @media only screen and (min-width: 668px) {
-    .firstSectionOverlay, .firstTransition {
-        min-height: 80vh;
+.firstSectionOverlay, .firstTransition {
+    min-height: 80vh;
     max-height: 80vh;
-    }
-    .headerBorder {
-        min-height: 45vh;
-        
-    }
+}
 }
 @media only screen and (min-width: 800px) {
-    .firstSectionOverlay, .firstTransition {
-        min-height: 85vh;
+.firstSectionOverlay, .firstTransition {
+    min-height: 85vh;
     max-height: 85vh;
-    }
-    .headerBorder {
-        min-height: 50vh;
-        margin-top: 5vh;
-    }
+}
+.headerBorder {
+    min-height: 40vh;
+    margin-top: 5vh;
+}
 }
 @media only screen and (min-width: 968px) {
-    .headerTitle {
-        font-size: 1.8rem;
-    }
-    .headerText {
-        font-size: 1.55rem;
-    }
-    .firstSectionOverlay, .firstTransition {
-        min-height: 90vh;
+.headerTitle {
+    font-size: 1.8rem;
+}
+.headerText {
+    font-size: 1.55rem;
+}
+.firstSectionOverlay, .firstTransition {
+    min-height: 90vh;
     max-height: 90vh;
-    }
-    .headerBorder {
-        min-height: 55vh;
-        
-    }
+}
+.headerBorder {
+    min-height: 55vh;
+}
 }
 @media only screen and (min-width: 768px) {
-
-
-    .headerTitle > span {
+.headerTitle > span {
       display: inline;
-  }
-  
-  
-  }
+}
+}

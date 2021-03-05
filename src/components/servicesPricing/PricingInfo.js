@@ -1,5 +1,4 @@
 const pricingInfo = {
-
 tierOne : {
     title: 'STANDARD',
     pages: '5 pages',

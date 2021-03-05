@@ -1,4 +1,8 @@
 .secondSection {
+    grid-column-start: left;
+    grid-column-end: right-gutter;
+    grid-row-start: second;
+    grid-row-end: third;
     padding-top: 5vh;
    padding-bottom: 5vh;
    min-height: 30vh;
@@ -32,18 +36,13 @@
    position: relative;
    bottom: 0vh;
    color: #1a1a1a;
-   
 }
-
 .benefitWrapper > p {
     color: #1a1a1a;
-  margin: 6vh 5vw 1vh 5vw;
-  font-size: 1.1rem;
-
-  position: relative;
-   bottom: 3.5vh;
-
-    
+    margin: 6vh 5vw 1vh 5vw;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 3.5vh;    
 }
 .benefitWrapper > p > span:nth-child(1) {
    font-weight: bold;
@@ -52,38 +51,33 @@
 .benefitWrapper > p > span:nth-child(2) {
    color: #3171b1;
 }
-
 @media only screen and (min-width: 320px) and (max-width: 410px) {
-     .secondSection {
-         padding-bottom: 8vh;
-     }
-     .benefitWrapper {
-      min-width: 70vw;
-      }
-    
-    .benefitWrapper > img {
-        min-width: 12.5vw;
-    }
-   }
-
-   @media only screen and (min-width: 668px) {
-   
-       .benefitWrapper {
-           width: 50vw;
-       }
-   }
-   @media only screen and (min-width: 860px) {
-           .secondSection {
-           flex-direction: row;
-           flex-wrap: wrap;
-
-       }
-       .benefitWrapper {
-           min-width: 40vw;
-           max-width: 40vw;
-           margin-bottom: 5vh;
-       }
-       .secondSection > span {
-           margin: 0 auto;
-       }
-   }
+.secondSection {
+    padding-bottom: 8vh;
+}
+.benefitWrapper {
+    min-width: 70vw;
+}   
+.benefitWrapper > img {
+    min-width: 12.5vw;
+}
+}
+@media only screen and (min-width: 668px) {
+.benefitWrapper {
+    width: 50vw;
+}
+}
+@media only screen and (min-width: 860px) {
+.secondSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.benefitWrapper {
+    min-width: 40vw;
+    max-width: 40vw;
+    margin-bottom: 5vh;
+}
+.secondSection > span {
+    margin: 0 auto;
+}
+}

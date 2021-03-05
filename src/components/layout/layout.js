@@ -9,11 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Footer from "./Footer"
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
+import Header from "./Header";
+import Footer from "./Footer";
+import styles from "./layoutGrid.module.css"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({  children, title }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,13 +32,14 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 0`
-
-         
         }}
       >
+       <div className={styles.grid}>
         <NavBar />
-        <main>{children}</main>
-       <Footer/>
+        <Header title={title}/>
+        <main className={styles.main}>{children}</main>
+        <Footer />
+       </div>
       </div>
     </>
   )

@@ -1,10 +1,8 @@
- 
- 
 import React, { useState } from 'react'
-import styles from '../../styles/ContactPage/loginPage.module.css'
 
+import styles from '../../styles/ContactPage/loginPage.module.css'
 const xImg = require('../../images/X.svg')
-const LoginForm = (props) => {
+const LoginForm = () => {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
     const [email, setEmail] = useState('')
@@ -15,6 +13,7 @@ const LoginForm = (props) => {
     const [confirmation, setConfirmation] = useState(false)
 
     const confirmed = () => setConfirmation(!confirmation)
+    
     const closeConfirmation = () => {
         setConfirmation(!confirmation)
         setEmail('')
@@ -24,10 +23,8 @@ const LoginForm = (props) => {
     const ConfirmationSuccess = () => (
         <section className={styles.confirmation}>
             <div className={styles.confirmedTitle}>
-            <h2>Thank you for getting in touch!</h2>
-            
-            <img src={xImg} alt={"close confirmation page"} onClick={closeConfirmation} />
-            
+                <h2>Thank you for getting in touch!</h2>
+                <img src={xImg} alt={"close confirmation page"} onClick={closeConfirmation} />
             </div>
             <div className={styles.confirmedMessage}>
                 We appreciate you contacting Websites By Trevor. Have a great day!
@@ -37,8 +34,6 @@ const LoginForm = (props) => {
             </div>
         </section>
     )
-
-    
     /*
     const setURL = () => setSendEmail("http://localhost:4000/api/send-email")
     */
@@ -63,38 +58,33 @@ const LoginForm = (props) => {
                     }
                     setMessage(e.target.value)
                     break;
-              
               }
           }
-         
-         
         return(
         <div>
-       
-       <label>Name:</label> {validateName}  <br />
-       
-        <input type="text" id="name" value={name} onChange={handleChange} name="name" key='name' placeholder="Enter name..." className={styles.input}/><br />
-        <label>Email:</label> {validateEmail} <br />
-        <input type="text" id="email" value={email} onChange={handleChange} name="email" key='email'  placeholder="Enter email..." className={styles.input}/><br />
-        <label>Message:</label> {validateMessage} <br />
-        <textarea type="text" rows="5" id="message" value={message} onChange={handleChange} name="message" key='message' placeholder="Enter message..." className={styles.input}/>
+            <label>Name:</label> {validateName}  <br />
+            <input type="text" id="name" value={name} onChange={handleChange} name="name" key='name' placeholder="Enter name..." className={styles.nameInput}/><br />
+            <label>Email:</label> {validateEmail} <br />
+            <input type="text" id="email" value={email} onChange={handleChange} name="email" key='email'  placeholder="Enter email..." className={styles.emailInput}/><br />
+            <label>Message:</label> {validateMessage} <br />
+            <textarea type="text" rows="5" id="message" value={message} onChange={handleChange} name="message" key='message' placeholder="Enter message..." className={styles.messageInput}/>
         </div>
         )
     }
-    const validateError = (label) => {
+    const validateError = (label, which) => {
         const errorMessage = () => (
             <div className={styles.validation}>
-            * {label} input is empty
+            * {which} input is empty
             </div>
         )
-        
+        console.log(label)
        switch (label) {
+           case name:
+                setValidateName(errorMessage)
+                break;
            case email:
                setValidateEmail(errorMessage)
                break;
-            case name:
-                setValidateName(errorMessage)
-                break;
             case message:
                 setValidateMessage(errorMessage)
                 break;
@@ -102,16 +92,16 @@ const LoginForm = (props) => {
     }
 const handleClick = (e) => {
     switch ('') {
-        case email:
-            validateError(email)
+        case name:
+            validateError(name, 'name');
             e.preventDefault()
             break;
-        case name:
-            validateError(name);
+        case email:
+            validateError(email, 'email')
             e.preventDefault()
             break;
         case message:
-            validateError(message);
+            validateError(message, 'message');
             e.preventDefault()
             break;
        
@@ -121,25 +111,23 @@ const handleClick = (e) => {
            e.preventDefault()
     }
 }
-
-    return (
+return (
+    <>
     <div className={styles.login}>
         <div className={styles.wrapper}>
-           {confirmation === true ? <ConfirmationSuccess /> : null}
-<form method="POST" action={sendEmail} onSubmit={handleClick}>
-
-    <div className={styles.title}>
-        Contact us and we'll get back with you within a week!
+           
+            <form method="POST" action={sendEmail} onSubmit={handleClick}>
+                <div className={styles.title}>
+                    Contact us and we'll get back with you within a week!
+                </div>
+                <div className={styles.label}>
+                    {useInput()}
+                </div>
+                <input type="submit" value="send" className={styles.btn} />
+            </form> 
+        </div>
     </div>
-    
-    <div className={styles.label}>
-   {useInput()}
-    </div>
-    <input type="submit" value="send" className={styles.btn} />
-   
-
-</form> 
-</div>
- </div>
-    )}
+    {confirmation === true ? <ConfirmationSuccess /> : null}
+    </>
+)}
 export default LoginForm;

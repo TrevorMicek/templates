@@ -4,7 +4,6 @@ import info from '../../components/frontPage/benefitData';
 import styles from '../../components/frontPage/benefit.module.css'
 import CreateComponent from '../commonComps/createComponent';
 
-
 const Benefit = (props) => (
 <div className={styles.benefitWrapper}>
           <img src={props.icon} alt={props.alt} width="50px" height="50px" />
@@ -18,12 +17,7 @@ const Benefit = (props) => (
 )
 const BenefitSection = () => (
     <section className={styles.secondSection}>
-
-  <CreateComponent component={Benefit} data={info} />
-
-   
-   
-    
-  </section>
+      <CreateComponent component={Benefit} data={info} />
+    </section>
 )
 export default BenefitSection

@@ -1,30 +1,25 @@
-
 .title {
-    
     margin-bottom: 5vh;
     margin-top: 3vh;
-font-size: 1.1rem;
-
+    font-size: 1.1rem;
 }
 .login {
-    
-    text-align: center;
+    grid-column-start: left;
+    grid-column-end: right-gutter;
+    grid-row-start: first;
+    grid-row-end: second;
     border: 3px solid #000;
-    width: 25vw;
-    margin: 15vh auto;
-    z-index: 8; 
-   width: 75vw;
-  
+    z-index: 3; 
 }
 .wrapper {
-    margin: 0 11vw;
+    width: 100%;
+    padding-left: 3vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     text-align: left;
 }
-
-.label > div > textarea {
+.messageInput {
     resize: none;
     min-height: 20vh;
     min-width: 250px;
@@ -32,54 +27,77 @@ font-size: 1.1rem;
 .validation {
     color: red;
 }
-.input{
-   
+.nameInput, .emailInput, .messageInput{
     max-width: 40vw;  
 }
 .btn {
-   
-   position: relative;
     padding: .5vh 2vw;
     margin-bottom: 3vh;
-
 }
 .btn:active {
     top: .25vh;
 }
 .confirmation {
-    position: absolute;
-    background: white;
-    z-index: 6;
-    width: 70vw;
-    height: 70vh;
-   display: flex;
-   flex-direction: column;
+    grid-column-start: left;
+    grid-column-end: right-gutter;
+    grid-row-start: first;
+    grid-row-end: second;
+    background: #fafafa;
+    z-index: 4;
+    border: 3px solid #000;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 2vh 8vw 5vh 8vw;
 }
 .confirmedDone > button {
-    width: 12vw;
+    min-width: 12vw;
     height: 5vh;
 }
 .confirmedTitle {
     margin: 0 auto;
-   
-    border: 1px solid red;
+
     justify-content: space-between;
     display: flex;
     flex-direction: row;
 }
 .confirmedTitle > h2 {
     margin: 0 auto;
-    
+    max-width: 50vw;
+    margin-right: 2vw;
 }
 .confirmedTitle > img {
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-    max-width: 5vw;
-   cursor: pointer;
+    position: relative;
+    top: 0;
+    right: 0vw;
+    max-width: 25px;
+    cursor: pointer;
 }
 .loginSection {
     z-index: 7;
+}
+@media only screen and (min-width: 320px) and (max-width: 410px) {
+.messageInput {
+    min-width: 200px;
+}
+.nameInput {
+    min-width: 150px;
+}
+.emailInput{
+    min-width: 175px;
+}
+}
+@media only screen and (min-width: 600px) {
+.login, .confirmation {
+    grid-column-end: right;
+}
+.label > div > textarea {
+    min-width: 300px;
+}
+}
+@media only screen and (min-width: 800px) {
+.login, .confirmation {
+    grid-column-end: right-center;
+}
 }

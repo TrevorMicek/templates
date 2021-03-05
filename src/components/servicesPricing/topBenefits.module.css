@@ -1,57 +1,30 @@
-
- .imgWrapper {
-    min-width: 4vw;
-     margin: .5vh 0vw 1vh auto;
- }
- .serviceWrapper {
-
-    min-width: 70vw;
-   
-     display: flex;
-     flex-direction: column;
-     flex-flow: flex-start;
+.imgWrapper {
+  min-width: 30px;
+  max-width: 30px;
 }
-
- .secondSection > div {
-     display: flex;
-     flex-direction: row;
-    margin: 0vh 5vw 2.5vh 5vw;
-   
-    margin-bottom: 0; 
- 
-    max-width: 77vw;
-   
- }
-
- .SecondSectionTitle {
-
-     font-size: 1.2rem;
-   margin: 1.5vh auto 2vh 1vw;
-  text-align: left;
-    min-width: 65vw;
-    max-height: 4vh;
-    position: relative;
-    color: #1a1a1a;
- }
+.serviceWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.secondSection > div {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10vw;
+}
+.SecondSectionTitle {
+  font-size: 1.2rem;
+  margin: 1.5vh auto 2vh 1vw;
+  min-width: 30vw;
+}
 div > div > p {
-     color: #1a1a1a;
-   margin: 3vh auto 0vh 1vw;
-     position: relative;
-   text-align: left;
-   max-width: 250px;
-    bottom: 3.5vh;
-     font-size: 1.1rem;
-     line-height: 1.25;
-    
+  color: #1a1a1a;
+  margin-left: 1vw;
+  max-width: 275px;
+  font-size: 1.1rem;
+  line-height: 1.25;
  }
- @media only screen and (min-width: 480px) {
-  div > div > p {
-    max-width: 275px;
+@media only screen and (min-width: 768px) {
+  .secondSection > div {
+    max-width: 40vw;
   }
- }
- @media only screen and (min-width:768px) {
-   .secondSection > div {
-     max-width: 37vw;
-   }
-  
- }
+}
