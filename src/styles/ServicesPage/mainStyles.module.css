@@ -39,7 +39,7 @@
 }
 .secondSection {
     grid-column-start: left;
-    grid-column-end: right-gutter;
+    grid-column-end: -1;
     grid-row-start: second;
     grid-row-end: third;
     align-items: left;

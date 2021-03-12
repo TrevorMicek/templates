@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './topBenefits.module.css'
+import styles from '../../styles/ServicesPage/topBenefits.module.css'
 const checkmark = require('../../images/checkmark.jpg')
 
 const Benefits = (props) => (

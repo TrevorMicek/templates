@@ -1,8 +1,8 @@
 import React from 'react';
 
-import info from '../../components/frontPage/benefitData';
-import styles from '../../components/frontPage/benefit.module.css'
-import CreateComponent from '../commonComps/createComponent';
+import info from '../../data/frontPage/benefitData';
+import styles from '../../styles/FrontPage/benefit.module.css'
+import CreateComponent from '../../components/commonComps/createComponent';
 
 const Benefit = (props) => (
 <div className={styles.benefitWrapper}>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './package.module.css';
+import styles from '../../styles/ServicesPage/package.module.css';
 import Benefits from './TierBenefits';
 
 const Package = (props) => (

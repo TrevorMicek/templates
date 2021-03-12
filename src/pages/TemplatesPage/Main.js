@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../../styles/AboutPage/mainStyles.module.css'
 
-import Section from '../../components/aboutPage/aboutSection'
-import info from '../../components/aboutPage/aboutInfo';
+import Section from '..//aboutPage/aboutSection'
+import info from '../../data/aboutPage/aboutInfo';
 
 
 const Main = () => {

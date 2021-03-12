@@ -4,12 +4,13 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
 import styles from '../styles/ServicesPage/mainStyles.module.css';
-import info from '../data/services/pageData';
+import info from '../data/servicesPage/pageData';
 import SecondSectionTitle from '../components/commonComps/MainSectionTitle'
-import Package from '../components/servicesPricing/package';
-import pricing from '../components/servicesPricing/PricingInfo';
-import Benefit from '../components/servicesPricing/TopBenefits';
-import BenefitData from '../components/servicesPricing/BenefitData';
+import Package from './servicesPage/package';
+import pricing from '../data/servicesPage/PricingInfo';
+import ecomPricing from '../data/servicesPage/ecomPricing'
+import Benefit from './servicesPage/TopBenefits';
+import BenefitData from '../data/servicesPage/BenefitData';
 import CreateComponent from '../components/commonComps/createComponent'
 
 const ServicePage = () => (
@@ -32,7 +33,7 @@ const ServicePage = () => (
              <li>
                <span className={styles.cost}>
               Cost: 
-               </span> <span> No Setup Fee, Affordable Monthly Subscription</span>
+               </span> <span> Low or No Setup Fee, W/ Affordable Monthly Subscription</span>
              </li>
              <li>
                  <span>Benefit: 
@@ -52,6 +53,7 @@ const ServicePage = () => (
       <SecondSectionTitle {...info} />
       </section>
       <section className={styles.fourthSection}>
+     <CreateComponent component={Package} data={ecomPricing} />
      <CreateComponent component={Package} data={pricing} />
       </section>
   </Layout>

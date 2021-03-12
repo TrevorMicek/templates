@@ -14,12 +14,12 @@
 .SecondSectionTitle {
   font-size: 1.2rem;
   margin: 1.5vh auto 2vh 1vw;
-  min-width: 30vw;
+  white-space: nowrap;
 }
 div > div > p {
   color: #1a1a1a;
   margin-left: 1vw;
-  max-width: 275px;
+  max-width: 250px;
   font-size: 1.1rem;
   line-height: 1.25;
  }
