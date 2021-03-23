@@ -16,7 +16,7 @@ import BenefitData from '../data/servicesPage/BenefitData';
 import CreateComponent from '../components/commonComps/createComponent'
 
 const ServicePage = () => (
-  <Layout>
+  <Layout title="Services & Pricing">
     <SEO title="Home" />
       <section className={styles.firstSection}>
         <section className={styles.firstSectionWrapper}>
@@ -56,10 +56,15 @@ const ServicePage = () => (
       </section>
       <section className={styles.fourthSection}> 
       <SecondSectionTitle {...ecom} />
-      <CreateComponent component={Package} data={ecomPricing} />   
+      </section>
+      <section className={styles.fifthSection}> 
+      <CreateComponent component={Package} data={ecomPricing} />
+      </section>
+      <section className={styles.sixthSection}>    
       <SecondSectionTitle {...standard} />
+      </section>
+      <section className={styles.seventhSection}> 
         <CreateComponent component={Package} data={pricing} />
-        
       </section>
   </Layout>
 )

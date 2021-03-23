@@ -1,21 +1,25 @@
 const pricingInfo = {
-  tierOne : {
+  tierThree: {
     title: 'BROCHURE',
     pages: '1 page',
     price: '50',
-    benefitOne: 'Centralized Business Info',
-    benefitTwo: 'More Customers Find You',
-    benefitThree: 'Link All Your Assets',
-    benefitFour: 'Easily Scalable'
+    featureOne: 'Partial Website Solution',
+    featureTwo: 'Easy To See Important Info',
+    featureThree: 'Centralized Business Info',
+    benefitOne: 'Start Your Online Presence',
+    benefitTwo: 'Fits Most Business Info',
+    benefitThree: 'Link All Your Assets'
   },
-  tierTwo : {
+  tierFour: {
     title: 'ECOMMERCE-LITE',
     pages: '6 pages',
     price: '249',
-    benefitOne: 'Revenue Directly From Site',
+    featureOne: 'Partial Ecommerce Solution',
+    featureTwo: 'Secures Sensitive Data',
+    featureThree: 'Up To 100 items',
+    benefitOne: 'Start Selling Online NOW',
     benefitTwo: 'More Cutomers Find You',
     benefitThree: 'Fits All Business Info',
-    benefitFour: 'Up To 30 Inventory Items'
   }
 }
 export default pricingInfo;

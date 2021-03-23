@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -28,7 +27,7 @@ const Layout = ({  children, title }) => {
 
   return (
     <>
- 
+
       <div
         style={{
           margin: `0 0`
@@ -41,6 +40,7 @@ const Layout = ({  children, title }) => {
         <Footer />
        </div>
       </div>
+     
     </>
   )
 }

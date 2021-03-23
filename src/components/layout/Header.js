@@ -13,9 +13,9 @@ const Header = (props) => {
     <div className={firstStyles.firstTransition}></div>
       <div className={firstStyles.headerBorder}>
       <h1 className={firstStyles.headerTitle}>
-          <span>Small Business Web Design</span><span> & Development</span>
+          <span>Websites By Trevor</span>
       </h1>
-      <h2 className={firstStyles.headerText}>Websites By Trevor</h2>
+      <h2 className={firstStyles.headerText}>Small Business Web Design<br /> & Development</h2>
       </div>
       
     </section>

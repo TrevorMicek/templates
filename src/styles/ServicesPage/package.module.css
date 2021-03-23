@@ -31,8 +31,8 @@
     margin: 0 auto;
     margin-bottom: 10vh;
     text-align: center;
-    width: 275px;
     background: white;
+    max-width: 300px;
 }
 .pricingTitle > span:nth-child(1) {
     font-size: 1.5rem;
@@ -43,6 +43,34 @@
     margin-top: 2vh;
     font-size: 1.25rem;
  }
+ .featureSwitch {
+    height: 5vh;
+    width: 100%;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .featureButtonActive {
+    border: 1px solid rgb(126, 125, 125);
+    color:rgb(49, 49, 49);
+    background: #d1d1d1;
+    outline: none;
+    margin-right: 5vw;
+ }
+ .benefitButtonActive {
+    border: 1px solid rgb(126, 125, 125);
+    color:rgb(49, 49, 49);
+    background: #d1d1d1;
+    outline: none;  
+ }
+ .featureButton {
+     cursor: pointer;
+     margin-right: 5vw;
+ }
+ .benefitButton {
+     cursor: pointer;
+    
+ }
  @media only screen and (min-width: 320px) and (max-width: 410px) {
 .pricingSection > div {
     width: 230px;
@@ -51,11 +79,5 @@
 @media only screen and (min-width: 500px) {
 .pricingSection > div{
     min-width: 300px;
-}
-}
-@media only screen and (min-width: 950px) {
-.pricingSection > div {
-    margin: auto 1vw;
-    min-width: 285px;
 }
 }
