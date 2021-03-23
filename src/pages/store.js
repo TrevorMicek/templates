@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from "react-redux"
-import store from "./storePage/redux/store"
-import App from "./storePage/storeComponents/App"
+import store from "../storePage/redux/store"
+import App from "../storePage/storeComponents/App"
 import "./app.css"
 
 import Layout from "../components/layout/layout"
