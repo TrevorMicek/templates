@@ -18,7 +18,6 @@ export default (props) => {
 			{products &&
 				products.map((product, i) => {
 					const image = product.images[0]
-				console.log(product.id)
 					return (
 						<div className="Product" key={product.id + i}>
 							{image ? (

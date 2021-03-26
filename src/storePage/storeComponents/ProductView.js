@@ -41,7 +41,7 @@ export default (props) => {
 
 	return (
 		<div id="individualProduct">
-			<Link className="homeButton button" to={"/Home"}>
+			<Link className="homeButton button" to={"/store"}>
 				Home
 			</Link>
 			<div className="Product-wrapper2">
@@ -50,9 +50,12 @@ export default (props) => {
 						product.images.map((image, i) => {
 							return (
 								<img
+									className="Image"
 									key={image.id + i}
 									src={image.src}
 									alt={`${product.title} product shot`}
+									width="150px"
+									height="150px"
 								/>
 							)
 						})}

@@ -1,10 +1,12 @@
 import React, { useEffect } from "react"
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom"
+
 import Products from "./Products"
 import Cart from "./Cart"
 import Home from "./Home"
 import ProductView from "./ProductView"
 import { useShopify } from "../hooks"
+import Product from "./Product"
 
 
 export default (props) => {
@@ -21,13 +23,12 @@ export default (props) => {
 		createCheckout()
 		// fetchCollection()
 	}, [])
-
+	
 	return (
-		<Router>
+		<Router id="router">
 			<div id="App">
-		
-				<Route path="/" component={Home} />
-				<Route path="/" component={Products} />
+				<Route path="/store" component={Home} />
+				<Route path="/store" component={Products} />
 				<Route path="/Product/:productId" component={ProductView} />
 				<Route path="/" component={Cart} />
 			</div>

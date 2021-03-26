@@ -1,0 +1,7 @@
+.app {
+    grid-column-start: left-gutter;
+	grid-column-end: -1;
+	grid-row-start: first;
+	grid-row-end: second;
+	
+}
