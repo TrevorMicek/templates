@@ -15,29 +15,26 @@ import * as reducers from "../storePage/redux/ducks"
 
 
 
-   
-
 const Store = () => {
-    const composeEnhancers = window.__REDUX__DEVTOOLS__EXTENSION__COMPOSE || compose;
+   //const composeEnhancers = window.__REDUX__DEVTOOLS__EXTENSION__COMPOSE__ || compose;
 
-        const rootReducer = combineReducers(reducers)
+    const rootReducer = combineReducers(reducers);
 
-    const enhancer = composeEnhancers(applyMiddleware(thunk));
+    const enhancer = compose(applyMiddleware(thunk));
     
-    const store = createStore(rootReducer, enhancer)
+    const store = createStore(rootReducer, enhancer);
 
-    useEffect(() => {
-        
-   
-    }, [])
+    
 return (
     <Layout title="Custom Ecommerce">
-    <SEO title="Home" />
+    <SEO title="Online Store" />
+    <div className={styles.app}>
 	<Provider store={store}>
-        <div className={styles.app}>
+        
 		    <App /> 
-        </div>
+        
 	</Provider>
+    </div>
     </Layout>
 )
 }

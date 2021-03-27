@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import ScrollToTop from "../../components/commonComps/ScrollToTop"
 import { useShopify } from "../hooks"
 
 export default (props) => {
@@ -18,6 +19,7 @@ export default (props) => {
 	const description = product.description && product.description.split(".")
 
 	function changeSize(sizeId, quantity) {
+		window.scrollTo(0,90)
 		openCart()
 		if (sizeId === "") {
 			sizeId = defaultSize
@@ -38,10 +40,9 @@ export default (props) => {
 	useEffect(() => {
 		fetchProduct(id)
 	}, [id])
-
 	return (
 		<div id="individualProduct">
-			<Link className="homeButton button" to={"/store"}>
+			<Link className="homeButton button" to="/store">
 				Home
 			</Link>
 			<div className="Product-wrapper2">
@@ -103,6 +104,7 @@ export default (props) => {
 					<h3 className="Product__price">
 						${product.variants && product.variants[0].price}
 					</h3>
+				
 					<button
 						className="prodBuy button"
 						onClick={(e) => changeSize(size, quantity)}

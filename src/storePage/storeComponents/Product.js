@@ -6,6 +6,7 @@ export default (props) => {
 
 	function handleClick(e, product_id) {
 		e.preventDefault()
+		window.scrollTo(0,400)
 		const id = product_id
 		fetchProduct(id).then((res) => {
 			props.history.push(`/Product/${res.id}`)

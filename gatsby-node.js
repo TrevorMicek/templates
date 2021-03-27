@@ -21,9 +21,4 @@ exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
     }
 }
 */
-exports.onCreatePage = async ({page, actions}) => {
-    const { createPage } = actions
-    if (page.path.match(/^\/Product/)) {
-        page.matchPath = "/Product/*"
-    }
-}
+
