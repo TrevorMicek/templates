@@ -11,7 +11,7 @@ export default (props) => {
 		const id = product_id
 		fetchProduct(id).then((res) => {
 			
-			navigate(`Products/${res.id}`)
+			navigate(`/Products/${res.id}`)
 		})
 	}
 
