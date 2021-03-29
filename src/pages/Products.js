@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import ScrollToTop from "../../components/commonComps/ScrollToTop"
-import { useShopify } from "../hooks"
+import ScrollToTop from "../components/commonComps/ScrollToTop"
+import { useShopify } from "../storePage/hooks"
 
 export default (props) => {
 	const {
@@ -42,9 +42,10 @@ export default (props) => {
 	}, [id])
 	return (
 		<div id="individualProduct">
-			<Link className="homeButton button" to="/store">
+			<Link className="homeButton button" to="/store/">
 				Home
 			</Link>
+			{console.log('productview')}
 			<div className="Product-wrapper2">
 				<div className="Images">
 					{product.images &&

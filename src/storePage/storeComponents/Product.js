@@ -1,15 +1,17 @@
 import React from "react"
 import { useShopify } from "../hooks"
-
+import { navigate } from '@reach/router'
 export default (props) => {
 	const { products, fetchProduct } = useShopify()
 
 	function handleClick(e, product_id) {
 		e.preventDefault()
 		window.scrollTo(0,400)
+		
 		const id = product_id
 		fetchProduct(id).then((res) => {
-			props.history.push(`/Product/${res.id}`)
+			
+			navigate(`Products/${res.id}`)
 		})
 	}
 

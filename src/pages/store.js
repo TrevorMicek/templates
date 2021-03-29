@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from "react-redux"
 
-import App from "../storePage/storeComponents/App"
+import App from "./App"
 import "./app.css"
 
 import Layout from "../components/layout/layout"
