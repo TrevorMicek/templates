@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import ScrollToTop from "../components/commonComps/ScrollToTop"
-import { useShopify } from "../storePage/hooks"
+import ScrollToTop from "../../components/commonComps/ScrollToTop"
+import { useShopify } from "../hooks"
 
 export default (props) => {
 	const {

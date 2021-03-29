@@ -4,7 +4,7 @@ import Link from 'gatsby'
 import Products from "./Products"
 import Cart from "./Cart"
 import Home from "./Home"
-import ProductView from "../../pages/Products"
+import ProductView from "./Productview"
 import { useShopify } from "../hooks"
 import Product from "./Product"
 
