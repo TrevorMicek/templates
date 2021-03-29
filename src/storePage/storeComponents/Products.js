@@ -1,6 +1,6 @@
 import React from "react"
 import Product from "./Product"
-import Cart from '../../pages/Cart'
+import Cart from './Cart'
 export default (props) => {
 	return (
 		<div className="Products-wrapper">

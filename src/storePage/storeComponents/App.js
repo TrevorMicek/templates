@@ -1,14 +1,14 @@
 import React, { useEffect } from "react"
 import { Router } from '@reach/router'
 import Link from 'gatsby'
-import Products from "../storePage/storeComponents/Products"
+import Products from "./Products"
 import Cart from "./Cart"
-import Home from "../storePage/storeComponents/Home"
-import ProductView from "./Products"
-import { useShopify } from "../storePage/hooks"
-import Product from "../storePage/storeComponents/Product"
+import Home from "./Home"
+import ProductView from "../../pages/Products"
+import { useShopify } from "../hooks"
+import Product from "./Product"
 
-import ScrollToTop from '../components/commonComps/ScrollToTop'
+import ScrollToTop from '../../components/commonComps/ScrollToTop'
 
 export default (props) => {
 	const {
@@ -30,9 +30,8 @@ export default (props) => {
 		
 		<Router>
 			
-				<Cart default />
-				<Home default />
-				<Products path='/store' />
+				
+				<Products default />
 				<ProductView path='Products/:productId' />
 				
 			
