@@ -1,14 +1,8 @@
 import React, { useEffect } from "react"
 import { Router } from '@reach/router'
-import Link from 'gatsby'
 import Products from "./Products"
-import Cart from "./Cart"
-import Home from "./Home"
 import ProductView from "./Productview"
 import { useShopify } from "../hooks"
-import Product from "./Product"
-
-import ScrollToTop from '../../components/commonComps/ScrollToTop'
 
 export default (props) => {
 	const {
@@ -29,7 +23,7 @@ export default (props) => {
 	<div id="App">
 		<Router>
 			<Products path='/store/' />
-			<ProductView path='Products/:productId' />
+			<ProductView path=':productId' />
 		</Router>
 	</div>
 	)
