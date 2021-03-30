@@ -27,16 +27,11 @@ export default (props) => {
 	
 	return (
 	<div id="App">
-		
 		<Router>
-			
-				
-				<Products default />
-				<ProductView path='Products/:productId' />
-				
-			
+			<Products path='/store/' />
+			<ProductView path='Products/:productId' />
 		</Router>
-		</div>
+	</div>
 	)
 }
 /*

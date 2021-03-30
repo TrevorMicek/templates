@@ -7,11 +7,11 @@ export default (props) => {
 	function handleClick(e, product_id) {
 		e.preventDefault()
 		window.scrollTo(0,400)
-		
 		const id = product_id
+		
 		fetchProduct(id).then((res) => {
-			
-			navigate(`/Products/${res.id}`)
+			console.log('here')
+			navigate(`Products/${res.id}`)
 		})
 	}
 

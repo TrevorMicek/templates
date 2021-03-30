@@ -4,6 +4,7 @@ import ScrollToTop from "../../components/commonComps/ScrollToTop"
 import { useShopify } from "../hooks"
 
 export default (props) => {
+	console.log('here')
 	const {
 		product,
 		fetchProduct,
