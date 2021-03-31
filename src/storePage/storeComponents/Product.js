@@ -8,9 +8,10 @@ export default (props) => {
 		e.preventDefault()
 		window.scrollTo(0,400)
 		const id = product_id
+
 		fetchProduct(id).then((res) => {
-			console.log('here')
-			navigate(`Product/${res.id}`)
+
+			props.history.push(`/products/${res.id}`)
 		})
 	}
 

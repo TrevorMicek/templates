@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
-import { Router } from '@reach/router'
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom"
 import Products from "../storePage/storeComponents/Products"
-import ProductView from "../storePage/storeComponents/Productview"
+import ProductView from "../templates/Productview"
 import { useShopify } from "../storePage/hooks"
 
 import { Provider } from "react-redux"
@@ -11,6 +11,8 @@ import "./app.css"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 import styles from '../styles/StorePage/wrapper.module.css'
+import Cart from '../storePage/storeComponents/Cart'
+import Home from '../storePage/storeComponents/Home'
 
 import { createStore, combineReducers, applyMiddleware, compose } from "redux"
 import thunk from "redux-thunk"
@@ -31,12 +33,17 @@ const App = () => {
 		// fetchCollection()
 	}, [])
     return (
-        <div id="App">
+        
         <Router>
-			<Products path='/store/' />
-			<ProductView path='Product/:productId' />
+			<div id="App">
+				
+				<Route path="/store/" component={Home} />
+				<Route path="/store/" component={Products} />
+				<Route path="/products/:productId" component={ProductView} />
+				<Route path="/store/" component={Cart} />
+			</div>
 		</Router>
-        </div>
+        
     )
 }
 

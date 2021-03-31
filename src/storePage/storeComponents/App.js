@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Router } from '@reach/router'
 import Products from "./Products"
-import ProductView from "./Productview"
+import ProductView from "../../templates/Productview"
 import { useShopify } from "../hooks"
 
 export default (props) => {

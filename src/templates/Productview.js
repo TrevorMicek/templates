@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import ScrollToTop from "../../components/commonComps/ScrollToTop"
-import { useShopify } from "../hooks"
+import ScrollToTop from "../components/commonComps/ScrollToTop"
+import { useShopify } from "../storePage/hooks"
 
 export default (props) => {
 	console.log('here')
@@ -42,6 +42,7 @@ export default (props) => {
 		fetchProduct(id)
 	}, [id])
 	return (
+
 		<div id="individualProduct">
 			<Link className="homeButton button" to="/store/">
 				Home
@@ -116,5 +117,6 @@ export default (props) => {
 				</div>
 			</div>
 		</div>
+		
 	)
 }
