@@ -37,10 +37,10 @@ const App = () => {
         <Router>
 			<div id="App">
 				
-				<Route path="/store/" component={Home} />
-				<Route path="/store/" component={Products} />
+				<Route path="/store" component={Home} />
+				<Route path="/store" component={Products} />
 				<Route path="/products/:productId" component={ProductView} />
-				<Route path="/store/" component={Cart} />
+				<Route path="/store" component={Cart} />
 			</div>
 		</Router>
         
