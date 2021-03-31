@@ -44,7 +44,7 @@ export default (props) => {
 	return (
 
 		<div id="individualProduct">
-			<Link className="homeButton button" to="/store/">
+			<Link className="homeButton button" to="/store">
 				Home
 			</Link>
 			<div className="Product-wrapper2">
