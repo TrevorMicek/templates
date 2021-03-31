@@ -47,7 +47,6 @@ export default (props) => {
 			<Link className="homeButton button" to="/store/">
 				Home
 			</Link>
-			{console.log('productview')}
 			<div className="Product-wrapper2">
 				<div className="Images">
 					{product.images &&
