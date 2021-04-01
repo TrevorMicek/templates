@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { Router } from '@reach/router'
 import Products from "../storePage/storeComponents/Products"
 import ProductView from "../templates/Productview"
+import Cart from '../storePage/storeComponents/Cart'
 import { useShopify } from "../storePage/hooks"
 
 import { Provider } from "react-redux"
@@ -31,14 +32,15 @@ const App = () => {
 		// fetchCollection()
 	}, [])
     return (
-        
+        <>
+        <Cart />
         <Router>
-          
-			<Products path='/store/' />
+            
+			<Products path="/store/" />
 			<ProductView path='/store/products/:productId' />
 		
         </Router>
-        
+        </>
     )
 }
 

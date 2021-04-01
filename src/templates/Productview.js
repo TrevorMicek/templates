@@ -3,10 +3,9 @@ import { Link } from "gatsby"
 import { useMatch } from "@reach/router"
 import ScrollToTop from "../components/commonComps/ScrollToTop"
 import { useShopify } from "../storePage/hooks"
-import { matchPath } from "react-router"
+
 
 export default (props) => {
-	console.log('here')
 	const {
 		product,
 		fetchProduct,
@@ -15,7 +14,7 @@ export default (props) => {
 		addVariant,
 	} = useShopify()
 	
-	//const id = props.match.productId
+	const id = useMatch("/store/products/:productId").productId
 	const defaultSize = product.variants && product.variants[0].id.toString()
 	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
@@ -40,14 +39,12 @@ export default (props) => {
 			addVariant(checkoutId, lineItemsToAdd)
 		}
 	}
-	const match = useMatch("/store/products/:productId")
-	
 	
 	
 	useEffect(() => {
-		fetchProduct(match.productId)
-	
-	}, [match.productId])
+		fetchProduct(id)
+		window.scrollTo(0,400)
+	}, [id])
 	
 	return (
 		<div id="individualProduct">

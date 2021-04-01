@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { useShopify } from "../hooks"
 import { navigate, Link } from '@reach/router'
 import Client from 'shopify-buy'
@@ -8,15 +8,17 @@ export default (props) => {
 
 	function handleClick(e, product_id) {
 		e.preventDefault()
-		window.scrollTo(0,400)
+		
 		const id = product_id
-fetchProduct(id).then((res) => {
-	navigate(`products/${res.id}`)
-})
+		fetchProduct(id).then((res) => {
+			navigate(`products/${res.id}`)
+		})
 		
 		
 	}
-
+	useEffect(() => {
+		window.scrollTo(0,0)
+	}, [products])
 
 	return (
 		<div className="Product-wrapper">
