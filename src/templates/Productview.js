@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { useMatch } from "@reach/router"
-import ScrollToTop from "../components/commonComps/ScrollToTop"
+
 import { useShopify } from "../storePage/hooks"
 
 
@@ -26,15 +26,20 @@ export default (props) => {
 		openCart()
 		if (sizeId === "") {
 			sizeId = defaultSize
+		
 			const lineItemsToAdd = [
 				{ variantId: sizeId, quantity: parseInt(quantity, 10) },
 			]
+			
 			const checkoutId = checkoutState.id
 			addVariant(checkoutId, lineItemsToAdd)
+			
 		} else {
+		
 			const lineItemsToAdd = [
 				{ variantId: sizeId, quantity: parseInt(quantity, 10) },
 			]
+			
 			const checkoutId = checkoutState.id
 			addVariant(checkoutId, lineItemsToAdd)
 		}

@@ -123,14 +123,17 @@ function shopInfo() {
 // Adds variants to cart/checkout
 function addVariantToCart(checkoutId, lineItemsToAdd) {
 	return async (dispatch) => {
+		
 		const response = await client.checkout.addLineItems(
 			checkoutId,
 			lineItemsToAdd
 		)
+		
 		dispatch({
 			type: ADD_VARIANT_TO_CART,
 			payload: response,
 		})
+	
 		return response
 	}
 }
