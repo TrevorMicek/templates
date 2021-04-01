@@ -1,6 +1,8 @@
 import React from "react"
 import { useShopify } from "../hooks"
-import { navigate } from '@reach/router'
+import { navigate, Link } from '@reach/router'
+import Client from 'shopify-buy'
+
 export default (props) => {
 	const { products, fetchProduct } = useShopify()
 
@@ -9,10 +11,8 @@ export default (props) => {
 		window.scrollTo(0,400)
 		const id = product_id
 
-		fetchProduct(id).then((res) => {
-
-			props.history.push(`/products/${res.id}`)
-		})
+		navigate(`products/${id}`)
+		
 	}
 
 
@@ -30,12 +30,14 @@ export default (props) => {
 								<h4 className="Product__title">{product.title}</h4>
 								<p className="Product__price">${product.variants[0].price}</p>
 							</div>
+							
 							<button
 								className="Product__buy button"
 								onClick={(e) => handleClick(e, product.id)}
 							>
 								View Details
 							</button>
+							
 						</div>
 					)
 				})}

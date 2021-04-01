@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, Match } from "gatsby"
 import ScrollToTop from "../components/commonComps/ScrollToTop"
 import { useShopify } from "../storePage/hooks"
 
@@ -12,7 +12,7 @@ export default (props) => {
 		checkoutState,
 		addVariant,
 	} = useShopify()
-	const id = props.match.params.productId
+	//const id = props.match.productId
 	const defaultSize = product.variants && product.variants[0].id.toString()
 	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
@@ -37,16 +37,18 @@ export default (props) => {
 			addVariant(checkoutId, lineItemsToAdd)
 		}
 	}
-
+	/*
 	useEffect(() => {
 		fetchProduct(id)
 	}, [id])
+	*/
 	return (
 
 		<div id="individualProduct">
-			<Link className="homeButton button" to="/store">
+			<Link className="homeButton button" to="/store/">
 				Home
 			</Link>
+			{console.log('productview')}
 			<div className="Product-wrapper2">
 				<div className="Images">
 					{product.images &&
