@@ -10,8 +10,10 @@ export default (props) => {
 		e.preventDefault()
 		window.scrollTo(0,400)
 		const id = product_id
-
-		navigate(`products/${id}`)
+fetchProduct(id).then((res) => {
+	navigate(`products/${res.id}`)
+})
+		
 		
 	}
 
