@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { Router } from '@reach/router'
 import Products from "../storePage/storeComponents/Products"
-import ProductView from "../templates/Productview"
+import ProductView from "../storePage/storeComponents/Productview"
 import Cart from '../storePage/storeComponents/Cart'
 import { useShopify } from "../storePage/hooks"
 
@@ -32,15 +32,14 @@ const App = () => {
 		// fetchCollection()
 	}, [])
     return (
-        <>
-        <Cart />
+     
         <Router>
             
 			<Products path="/store/" />
 			<ProductView path='/store/products/:productId' />
 		
         </Router>
-        </>
+        
     )
 }
 

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { useMatch } from "@reach/router"
 
-import { useShopify } from "../storePage/hooks"
+import Cart from './Cart'
+import { useShopify } from "../hooks"
 
 
 export default (props) => {
@@ -51,7 +52,8 @@ export default (props) => {
 		window.scrollTo(0,400)
 	}, [id])
 	
-	return (
+	return (<>
+		<Cart />
 		<div id="individualProduct">
 			<Link className="homeButton button" to="/store/">
 				Home
@@ -126,7 +128,7 @@ export default (props) => {
 				</div>
 			</div>
 		</div>
-	
+	</>
 		)
 	
 	
