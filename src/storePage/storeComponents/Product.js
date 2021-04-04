@@ -4,16 +4,21 @@ import { navigate, Link } from '@reach/router'
 import Client from 'shopify-buy'
 
 export default (props) => {
-	const { products, fetchProduct } = useShopify()
+	const { products, fetchProduct, fetchProducts } = useShopify()
 
+	useEffect(() => {
+	
+		fetchProducts()
+	
+		// fetchCollection()
+	}, [])
 	function handleClick(e, product_id) {
 		e.preventDefault()
 		
 		const id = product_id
 		fetchProduct(id).then((res) => {
-			navigate(`products/${res.id}`)
+			navigate(`/store/products/${res.id}`)
 		})
-		
 		
 	}
 	useEffect(() => {

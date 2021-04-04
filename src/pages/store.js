@@ -1,8 +1,10 @@
-import React, { useEffect } from "react"
-import { Router } from '@reach/router'
+import React, { useCallback, useEffect, useState } from "react"
+import { Router, Redirect } from '@reach/router'
 import Products from "../storePage/storeComponents/Products"
 import ProductView from "../storePage/storeComponents/Productview"
 import Cart from '../storePage/storeComponents/Cart'
+import createComponent from '../components/commonComps/createCart'
+
 import { useShopify } from "../storePage/hooks"
 
 import { Provider } from "react-redux"
@@ -18,28 +20,45 @@ import thunk from "redux-thunk"
 import * as reducers from "../storePage/redux/ducks"
 
 const App = () => {
+    const Pages = () => {
      const {
 		createShop,
 		createCheckout,
 		fetchProducts,
+        addVariant
 		// fetchCollection,
 	} = useShopify()
-
+    const [cart, setCart] = useState([])
+   
+    console.log(cart)
+	const addToCart = (cartItem) => setCart([...cart, cartItem])
+    const createCart = () => {
+      
+        createComponent(cart, addVariant)
+    } 
+    /*
+    const addItems = useCallback(() => {
+        createCart()
+    }, [cart])
+    */
 	useEffect(() => {
 		createShop()
 		fetchProducts()
 		createCheckout()
+        
 		// fetchCollection()
 	}, [])
     return (
-     
+        <>
+      <Cart create={createCart} />
         <Router>
             
-			<Products path="/store/" />
-			<ProductView path='/store/products/:productId' />
+            
+			<Products path="/store" />
+			<ProductView path='/store/products/:productId' add={addToCart} item={cart} create={createCart} />
 		
         </Router>
-        
+        </>
     )
 }
 
@@ -55,14 +74,18 @@ const Store = () => {
 
     
 return (
+    
     <Layout title="Custom Ecommerce">
     <SEO title="Online Store" />
     <div className={styles.app}>
 	<Provider store={store}>
-        <App /> 
+       
+        <Pages /> 
 	</Provider>
     </div>
     </Layout>
 )
 }
-export default Store;
+return <Store />
+}
+export default App;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import LineItem from "./LineItem"
 import { useShopify } from "../hooks"
 import { MdShoppingCart, MdRemoveShoppingCart } from "react-icons/md"
@@ -11,9 +11,10 @@ export default (props) => {
 		checkoutState,
 		setCount,
 	} = useShopify()
-
+	
 	function handleOpen(e) {
 		e.preventDefault()
+		props.create()
 		openCart()
 	}
 

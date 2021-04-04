@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
-import { useMatch } from "@reach/router"
+import { navigate, useMatch } from "@reach/router"
 
-import Cart from './Cart'
+
 import { useShopify } from "../hooks"
+import { create } from "lodash"
 
 
 export default (props) => {
@@ -11,6 +12,7 @@ export default (props) => {
 		product,
 		fetchProduct,
 		openCart,
+		createCheckout,
 		checkoutState,
 		addVariant,
 	} = useShopify()
@@ -24,7 +26,6 @@ export default (props) => {
 
 	function changeSize(sizeId, quantity) {
 		window.scrollTo(0,90)
-		openCart()
 		if (sizeId === "") {
 			sizeId = defaultSize
 		
@@ -33,7 +34,13 @@ export default (props) => {
 			]
 			
 			const checkoutId = checkoutState.id
-			addVariant(checkoutId, lineItemsToAdd)
+			const answer = {
+				id: checkoutId,
+				add: lineItemsToAdd
+			}
+			props.add(answer)
+			
+			props.create()
 			
 		} else {
 		
@@ -45,17 +52,20 @@ export default (props) => {
 			addVariant(checkoutId, lineItemsToAdd)
 		}
 	}
+	useEffect(() => {
 	
+		createCheckout()
+		// fetchCollection()
+	}, [])
 	
 	useEffect(() => {
 		fetchProduct(id)
 		window.scrollTo(0,400)
 	}, [id])
 	
-	return (<>
-		<Cart />
+	return (
 		<div id="individualProduct">
-			<Link className="homeButton button" to="/store/">
+			<Link className="homeButton button" to="../../">
 				Home
 			</Link>
 	
@@ -128,7 +138,6 @@ export default (props) => {
 				</div>
 			</div>
 		</div>
-	</>
 		)
 	
 	
