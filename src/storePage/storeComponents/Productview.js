@@ -51,10 +51,10 @@ export default (props) => {
 			
 			
 
-			
+			//localStorage.clear()
 			//const oldItems = JSON.parse(localStorage.getItem('cart')) || {}
-			
-			localStorage.clear()
+			//console.log(oldItems)
+
 			props.add(storage)
 			
 			addVariant(storage.id, storage.add)
