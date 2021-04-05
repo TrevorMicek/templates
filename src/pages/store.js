@@ -31,15 +31,14 @@ const App = () => {
     const [cart, setCart] = useState([])
    const [isCartOpen, setIsCartOpen] = useState(false)
    const cartIsOpen = () => setIsCartOpen(true)
-   const storage = JSON.parse(localStorage.getItem('cart'))
-  
+   
 	const addToCart = (cartItem) =>{
         console.log('added!')
          setCart([...cart, cartItem])
     }
     const createCart = () => {
    
-      addToCart(storage)
+      
      
         createComponent(cart, addVariant)
     } 
@@ -53,7 +52,8 @@ const App = () => {
 		createShop()
 		fetchProducts()
 		createCheckout()
-    
+    const storage = JSON.parse(localStorage.getItem('cart'))
+  addToCart(storage)
 		// fetchCollection()
 	}, [])
     return (

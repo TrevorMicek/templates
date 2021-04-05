@@ -59,7 +59,7 @@ export default (props) => {
 			
 			addVariant(storage.id, storage.add)
 			console.log(props.item)
-			localStorage.setItem('cart', JSON.stringify(storage))
+			window.localStorage.setItem('cart', JSON.stringify(storage))
 			
 		} else {
 		
