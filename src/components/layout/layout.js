@@ -44,7 +44,7 @@ const Layout = ({children, title}) => {
 
       <div
         style={{
-          margin: `0 0`
+          margin: `0 0`,
         }}
       >
         
