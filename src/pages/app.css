@@ -58,9 +58,10 @@ img {
 }
 
 .App__view-cart-wrapper2 {
-	position: absolute;
-	top: 15vh;
-	left: -14vw;
+	position: relative;
+	top: 7vh;
+	right: 25vw;
+	margin-right: 20vw;
 }
 
 .App__view-cart {
@@ -69,7 +70,6 @@ img {
 	background: none;
 	cursor: pointer;
 	color: #f3dbdb;
-	
 }
 
 .button {
@@ -162,8 +162,8 @@ img {
 }
 .Cart__close {
 	position: absolute;
-	right: 9px;
-	top: 16vh;
+	right: 10vw;
+	top: 17vh;
 	font-size: 35px;
 	color: #999;
 	border: none;
