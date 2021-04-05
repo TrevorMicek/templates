@@ -37,9 +37,6 @@ const App = () => {
          setCart([...cart, cartItem])
     }
     const createCart = () => {
-   
-      
-     
         createComponent(cart, addVariant)
     } 
     /*
@@ -52,8 +49,8 @@ const App = () => {
 		createShop()
 		fetchProducts()
 		createCheckout()
-    const storage = JSON.parse(localStorage.getItem('cart'))
-  addToCart(storage)
+        const storage = JSON.parse(window.localStorage.getItem('cart'))
+        addToCart(storage)
 		// fetchCollection()
 	}, [])
     return (

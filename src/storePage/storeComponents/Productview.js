@@ -46,13 +46,8 @@ export default (props) => {
 			
 			}
 			
-			
-			
-			
-			
-
-			//localStorage.clear()
-			//const oldItems = JSON.parse(localStorage.getItem('cart')) || {}
+	
+			//const oldItems = JSON.parse(window.localStorage.getItem('cart')) || {}
 			//console.log(oldItems)
 
 			props.add(storage)
