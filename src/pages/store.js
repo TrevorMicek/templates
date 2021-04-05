@@ -29,11 +29,18 @@ const App = () => {
 		// fetchCollection,
 	} = useShopify()
     const [cart, setCart] = useState([])
-   
-    console.log(cart)
-	const addToCart = (cartItem) => setCart([...cart, cartItem])
+   const [isCartOpen, setIsCartOpen] = useState(false)
+   const cartIsOpen = () => setIsCartOpen(true)
+   const storage = JSON.parse(localStorage.getItem('cart'))
+  
+	const addToCart = (cartItem) =>{
+        console.log('added!')
+         setCart([...cart, cartItem])
+    }
     const createCart = () => {
-      
+   
+      addToCart(storage)
+     
         createComponent(cart, addVariant)
     } 
     /*
@@ -41,16 +48,17 @@ const App = () => {
         createCart()
     }, [cart])
     */
+    
 	useEffect(() => {
 		createShop()
 		fetchProducts()
 		createCheckout()
-        
+    
 		// fetchCollection()
 	}, [])
     return (
         <>
-      <Cart create={createCart} />
+      <Cart create={createCart} isOpen={isCartOpen} setIsOpen={cartIsOpen} />
         <Router>
             
             
@@ -79,7 +87,7 @@ return (
     <SEO title="Online Store" />
     <div className={styles.app}>
 	<Provider store={store}>
-       
+      
         <Pages /> 
 	</Provider>
     </div>

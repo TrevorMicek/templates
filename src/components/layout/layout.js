@@ -20,18 +20,9 @@ import thunk from "redux-thunk"
 import * as reducers from "../../storePage/redux/ducks"
 import { Provider } from "react-redux"
 const Layout = ({children, title}) => {
+  
+
   /*
-  const {
-    addVariant
-  } = useShopify()
-  const [cart, setCart] = useState([])
-   
-  console.log(cart)
-const addToCart = (cartItem) => setCart([...cart, cartItem])
-  const createCart = () => {
-    
-      createComponent(cart, addVariant)
-  } 
   const rootReducer = combineReducers(reducers);
 
   const enhancer = compose(applyMiddleware(thunk));

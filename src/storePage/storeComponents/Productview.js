@@ -21,36 +21,57 @@ export default (props) => {
 	const defaultSize = product.variants && product.variants[0].id.toString()
 	const [size, setSize] = useState("")
 	const [quantity, setQuantity] = useState(1)
-
+	const [refreshQuantity, setRefreshQuantity] = useState(0)
 	const description = product.description && product.description.split(".")
 
 	function changeSize(sizeId, quantity) {
 		window.scrollTo(0,90)
+		
 		if (sizeId === "") {
 			sizeId = defaultSize
 		
 			const lineItemsToAdd = [
 				{ variantId: sizeId, quantity: parseInt(quantity, 10) },
 			]
+			const lineItemsOnRefresh = [
+				{ variantId: sizeId, quantity: parseInt(refreshQuantity, 10) },
+			]
 			
 			const checkoutId = checkoutState.id
-			const answer = {
-				id: checkoutId,
-				add: lineItemsToAdd
-			}
-			props.add(answer)
+			const storage = {
 			
-			props.create()
+				id: checkoutId,
+				add: lineItemsToAdd,
+				onRefresh: lineItemsOnRefresh
+			
+			}
+			
+			
+			
+			
+			
+
+			
+			//const oldItems = JSON.parse(localStorage.getItem('cart')) || {}
+			
+			localStorage.clear()
+			props.add(storage)
+			
+			addVariant(storage.id, storage.add)
+			console.log(props.item)
+			localStorage.setItem('cart', JSON.stringify(storage))
 			
 		} else {
 		
 			const lineItemsToAdd = [
 				{ variantId: sizeId, quantity: parseInt(quantity, 10) },
 			]
+		
 			
 			const checkoutId = checkoutState.id
 			addVariant(checkoutId, lineItemsToAdd)
 		}
+		
 	}
 	useEffect(() => {
 	

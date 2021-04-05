@@ -14,7 +14,7 @@ export default (props) => {
 	
 	function handleOpen(e) {
 		e.preventDefault()
-		props.create()
+		props.setIsOpen()
 		openCart()
 	}
 
@@ -53,7 +53,9 @@ export default (props) => {
 
 		getCount()
 	}, [cartStatus, checkoutState])
-
+	useEffect(()=> {
+		props.create()
+	},[props.isOpen])
 	return (
 		<div id="cart">
 			<div className={`Cart ${cartStatus ? "Cart--open" : ""}`}>
