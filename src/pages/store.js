@@ -32,7 +32,7 @@ const App = () => {
  
    const [isCartOpen, setIsCartOpen] = useState(false)
    const cartIsOpen = () => setIsCartOpen(!isCartOpen)
-    const storage = JSON.parse(window.localStorage.getItem('cart')) || {}
+    
 	const addToCart = (cartItem) =>{
       
          setCart([...cart, cartItem])
@@ -40,7 +40,7 @@ const App = () => {
          
     }
     const createCart = () => {
-        
+        const storage = JSON.parse(window.localStorage.getItem('cart')) || {}
         addToCart(storage)
         //console.log(cart)
         return createComponent(cart, addVariant)
