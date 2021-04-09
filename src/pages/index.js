@@ -13,7 +13,6 @@ const IndexPage = () => (
     <div className={styles.wrapper}>
     <FirstSection {...info} />
     </div>
-    {window.localStorage.clear()}
       <SecondSection />
   </Layout>
 )
