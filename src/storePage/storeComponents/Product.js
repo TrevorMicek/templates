@@ -24,9 +24,7 @@ export default (props) => {
 	useEffect(() => {
 		window.scrollTo(0,0)
 	}, [products])
-useEffect(() => {
-	window.localStorage.clear()
-},[])
+
 	return (
 		<div className="Product-wrapper">
 			{products &&
