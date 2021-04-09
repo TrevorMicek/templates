@@ -29,15 +29,21 @@ const App = () => {
 		// fetchCollection,
 	} = useShopify()
     const [cart, setCart] = useState([])
+ 
    const [isCartOpen, setIsCartOpen] = useState(false)
-   const cartIsOpen = () => setIsCartOpen(true)
-   
+   const cartIsOpen = () => setIsCartOpen(!isCartOpen)
+    const storage = JSON.parse(window.localStorage.getItem('cart')) || {}
 	const addToCart = (cartItem) =>{
-        console.log('added!')
+      
          setCart([...cart, cartItem])
+         
+         
     }
     const createCart = () => {
-        createComponent(cart, addVariant)
+        
+        addToCart(storage)
+        //console.log(cart)
+        return createComponent(cart, addVariant)
     } 
     /*
     const addItems = useCallback(() => {
@@ -49,8 +55,9 @@ const App = () => {
 		createShop()
 		fetchProducts()
 		createCheckout()
-        const storage = JSON.parse(window.localStorage.getItem('cart'))
-        addToCart(storage)
+       //createCart()
+        
+       
 		// fetchCollection()
 	}, [])
     return (
@@ -60,7 +67,7 @@ const App = () => {
             
             
 			<Products path="/store" />
-			<ProductView path='/store/products/:productId' add={addToCart} item={cart} create={createCart} />
+			<ProductView path='/store/products/:productId' isOpen={isCartOpen} setIsOpen={cartIsOpen} create={createCart} />
 		
         </Router>
         </>

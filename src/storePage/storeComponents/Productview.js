@@ -26,7 +26,7 @@ export default (props) => {
 
 	function changeSize(sizeId, quantity) {
 		window.scrollTo(0,90)
-		
+	
 		if (sizeId === "") {
 			sizeId = defaultSize
 		
@@ -37,24 +37,27 @@ export default (props) => {
 				{ variantId: sizeId, quantity: parseInt(refreshQuantity, 10) },
 			]
 			
-			const checkoutId = checkoutState.id
+			
 			const storage = {
 			
-				id: checkoutId,
+				id: checkoutState.id,
 				add: lineItemsToAdd,
 				onRefresh: lineItemsOnRefresh
 			
 			}
 			
-	
-			//const oldItems = JSON.parse(window.localStorage.getItem('cart')) || {}
+		
+			
+			const oldItems = JSON.parse(window.localStorage.getItem('cart')) || []
+			
+			oldItems.push(storage)	
+			window.localStorage.setItem('cart', JSON.stringify(oldItems))
+			//props.setIsOpen()
+			
 			//console.log(oldItems)
-
-			props.add(storage)
 			
 			addVariant(storage.id, storage.add)
-			console.log(props.item)
-			window.localStorage.setItem('cart', JSON.stringify(storage))
+			//console.log(oldItems)
 			
 		} else {
 		
@@ -68,12 +71,16 @@ export default (props) => {
 		}
 		
 	}
+
 	useEffect(() => {
-	
+		
 		createCheckout()
+		
 		// fetchCollection()
 	}, [])
-	
+	useEffect(() => {
+		props.create()
+	}, [checkoutState.id])
 	useEffect(() => {
 		fetchProduct(id)
 		window.scrollTo(0,400)
