@@ -1,11 +1,11 @@
 import React from "react"
 import Product from "./Product"
-
+import Header from './Header'
 export default (props) => {
 	return (
 		<div className="Products-wrapper">
-			
-			<Product history={props.history} />
+			<Header title="Custom Ecommerce" />
+			<Product history={props.history} title={props.title} />
 		</div>
 	)
 }

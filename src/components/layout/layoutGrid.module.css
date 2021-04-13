@@ -2,7 +2,7 @@
    display: grid;
    background: #fafafa;
    grid-template-columns: [left-gutter] 1fr [left] 3fr [center] 3fr [right] 3fr [right-gutter] 1fr;
-   grid-template-rows: [nav] 1fr [header] 3fr [main] auto [footer] auto;
+   grid-template-rows: [nav] 1fr [header] 2fr [main] auto [footer] auto;
 }
 .main {
    grid-column-start: left-gutter;

@@ -20,7 +20,7 @@ import thunk from "redux-thunk"
 import * as reducers from "../storePage/redux/ducks"
 
 const App = () => {
-    const Pages = () => {
+    const Pages = (props) => {
      const {
 		createShop,
 		createCheckout,
@@ -28,71 +28,50 @@ const App = () => {
         addVariant
 		// fetchCollection,
 	} = useShopify()
+  
     const [cart, setCart] = useState([])
- 
-   const [isCartOpen, setIsCartOpen] = useState(false)
-   const cartIsOpen = () => setIsCartOpen(!isCartOpen)
+    const [cartAmount, setCartAmount] = useState(0)
     
-	const addToCart = (cartItem) =>{
-      
-         setCart([...cart, cartItem])
-         
-         
-    }
+	const addToCart = (cartItem) => setCart([...cart, cartItem])
+    const getCart = () => setCartAmount(cart.length)
+   
+    const storage = () => JSON.parse(window.localStorage.getItem('cart')) || {}
     const createCart = () => {
-        const storage = JSON.parse(window.localStorage.getItem('cart')) || {}
-        addToCart(storage)
-        //console.log(cart)
+       
+        addToCart(storage())
+    
         return createComponent(cart, addVariant)
     } 
-    /*
-    const addItems = useCallback(() => {
-        createCart()
-    }, [cart])
-    */
-    
 	useEffect(() => {
 		createShop()
 		fetchProducts()
 		createCheckout()
-       //createCart()
-        
-       
 		// fetchCollection()
 	}, [])
     return (
         <>
-      <Cart create={createCart} isOpen={isCartOpen} setIsOpen={cartIsOpen} />
+      <Cart create={createCart} />
         <Router>
-            
-            
-			<Products path="/store" />
-			<ProductView path='/store/products/:productId' isOpen={isCartOpen} setIsOpen={cartIsOpen} create={createCart} />
-		
+			<Products path="/store" title={props.title} />
+			<ProductView path='/store/products/:productId' title={props.title} />
         </Router>
         </>
     )
 }
-
 const Store = () => {
+    const initialTitle = 'Custom Ecommerce'
+    const [pageTitle, setPageTitle] = useState(initialTitle)
+    const getTitle = (title) => setPageTitle(title)
    //const composeEnhancers = window.__REDUX__DEVTOOLS__EXTENSION__COMPOSE__ || compose;
-
     const rootReducer = combineReducers(reducers);
-
     const enhancer = compose(applyMiddleware(thunk));
-    
     const store = createStore(rootReducer, enhancer);
-   
-
-    
 return (
-    
-    <Layout title="Custom Ecommerce">
+    <Layout title={undefined}>
     <SEO title="Online Store" />
     <div className={styles.app}>
 	<Provider store={store}>
-      
-        <Pages /> 
+        <Pages title={getTitle} /> 
 	</Provider>
     </div>
     </Layout>

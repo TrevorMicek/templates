@@ -14,7 +14,6 @@ export default (props) => {
 	
 	function handleOpen(e) {
 		e.preventDefault()
-		
 		openCart()
 	}
 
@@ -62,9 +61,16 @@ export default (props) => {
 				<div className="App__view-cart-wrapper2">
 					<button className="App__view-cart" onClick={(e) => handleOpen(e)}>
 						<MdShoppingCart />
+						
 					</button>
+				
+					<div className="cartCounterWrapper">
+						<div className="cartCounter">{props.cartAmount}</div>
+						
+					</div>
 				</div>
 				<header className="Cart__header">
+					<button onClick={() => window.localStorage.clear()}>CLEAR CART</button>
 					<h2>Your cart</h2>
 					<button className="Cart__close" onClick={(e) => handleClose(e)}>
 						<MdRemoveShoppingCart />

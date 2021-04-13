@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
+import Header from '../components/layout/Header'
 import styles from '../styles/ServicesPage/mainStyles.module.css';
 import info from '../data/servicesPage/pageData';
 import SecondSectionTitle from '../components/commonComps/MainSectionTitle'
@@ -14,12 +15,18 @@ import ecomPricing from '../data/servicesPage/ecomPricing'
 import Benefit from './servicesPage/TopBenefits';
 import BenefitData from '../data/servicesPage/BenefitData';
 import CreateComponent from '../components/commonComps/createComponent'
+import wrapperStyles from '../styles/FrontPage/wrapper.module.css'
 
 const ServicePage = () => (
+  
   <Layout title="Services & Pricing">
     <SEO title="Home" />
+    <div className={wrapperStyles.wrapper}>
+      
       <section className={styles.firstSection}>
+        
         <section className={styles.firstSectionWrapper}>
+       
         <div className={styles.firstSectionTitle}>
           <h3>
           Focused On Quality<br /> &  Ease-of-use
@@ -66,6 +73,7 @@ const ServicePage = () => (
       <section className={styles.seventhSection}> 
         <CreateComponent component={Package} data={pricing} />
       </section>
+      </div>
   </Layout>
 )
 export default ServicePage

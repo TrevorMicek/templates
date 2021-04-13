@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { navigate, useMatch } from "@reach/router"
-
+import Header from './Header'
 
 import { useShopify } from "../hooks"
 import { create } from "lodash"
 
 
 export default (props) => {
+	
 	const {
 		product,
 		fetchProduct,
@@ -25,40 +26,25 @@ export default (props) => {
 	const description = product.description && product.description.split(".")
 
 	function changeSize(sizeId, quantity) {
-		window.scrollTo(0,90)
-	
+		window.scrollTo(0,0)
 		if (sizeId === "") {
 			sizeId = defaultSize
-		
 			const lineItemsToAdd = [
 				{ variantId: sizeId, quantity: parseInt(quantity, 10) },
 			]
 			const lineItemsOnRefresh = [
 				{ variantId: sizeId, quantity: parseInt(refreshQuantity, 10) },
 			]
-			
-			
 			const storage = {
-			
 				id: checkoutState.id,
 				add: lineItemsToAdd,
 				onRefresh: lineItemsOnRefresh
-			
 			}
-			
-		
-			
+			addVariant(storage.id, storage.add)	
 			const oldItems = JSON.parse(window.localStorage.getItem('cart')) || []
-			
 			oldItems.push(storage)	
 			window.localStorage.setItem('cart', JSON.stringify(oldItems))
-			//props.setIsOpen()
-			
-			//console.log(oldItems)
-			
-			addVariant(storage.id, storage.add)
-			//console.log(oldItems)
-			
+			navigate('../')
 		} else {
 		
 			const lineItemsToAdd = [
@@ -73,20 +59,19 @@ export default (props) => {
 	}
 
 	useEffect(() => {
-		
 		createCheckout()
 		
 		// fetchCollection()
 	}, [])
-	useEffect(() => {
-		props.create()
-	}, [checkoutState.id])
+	
 	useEffect(() => {
 		fetchProduct(id)
-		window.scrollTo(0,400)
+		window.scrollTo(0,0)
 	}, [id])
 	
 	return (
+		<>
+		<Header title={product.title} />
 		<div id="individualProduct">
 			<Link className="homeButton button" to="../../">
 				Home
@@ -109,7 +94,7 @@ export default (props) => {
 						})}
 				</div>
 				<div className="Product__info">
-					<h2 className="Product__title2">{product.title}</h2>
+					
 					<ul className="Product__description">
 						{description &&
 							description.map((each, i) => {
@@ -156,11 +141,12 @@ export default (props) => {
 						className="prodBuy button"
 						onClick={(e) => changeSize(size, quantity)}
 					>
-						Add to Cart
+						Add To Cart
 					</button>
 				</div>
 			</div>
 		</div>
+		</>
 		)
 	
 	

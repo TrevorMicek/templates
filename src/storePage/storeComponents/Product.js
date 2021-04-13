@@ -12,8 +12,9 @@ export default (props) => {
 	
 		// fetchCollection()
 	}, [])
-	function handleClick(e, product_id) {
+	function handleClick(e, product_id, productTitle) {
 		e.preventDefault()
+		props.title(productTitle)
 		
 		const id = product_id
 		fetchProduct(id).then((res) => {
@@ -42,7 +43,7 @@ export default (props) => {
 							
 							<button
 								className="Product__buy button"
-								onClick={(e) => handleClick(e, product.id)}
+								onClick={(e) => handleClick(e, product.id, product.title)}
 							>
 								View Details
 							</button>
