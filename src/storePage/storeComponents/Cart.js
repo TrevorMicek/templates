@@ -59,11 +59,12 @@ export default (props) => {
 		<div id="cart">
 			<div className={`Cart ${cartStatus ? "Cart--open" : ""}`}>
 				<div className="App__view-cart-wrapper2">
+					<div className="fixedCart">
 					<button className="App__view-cart" onClick={(e) => handleOpen(e)}>
 						<MdShoppingCart />
 						
 					</button>
-				
+				</div>
 					<div className="cartCounterWrapper">
 						<div className="cartCounter">{props.cartAmount}</div>
 						

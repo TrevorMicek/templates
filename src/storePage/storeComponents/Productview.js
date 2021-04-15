@@ -60,7 +60,7 @@ export default (props) => {
 
 	useEffect(() => {
 		createCheckout()
-		
+		props.button('../../')
 		// fetchCollection()
 	}, [])
 	
@@ -73,9 +73,7 @@ export default (props) => {
 		<>
 		<Header title={product.title} />
 		<div id="individualProduct">
-			<Link className="homeButton button" to="../../">
-				Home
-			</Link>
+			<props.homeButton />
 	
 			<div className="Product-wrapper2">
 				<div className="Images">

@@ -1,9 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react"
+import { Link } from 'gatsby'
 import { Router, Redirect } from '@reach/router'
 import Products from "../storePage/storeComponents/Products"
 import ProductView from "../storePage/storeComponents/Productview"
 import Cart from '../storePage/storeComponents/Cart'
 import createComponent from '../components/commonComps/createCart'
+import HomeButton from '../components/commonComps/storeHeaderButton'
 
 import { useShopify } from "../storePage/hooks"
 
@@ -31,7 +33,8 @@ const App = () => {
   
     const [cart, setCart] = useState([])
     const [cartAmount, setCartAmount] = useState(0)
-    
+    const [linkUrl, setLinkUrl] = useState('/')
+    const getUrl = (url) => setLinkUrl(url)
 	const addToCart = (cartItem) => setCart([...cart, cartItem])
     const getCart = () => setCartAmount(cart.length)
    
@@ -46,14 +49,23 @@ const App = () => {
 		createShop()
 		fetchProducts()
 		createCheckout()
+        
 		// fetchCollection()
 	}, [])
+    const handleClick = (url) => getUrl(url)
+    const ContinueShopping = () => (
+        <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Continue Shopping" onClick={() => handleClick('../../')} />
+    )
+    const MainHomeButton = () => (
+        <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Main Website" onClick={() => handleClick('/')} />
+    )
     return (
         <>
+ 
       <Cart create={createCart} />
         <Router>
-			<Products path="/store" title={props.title} />
-			<ProductView path='/store/products/:productId' title={props.title} />
+			<Products path="/store" title={props.title} homeButton={MainHomeButton}  />
+			<ProductView path='/store/products/:productId' title={props.title} homeButton={ContinueShopping} button={getUrl} />
         </Router>
         </>
     )

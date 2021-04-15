@@ -52,24 +52,39 @@ img {
 	padding: 80px 20px;
 	text-align: center;
 }
-
+.mainHomeButton {
+	color: white;
+	background: rgb(6, 85, 6);
+	padding: 1vh 2vw;
+	position: relative;
+	left: 5vw;
+	top: 2vh;
+	z-index: 6;
+	
+}
 .App__view-cart-wrapper {
 	float: right;
 }
 
 .App__view-cart-wrapper2 {
 	position: relative;
-	top: 7vh;
-	right: 25vw;
-	margin-right: 20vw;
+	
+	bottom: 10vh;
+	right: 100vw;
+	width: 100vw;
+	display: flex;
+	justify-content: flex-end;
+	
+	
 }
 
 .App__view-cart {
+	
 	font-size: 45px;
 	border: none;
 	background: none;
 	cursor: pointer;
-	color: #f3dbdb;
+	color: #161616;
 }
 
 .button {
@@ -140,7 +155,7 @@ img {
   * ============================== */
 .Cart {
 	position: absolute;
-	top: 0vh;
+	top: -2vh;
 	right: 0vw;
 	height: 100vh;
 	width: 350px;
@@ -158,6 +173,7 @@ img {
 .Cart--open {
 	transform: translateX(0);
 	overflow-x: hidden;
+	border: 1px solid red;
 	
 }
 .Cart__close {
@@ -171,6 +187,7 @@ img {
 	transition: transform 100ms ease;
 	cursor: pointer;
 }
+
 .cartCounterWrapper {
 	text-align: center;
 	position: relative;
@@ -422,14 +439,38 @@ img {
 .Image {
 	margin: auto .5vw;
 }
-
+.linkColor {
+	color: white;
+	
+	
+}
+.homeButtonWrapper {
+	width: 100vw;
+	height: 10vh;
+	position: fixed;
+	border-top: 1px solid lightgray;
+	top: 14vh;
+	background: white;
+	z-index: 4;
+	
+}
 .homeButton {
 	background: rgb(6, 85, 6);
-	position: relative;
-	left: 40%;
+	min-width: 36vw;
+	min-height: 5vh;
+	color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 5vw;
+	top: 0vh;
+	z-index: 6;
+	
 }
 .homeButton:hover {
 	background: rgb(9, 119, 9);
+	
 }
 .Product__description {
 	font-size: 20px;
