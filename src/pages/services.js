@@ -21,7 +21,7 @@ const ServicePage = () => (
   
   <Layout title="Services & Pricing">
     <SEO title="Home" />
-    <div className={wrapperStyles.wrapper}>
+   
       
       <section className={styles.firstSection}>
         
@@ -73,7 +73,7 @@ const ServicePage = () => (
       <section className={styles.seventhSection}> 
         <CreateComponent component={Package} data={pricing} />
       </section>
-      </div>
+    
   </Layout>
 )
 export default ServicePage
