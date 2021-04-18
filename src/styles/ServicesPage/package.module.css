@@ -64,10 +64,12 @@
     outline: none;  
  }
  .featureButton {
+     -webkit-appearance: none;
      cursor: pointer;
      margin-right: 5vw;
  }
  .benefitButton {
+    -webkit-appearance: none;
      cursor: pointer;
     
  }
