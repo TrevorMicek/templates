@@ -3,8 +3,8 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    min-height: 200px;
-   margin-bottom: 10vh;
+    min-height: 150px;
+   margin-bottom: 2vh;
    margin-top: 7vh;
 }
 .headerBorder {

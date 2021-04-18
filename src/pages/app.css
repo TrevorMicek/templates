@@ -380,7 +380,6 @@ img {
 	max-height: 45vh;
 	display: flex;
 	flex-direction: column;
-
 }
 .Product-wrapper {
 	display: flex;
@@ -417,9 +416,7 @@ img {
 	bottom: 3vh;
 }
 .Product__price {	
-	position: relative;
-	bottom: 3vh;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	
 }
@@ -454,6 +451,14 @@ img {
 	margin: 60px auto 0;
 	justify-content: center;
 	align-items: center;
+}
+.optionsWrapper{
+	margin: 3vh 5vw;
+	
+}
+.qtyLabel {
+	position: relative;
+	top: 2vh;
 }
 .Images {
 	display: flex;
@@ -515,9 +520,25 @@ img {
 	justify-content: center;
 }
 .quantity {
+	min-height: 7vh;
+	min-width: 86vw;
+	border-radius: 5px;
 	margin: 2vh 0;
+	border: 1px solid rgb(24, 24, 24);
+}
+#prodOptions {
+	background-color: white;
+	min-height: 7vh;
+	min-width: 86vw;
+	border-radius: 5px;
+	margin: auto 0;
+	border: 1px solid rgb(24, 24, 24);
 }
 
+.prodBuy {
+	border-radius: 15px;
+	min-width: 86vw;
+}
 /* CUSTOMER AUTH
   * ============================== */
 .CustomerAuth {

@@ -91,8 +91,12 @@ export default (props) => {
 							)
 						})}
 				</div>
-				<div>
-						<label htmlFor={"prodOptions"}>Size</label>
+				<div className="optionsWrapper">
+					<div>
+				<h3 className="Product__price">
+						${product.variants && product.variants[0].price}
+					</h3>
+						<label htmlFor={"prodOptions"}>Size</label><br />
 						<select
 							id="prodOptions"
 							name={size}
@@ -112,7 +116,7 @@ export default (props) => {
 						</select>
 					</div>
 					<div>
-						<label>Quantity</label>
+						<label className="qtyLabel">Quantity</label><br />
 						<input
 							className="quantity"
 							type="number"
@@ -123,9 +127,7 @@ export default (props) => {
 							}}
 						></input>
 					</div>
-					<h3 className="Product__price">
-						${product.variants && product.variants[0].price}
-					</h3>
+					
 				
 					<button
 						className="prodBuy button"
@@ -133,6 +135,7 @@ export default (props) => {
 					>
 						Add To Cart
 					</button>
+					</div>
 				<div className="Product__info">
 					
 					<ul className="Product__description">
