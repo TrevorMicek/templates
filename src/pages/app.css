@@ -157,23 +157,24 @@ img {
 	position: absolute;
 	top: -2vh;
 	right: 0vw;
-	height: 100vh;
+	height: 80vh;
 	width: 350px;
 	padding-top: 10vh;
 	background-color: white;
 	display: flex;
+	align-items: flex-start;
 	flex-direction: column;
 	border-left: 1px solid #e5e5e5;
 	transform: translateX(100%);
 	transition: transform 0.15s ease-in-out;
 	z-index: 5;
-	
+	border: 1px solid red;
 }
 
 .Cart--open {
 	transform: translateX(0);
 	overflow-x: hidden;
-	border: 1px solid red;
+	
 	
 }
 .Cart__close {
@@ -376,11 +377,10 @@ img {
 	flex: 0 1 31%;
 	margin-bottom: 2vh;
 	min-width: 45vw;
+	max-height: 45vh;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	border: 1px solid lightgray;
+
 }
 .Product-wrapper {
 	display: flex;
@@ -388,21 +388,40 @@ img {
 	justify-content: space-between;
 	margin: auto 2vw;
 	z-index: -1;
-	
+}
+.Product > img {
+	margin-bottom: 0;
+}
+.Product__Info {
+	display: flex;
+	flex-direction: column;
+	justify-content:space-evenly;
+	max-height: 15vh;
+	padding-top: 5vh;
+	margin-top: 1vh;
+}
+.Product__vendor {
+	 color: rgb(112, 112, 112);
+	 font-weight: 500;
 }
 .Product__title {
-	font-size: 1.1rem;
-	margin-top: 1rem;
-	margin-bottom: 0.4rem;
-	opacity: 0.7;
+	font-size: 1rem;
+	margin-bottom: 1vh;
+	font-weight: 500;
 	text-align: left;
 	white-space:nowrap;
+
 }
-.Product__price {
-	display: block;
+.Product__review {
+	position: relative;
+	bottom: 3vh;
+}
+.Product__price {	
+	position: relative;
+	bottom: 3vh;
 	font-size: 1.1rem;
-	opacity: 0.5;
-	margin-bottom: 0.4rem;
+	font-weight: 600;
+	
 }
 .Product__option {
 	display: block;
@@ -416,10 +435,17 @@ img {
 	margin-bottom: 10px;
 }
 .Product__buy {
-	background: rgb(6, 85, 6);
+	background: rgba(255, 255, 255, 0.1);
+	position: relative;
+	bottom: 42vh;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	
 }
 .Product__buy:hover, .Product__buy:focus {
-	background: rgb(9, 119, 9);
+	background: rgba(255, 255, 255, 0.1);
+	outline: none;
 }
 /* SINGLE PRODUCT VIEW
 	* ============================== */

@@ -36,8 +36,10 @@ export default (props) => {
 							{image ? (
 								<img src={image.src} alt={`${product.title} product shot`} width="300px" height="175px" />
 							) : null}
-							<div>
+							<div className="Product__Info">
 								<h4 className="Product__title">{product.title}</h4>
+								<h5 className="Product__vendor">{product.vendor}</h5>
+								<div className="Product__review">****(15)</div>
 								<p className="Product__price">${product.variants[0].price}</p>
 							</div>
 							
@@ -45,7 +47,7 @@ export default (props) => {
 								className="Product__buy button"
 								onClick={(e) => handleClick(e, product.id, product.title)}
 							>
-								View Details
+								
 							</button>
 							
 						</div>

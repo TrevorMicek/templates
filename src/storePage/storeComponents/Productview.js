@@ -91,15 +91,7 @@ export default (props) => {
 							)
 						})}
 				</div>
-				<div className="Product__info">
-					
-					<ul className="Product__description">
-						{description &&
-							description.map((each, i) => {
-								return <li key={`line-description +${i}`}>{each}</li>
-							})}
-					</ul>
-					<div>
+				<div>
 						<label htmlFor={"prodOptions"}>Size</label>
 						<select
 							id="prodOptions"
@@ -141,6 +133,15 @@ export default (props) => {
 					>
 						Add To Cart
 					</button>
+				<div className="Product__info">
+					
+					<ul className="Product__description">
+						{description &&
+							description.map((each, i) => {
+								return <li key={`line-description +${i}`}>{each}</li>
+							})}
+					</ul>
+					
 				</div>
 			</div>
 		</div>

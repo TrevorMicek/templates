@@ -56,16 +56,20 @@ const App = () => {
     const ContinueShopping = () => (
         <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Continue Shopping" onClick={() => handleClick('../../')} />
     )
+    const CartButton = () => (
+        <HomeButton linkUrl={linkUrl} geturl={getUrl} title="To Store" onClick={() => handleClick('../')} />
+    )
     const MainHomeButton = () => (
         <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Main Website" onClick={() => handleClick('/')} />
     )
     return (
         <>
  
-      <Cart create={createCart} />
+ <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
         <Router>
 			<Products path="/store" title={props.title} homeButton={MainHomeButton}  />
 			<ProductView path='/store/products/:productId' title={props.title} homeButton={ContinueShopping} button={getUrl} />
+           
         </Router>
         </>
     )

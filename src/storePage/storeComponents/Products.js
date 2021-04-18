@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import Product from "./Product"
 import Header from './Header'
 export default (props) => {
