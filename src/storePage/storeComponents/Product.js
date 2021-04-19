@@ -14,11 +14,14 @@ export default (props) => {
 	}, [])
 	function handleClick(e, product_id, productTitle) {
 		e.preventDefault()
-		props.title(productTitle)
+		
+		props.getTitle(productTitle)
 		
 		const id = product_id
 		fetchProduct(id).then((res) => {
+			props.getTitle(res.title)
 			navigate(`/store/products/${res.id}`)
+			
 		})
 		
 	}
@@ -27,10 +30,12 @@ export default (props) => {
 	}, [products])
 
 	return (
+		
 		<div className="Product-wrapper">
 			{products &&
 				products.map((product, i) => {
 					const image = product.images[0]
+
 					return (
 						<div className="Product" key={product.id + i}>
 							{image ? (

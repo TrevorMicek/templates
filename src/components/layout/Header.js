@@ -6,8 +6,16 @@ import firstStyles from '../../styles/FrontPage/headerStyles.module.css';
 const Header = (props) => {
 
   const firstTitle = 'Small Business Web Design & Development'
-  
+  const secondaryTitles = ['Services & Pricing', 'About Us', 'Contact Us']
 
+  const getSecondaryTitle = (curTitle) => {
+    for (let i=0;i<secondaryTitles.length;i++) {
+      if (curTitle === secondaryTitles[i]) {
+        return secondaryTitles[i]
+      }
+    }
+  }
+  const secondTitle = getSecondaryTitle(props.title)
   const HomeHeader = () => (
     <section className={firstStyles.headerPictureWrapper}>
 
@@ -46,8 +54,10 @@ const Header = (props) => {
     switch(props.title) {
         case firstTitle:
           return <HomeHeader />
-        default:
+        case secondTitle:
           return <SecondaryHeader />
+        default:
+          return <StoreHeader />
     }
   }
 return (

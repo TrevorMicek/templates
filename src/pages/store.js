@@ -62,13 +62,24 @@ const App = () => {
     const MainHomeButton = () => (
         <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Main Website" onClick={() => handleClick('/')} />
     )
+
+    const switchButton = () => {
+        switch(linkUrl) {
+            case '/':
+                return <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Main Website" onClick={() => handleClick('/')} />
+            case '../../':
+                return <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Continue Shopping" onClick={() => handleClick('../../')} />
+        }
+    }
     return (
         <>
- 
+        <div className="homeButtonWrapper">
+ {switchButton()}
  <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
+ </div>
         <Router>
-			<Products path="/store" title={props.title} homeButton={MainHomeButton}  />
-			<ProductView path='/store/products/:productId' title={props.title} homeButton={ContinueShopping} button={getUrl} />
+			<Products path="/store" title={props.title} getTitle={props.getTitle} homeButton={MainHomeButton}  />
+			<ProductView path='/store/products/:productId' title={props.getTitle} homeButton={ContinueShopping} button={getUrl} />
            
         </Router>
         </>
@@ -77,20 +88,25 @@ const App = () => {
 const Store = () => {
     const initialTitle = 'Custom Ecommerce'
     const [pageTitle, setPageTitle] = useState(initialTitle)
-    const getTitle = (title) => setPageTitle(title)
+    const getTitle = (title) =>{
+        
+         setPageTitle(title)
+        
+    }
    //const composeEnhancers = window.__REDUX__DEVTOOLS__EXTENSION__COMPOSE__ || compose;
     const rootReducer = combineReducers(reducers);
     const enhancer = compose(applyMiddleware(thunk));
     const store = createStore(rootReducer, enhancer);
 return (
-    <Layout title={undefined}>
+    
+    <>
     <SEO title="Online Store" />
-    <div className={styles.app}>
+
 	<Provider store={store}>
-        <Pages title={getTitle} /> 
+        <Pages title={pageTitle} getTitle={getTitle} /> 
 	</Provider>
-    </div>
-    </Layout>
+    
+   </>
 )
 }
 return <Store />

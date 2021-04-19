@@ -74,11 +74,11 @@ input, select {
 	position: relative;
 	
 	bottom: 10vh;
-	right: 100vw;
-	width: 100vw;
+	right: 24vw;
+	
 	display: flex;
 	justify-content: flex-end;
-	
+
 	
 }
 
@@ -159,7 +159,7 @@ input, select {
   * ============================== */
 .Cart {
 	position: absolute;
-	top: -2vh;
+	top: 0vh;
 	right: 0vw;
 	height: 80vh;
 	width: 350px;
@@ -172,7 +172,7 @@ input, select {
 	transform: translateX(100%);
 	transition: transform 0.15s ease-in-out;
 	z-index: 5;
-	border: 1px solid red;
+	
 }
 
 .Cart--open {
@@ -182,9 +182,9 @@ input, select {
 	
 }
 .Cart__close {
-	position: absolute;
-	right: 10vw;
-	top: 17vh;
+	position: relative;
+	right: 8vw;
+	top: 1vh;
 	font-size: 35px;
 	color: #999;
 	border: none;
@@ -192,7 +192,6 @@ input, select {
 	transition: transform 100ms ease;
 	cursor: pointer;
 }
-
 .cartCounterWrapper {
 	text-align: center;
 	position: relative;
@@ -210,6 +209,7 @@ input, select {
 	
 }
 .Cart__header {
+	position: relative;
 	padding: 35px;
 	border-bottom: 1px solid #e5e5e5;
 	flex: 0 0 auto;
@@ -385,6 +385,7 @@ input, select {
 	display: flex;
 	flex-direction: column;
 }
+
 .Product-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -452,7 +453,7 @@ input, select {
 	* ============================== */
 .Product-wrapper2 {
 	max-width: 900px;
-	margin: 60px auto 0;
+	margin: 5vh auto 0;
 	justify-content: center;
 	align-items: center;
 }
@@ -472,7 +473,30 @@ input, select {
 	/* width: 20%; */
 }
 .Image {
-	margin: auto .5vw;
+	margin: auto auto;
+	
+}
+.leftButton {
+	cursor: pointer;
+	outline: none;
+	border-radius: 100px;
+	background: white;
+	font-size: 1.5rem;
+	margin: auto auto;
+
+	margin-left: 15vw;
+	margin-right: 1vw;
+}
+.rightButton {
+	cursor: pointer;
+	outline: none;
+	border-radius: 100px;
+	background: white;
+	font-size: 1.5rem;
+	margin: auto auto;
+	
+	margin-right: 15vw;
+	margin-left: 1vw;
 }
 .linkColor {
 	color: white;
@@ -481,25 +505,26 @@ input, select {
 }
 .homeButtonWrapper {
 	width: 100vw;
-	height: 10vh;
-	position: fixed;
+	height: 8vh;
+	position: absolute;
 	border-top: 1px solid lightgray;
 	top: 14vh;
 	background: white;
-	z-index: 4;
+	z-index: 6;
 	
 }
 .homeButton {
 	background: rgb(6, 85, 6);
 	min-width: 36vw;
+	max-width: 36vw;
 	min-height: 5vh;
 	color: #fafafa;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: absolute;
+	position: relative;
 	left: 5vw;
-	top: 0vh;
+	top: 1.5vh;
 	z-index: 6;
 	
 }

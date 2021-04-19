@@ -50,7 +50,7 @@ const Layout = ({children, title}) => {
         
        <div className={styles.grid}>
         <NavBar />
-        {title === undefined ? null : <Header title={title}/> }
+        <Header title={title}/> 
         
       
         <main className={styles.main}>{children}</main>

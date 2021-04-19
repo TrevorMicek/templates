@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { navigate, useMatch } from "@reach/router"
 import Header from './Header'
-
+import Layout from '../../components/layout/layout'
 import { useShopify } from "../hooks"
 import { create } from "lodash"
-
+import styles from '../../styles/StorePage/wrapper.module.css'
 
 export default (props) => {
 	
@@ -24,6 +24,22 @@ export default (props) => {
 	const [quantity, setQuantity] = useState(1)
 	const [refreshQuantity, setRefreshQuantity] = useState(0)
 	const description = product.description && product.description.split(".")
+
+	const [curImg, setCurImg] = useState(0)
+	const leftImg = () => {
+		if (curImg > 0) {
+		setCurImg(curImg - 1)
+		} else {
+			setCurImg(curImg)
+		}
+	}
+	const rightImg = () => {
+		if (curImg < 3) {
+		setCurImg(curImg + 1)
+		} else {
+			setCurImg(curImg)
+		}
+	}
 
 	function changeSize(sizeId, quantity) {
 		window.scrollTo(0,0)
@@ -61,6 +77,7 @@ export default (props) => {
 	useEffect(() => {
 		createCheckout()
 		props.button('../../')
+		
 		// fetchCollection()
 	}, [])
 	
@@ -68,28 +85,28 @@ export default (props) => {
 		fetchProduct(id)
 		window.scrollTo(0,0)
 	}, [id])
-	
+	const leftArrow = '<'
+	const rightArrow = '>'
 	return (
-		<>
-		<Header title={product.title} />
+		<Layout title={product.title}>
+		<div className={styles.app}>
 		<div id="individualProduct">
-			<props.homeButton />
+			
 	
 			<div className="Product-wrapper2">
 				<div className="Images">
+				<button className="leftButton" onClick={leftImg}>{leftArrow}</button>
 					{product.images &&
-						product.images.map((image, i) => {
-							return (
 								<img
 									className="Image"
-									key={image.id + i}
-									src={image.src}
+									key={product.images[curImg].src}
+									src={product.images[curImg].src}
 									alt={`${product.title} product shot`}
-									width="150px"
-									height="150px"
+									width="250px"
+									height="250px"
 								/>
-							)
-						})}
+						}
+						<button className="rightButton" onClick={rightImg}>{rightArrow}</button>
 				</div>
 				<div className="optionsWrapper">
 					<div>
@@ -148,7 +165,8 @@ export default (props) => {
 				</div>
 			</div>
 		</div>
-		</>
+		</div>
+		</Layout>
 		)
 	
 	

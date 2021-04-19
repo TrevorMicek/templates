@@ -4,8 +4,9 @@
     align-content: center;
     justify-content: center;
     min-height: 150px;
+    width: 100vw;
    margin-bottom: 2vh;
-   margin-top: 7vh;
+   margin-top: 6vh;
 }
 .headerBorder {
    margin: auto 0;
@@ -16,7 +17,7 @@
     font-size: 1.85rem;
     text-shadow: 1px 1px black;
     position: relative;
-    bottom: 2vh;
+    bottom: 1vh;
     z-index: 4;
     font-family: sans-serif, Arial, Helvetica;
  }
