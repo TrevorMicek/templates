@@ -452,6 +452,7 @@ input, select {
 /* SINGLE PRODUCT VIEW
 	* ============================== */
 .Product-wrapper2 {
+	
 	max-width: 900px;
 	margin: 5vh auto 0;
 	justify-content: center;
@@ -470,15 +471,14 @@ input, select {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
+	justify-content: center;
 	
-	
-	margin: 0 9vw 0 5vw;
+	margin: 0 auto;
+	position: relative;
+	right: 2.5vw;
 	/* width: 20%; */
 }
-.Image {
-	margin: auto auto;
-	
-}
+
 .leftButton {
 	cursor: pointer;
 	outline: none;
@@ -487,6 +487,7 @@ input, select {
 	font-size: 1.5rem;
 	position: relative;
 	right: 0vw;
+	max-width: 7vw;
 }
 .rightButton {
 	cursor: pointer;
@@ -496,6 +497,7 @@ input, select {
 	font-size: 1.5rem;
 	position: relative;
 	left: 0vw;
+	max-width: 7vw;
 }
 .downArrow {
 	position: relative;
