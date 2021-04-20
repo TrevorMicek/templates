@@ -469,9 +469,8 @@ input, select {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content:space-around;
 	align-items: center;
-	
+	max-width: 65vw;
 	margin: 0 auto;
 	/* width: 20%; */
 }
@@ -485,7 +484,8 @@ input, select {
 	border-radius: 100px;
 	background: white;
 	font-size: 1.5rem;
-	
+	position: relative;
+	right: 0vw;
 }
 .rightButton {
 	cursor: pointer;
@@ -493,7 +493,8 @@ input, select {
 	border-radius: 100px;
 	background: white;
 	font-size: 1.5rem;
-
+	position: relative;
+	left: 0vw;
 }
 .linkColor {
 	color: white;
