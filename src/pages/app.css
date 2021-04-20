@@ -470,8 +470,9 @@ input, select {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
-	max-width: 65vw;
-	margin: 0 auto;
+	
+	
+	margin: 0 9vw 0 5vw;
 	/* width: 20%; */
 }
 .Image {
@@ -484,7 +485,8 @@ input, select {
 	border-radius: 100px;
 	background: white;
 	font-size: 1.5rem;
-	
+	position: relative;
+	right: 0vw;
 }
 .rightButton {
 	cursor: pointer;
@@ -492,7 +494,8 @@ input, select {
 	border-radius: 100px;
 	background: white;
 	font-size: 1.5rem;
-	
+	position: relative;
+	left: 0vw;
 }
 .downArrow {
 	position: relative;
