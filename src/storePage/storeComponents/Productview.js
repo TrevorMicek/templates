@@ -87,6 +87,7 @@ export default (props) => {
 	}, [id])
 	const leftArrow = '<'
 	const rightArrow = '>'
+	const downArrow = '^'
 	return (
 		<Layout title={product.title}>
 		<div className={styles.app}>
@@ -113,7 +114,9 @@ export default (props) => {
 				<h3 className="Product__price">
 						${product.variants && product.variants[0].price}
 					</h3>
+					
 						<label htmlFor={"prodOptions"}>Size</label><br />
+						
 						<select
 							id="prodOptions"
 							name={size}
@@ -121,6 +124,7 @@ export default (props) => {
 								setSize(e.target.value)
 							}}
 						>
+							
 							{product.variants &&
 								product.variants.map((item, i) => {
 									return (
@@ -131,6 +135,7 @@ export default (props) => {
 									)
 								})}
 						</select>
+						<div className="downArrow">{downArrow}</div>
 					</div>
 					<div>
 						<label className="qtyLabel">Quantity</label><br />

@@ -484,8 +484,7 @@ input, select {
 	border-radius: 100px;
 	background: white;
 	font-size: 1.5rem;
-	position: relative;
-	right: 0vw;
+	
 }
 .rightButton {
 	cursor: pointer;
@@ -493,8 +492,12 @@ input, select {
 	border-radius: 100px;
 	background: white;
 	font-size: 1.5rem;
+	
+}
+.downArrow {
 	position: relative;
-	left: 0vw;
+	
+	right: 2.5vw;
 }
 .linkColor {
 	color: white;
