@@ -529,8 +529,9 @@ input, select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: auto 0;
-	margin-left: 5vw;
+	position: absolute;
+	top: 1.5vh;
+	left: 3vw;
 	z-index: 6;
 	
 }
