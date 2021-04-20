@@ -518,6 +518,7 @@ input, select {
 	background: white;
 	z-index: 6;
 	
+	
 }
 .homeButton {
 	background: rgb(6, 85, 6);
@@ -528,9 +529,8 @@ input, select {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
-	left: 5vw;
-	top: 1.5vh;
+	margin: auto 0;
+	margin-left: 5vw;
 	z-index: 6;
 	
 }
