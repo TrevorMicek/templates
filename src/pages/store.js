@@ -74,7 +74,7 @@ const App = () => {
     return (
         <>
         <div className="homeButtonWrapper">
- {switchButton()}
+ 
  <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
  </div>
         <Router>
