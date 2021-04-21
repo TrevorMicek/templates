@@ -4,7 +4,7 @@
     background: #2c3e50;
     height: 36vh;
     z-index: -1;
-    width: 100vw;
+    min-width: 100vw;
     top: 5vh;
     padding-top: 10vh;
 }

@@ -5,7 +5,7 @@
     justify-content: center;
     grid-column: span 5;
    margin-top: 6vh;
-   
+   min-width: 100vw;
 }
 .headerBorder {
    margin: auto 0;
