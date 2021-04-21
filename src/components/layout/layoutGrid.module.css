@@ -1,6 +1,4 @@
 .grid {
-   border: 1px solid red;
-   max-height: 595vh;
    display: grid;
    background: #fafafa;
    grid-template-columns: [left-gutter] 1fr [left] 3fr [center] 3fr [right] 3fr [right-gutter] 1fr;
@@ -16,5 +14,5 @@
     grid-template-rows: [top-gutter] auto [top-padding] auto [first] auto [second] auto [third] auto [fourth] auto [fifth] auto [sixth] auto [seventh] auto;
     grid-gap: 30px;
     min-width: 90vw;
-    border: 1px solid red;
+   
 }
