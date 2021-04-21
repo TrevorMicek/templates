@@ -73,10 +73,10 @@ const App = () => {
     }
     return (
         <>
-        <div className="homeButtonWrapper">
- {switchButton()}
+        
+
  <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
- </div>
+ 
         <Router>
 			<Products path="/store" title={props.title} getTitle={props.getTitle} homeButton={MainHomeButton}  />
 			<ProductView path='/store/products/:productId' title={props.getTitle} homeButton={ContinueShopping} button={getUrl} />
