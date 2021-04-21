@@ -7,7 +7,9 @@ import styles from '../../styles/StorePage/wrapper.module.css'
 export default (props) => {
 	return (
 		<Layout title='Custom Ecommerce'>
+			{props.cart()}
 				<div className={styles.app}>
+				
 		<div className="Products-wrapper">	
 			
 			

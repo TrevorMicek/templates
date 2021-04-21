@@ -71,15 +71,18 @@ const App = () => {
                 return <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Continue Shopping" onClick={() => handleClick('../../')} />
         }
     }
+    const CartWrapper = () => (
+        <div className="homeButtonWrapper">
+ {switchButton()}
+ <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
+ </div>
+    )
     return (
         <>
-       
- 
- 
-
+        
         <Router>
-			<Products path="/store" title={props.title} getTitle={props.getTitle} homeButton={MainHomeButton}  />
-			<ProductView path='/store/products/:productId' title={props.getTitle} homeButton={ContinueShopping} button={getUrl} />
+			<Products path="/store" cart={CartWrapper} title={props.title} getTitle={props.getTitle} homeButton={MainHomeButton}  />
+			<ProductView path='/store/products/:productId' cart={CartWrapper} title={props.getTitle} homeButton={ContinueShopping} button={getUrl} />
            
         </Router>
         </>
