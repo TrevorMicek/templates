@@ -75,7 +75,7 @@ const App = () => {
         <>
        
  
- <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
+ 
 
         <Router>
 			<Products path="/store" title={props.title} getTitle={props.getTitle} homeButton={MainHomeButton}  />
