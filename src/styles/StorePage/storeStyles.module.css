@@ -3,9 +3,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    min-height: 150px;
-    width: 100vw;
-   margin-bottom: 2vh;
+    grid-column: span 5;
    margin-top: 6vh;
    
 }
