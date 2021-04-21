@@ -89,7 +89,7 @@ export default (props) => {
 	const rightArrow = '>'
 	const downArrow = '^'
 	return (
-		
+		<Layout title={product.title}>
 		<div className={styles.app}>
 		<div id="individualProduct">
 			
@@ -171,7 +171,7 @@ export default (props) => {
 			</div>
 		</div>
 		</div>
-	
+		</Layout>
 		)
 	
 	
