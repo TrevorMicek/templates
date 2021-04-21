@@ -9,9 +9,8 @@ const Button = (props) => {
         <div className="homeButton">
             <Link className="linkColor" to={props.linkUrl}  geturl={props.getUrl}>{props.title}</Link>
             
-        </div>
-       
         
+        </div>
     )
 }
 export default Button;
