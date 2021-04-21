@@ -11,7 +11,8 @@
 .wave {
     position: absolute;
     height: 70px;
-    min-width: 100%;    bottom: 30vh;
+    min-width: 100%;    
+    bottom: 30vh;
     background: #2c3e50;
     bottom: 0;
 }
@@ -41,10 +42,11 @@
     margin-top: 0vh;
     position: relative;
     bottom: 25vh;
+    
 }
 footer {
     max-height: 36vh;
-    min-width: 100%;
+    min-width: 100vw;
     background-color: #fafafa;
     position: relative;
     z-index: 1;
