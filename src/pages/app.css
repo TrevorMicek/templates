@@ -558,6 +558,7 @@ input, select {
 	justify-content: center;
 }
 .quantity {
+	background: linear-gradient(to bottom, #fafafa, rgb(230, 228, 228));
 	min-height: 7vh;
 	min-width: 86vw;
 	border-radius: 5px;
@@ -565,7 +566,7 @@ input, select {
 	border: 1px solid rgb(24, 24, 24);
 }
 #prodOptions {
-	background-color: none;
+	background: linear-gradient(to bottom, #fafafa, rgb(230, 228, 228));
 	height: 7vh;
 	width: 86vw;
 	border-radius: 5px;
