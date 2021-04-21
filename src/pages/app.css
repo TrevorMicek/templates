@@ -566,8 +566,8 @@ input, select {
 }
 #prodOptions {
 	background-color: white;
-	min-height: 7vh;
-	min-width: 86vw;
+	height: 7vh;
+	width: 86vw;
 	border-radius: 5px;
 	margin: auto 0;
 	border: 1px solid rgb(24, 24, 24);
