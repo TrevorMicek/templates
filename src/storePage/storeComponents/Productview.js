@@ -135,7 +135,7 @@ export default (props) => {
 									)
 								})}
 						</select>
-						<div className="downArrow">{downArrow}</div>
+						
 					</div>
 					<div>
 						<label className="qtyLabel">Quantity</label><br />

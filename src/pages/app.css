@@ -500,9 +500,12 @@ input, select {
 	
 }
 .downArrow {
+	cursor: pointer;
 	position: relative;
-	
-	right: 2.5vw;
+	bottom: 6vh;
+	right: 8vw;
+	font-size: 1.75rem;
+	transform: rotate(180deg);
 }
 .linkColor {
 	color: white;
@@ -512,9 +515,9 @@ input, select {
 .homeButtonWrapper {
 	width: 100vw;
 	height: 8vh;
-	position: relative;
+	position: absolute;
 	border-top: 1px solid lightgray;
-	top: 20vh;
+	top: 14vh;
 	background: white;
 	z-index: 6;
 	
@@ -569,7 +572,8 @@ input, select {
 	border-radius: 5px;
 	margin: auto 0;
 	border: 1px solid rgb(24, 24, 24);
-	-webkit-appearance: none;
+
+	cursor: pointer;
 }
 
 .prodBuy {
