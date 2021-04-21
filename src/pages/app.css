@@ -520,7 +520,6 @@ input, select {
 	top: 14vh;
 	background: black;
 	z-index: 6;
-	border: 2px solid red;
 	
 }
 .homeButton {
