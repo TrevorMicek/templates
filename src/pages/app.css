@@ -452,7 +452,7 @@ input, select {
 /* SINGLE PRODUCT VIEW
 	* ============================== */
 .Product-wrapper2 {
-	border: 2px solid red;;
+	min-width: 100vw;
 	max-width: 900px;
 	margin: 0vh auto 0;
 	justify-content: center;
