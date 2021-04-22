@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
+
 import { navigate, useMatch } from "@reach/router"
 import Header from './Header'
 import Layout from '../../components/layout/layout'

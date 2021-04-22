@@ -16,6 +16,7 @@
 .navWrapper > .rightsideNav {
    font-size: .9rem;
    text-align: justify;
+  
 }
 .navList > li {
    text-align: center;
@@ -63,7 +64,7 @@
 }
 .dropDown, .hamburger, .mobileNav {
     overflow: hidden;
-    z-index: 5;
+    z-index: 6;
     min-width: 35px;
     max-width: 35px;
     min-height: 35px;
@@ -86,10 +87,13 @@
     padding-top: 10vh;
     min-height: 80vh;
     background: #fafafa;
+  
 }
 .mobileNavList {
     margin: 0;
     padding: 0;
+    z-index: 5;
+
 }
 .mobileNavList > li {
     text-align: center;

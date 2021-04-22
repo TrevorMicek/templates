@@ -67,8 +67,11 @@ export default (props) => {
 					</button>
 				</div>
 				<header className="Cart__header">
-					<button onClick={() => window.localStorage.clear()}>CLEAR CART</button>
-					<h2>Your cart</h2>
+				<div className="titleWrapper">
+						<h2>Your cart</h2>
+					<button className="clearButton" onClick={() => window.localStorage.clear()}>CLEAR CART</button>
+					
+					</div>
 					<button className="Cart__close" onClick={(e) => handleClose(e)}>
 						<MdRemoveShoppingCart />
 					</button>
