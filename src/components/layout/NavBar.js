@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "gatsby"
-
+import { useShopify } from "../../storePage/hooks"
 
 import styles from './navBarStyles.module.css';
 const hamburger = require('../../images/HamburgerImg.svg')
 const xImg = require('../../images/X.svg')
 
 const Nav = () => {
+ 
   const [isOpen, setIsOpen] = useState(false)
   const toggleOpen = () => setIsOpen(!isOpen)
 

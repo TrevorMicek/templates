@@ -2,7 +2,7 @@ const pricingInfo = {
   tierOne: {
     title: 'STANDARD',
     pages: '5 pages',
-    price: '195',
+    price: '325',
     featureOne: 'Full Website Solution',
     featureTwo: 'Easy To Navigate',
     featureThree: 'Easily Scalable',
@@ -15,7 +15,7 @@ const pricingInfo = {
   tierTwo: {
     title: 'ECOMMERCE',
     pages: '6 pages',
-    price: '349',
+    price: '550',
     featureOne: 'Full Ecommerce Solution',
     featureTwo: 'Secures Sensitive Data',
     featureThree: 'Easily Scalable',

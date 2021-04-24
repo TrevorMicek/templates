@@ -536,6 +536,11 @@ input, select {
 	
 	
 }
+.searchBar {
+	position: relative;
+	bottom: 14vh;
+	left: 25%;
+}
 .homeButtonWrapper {
 	width: 100vw;
 	height: 8vh;

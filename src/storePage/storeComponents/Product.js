@@ -12,6 +12,27 @@ export default (props) => {
 	
 		// fetchCollection()
 	}, [])
+	
+	const handleSearch = () => {
+		/*
+		for (let i=0;i<products.length;i++) {
+			products[i]['queryParams'] = 
+		}
+		*/
+        console.log(products)
+        
+    }
+    const SearchBar = () => (
+        <div className="searchBar">
+            <form onSubmit={handleSearch}>
+        <input type="text" placeholder="Search.." />
+        </form>
+        </div>
+    )
+	useEffect(() => {
+		window.scrollTo(0,0)
+		console.log(products)
+	}, [products])
 	function handleClick(e, product_id, productTitle) {
 		e.preventDefault()
 		
@@ -25,13 +46,13 @@ export default (props) => {
 		})
 		
 	}
-	useEffect(() => {
-		window.scrollTo(0,0)
-	}, [products])
+	
 
 	return (
+	<>
 		
 		<div className="Product-wrapper">
+			
 			{products &&
 				products.map((product, i) => {
 					const image = product.images[0]
@@ -59,5 +80,6 @@ export default (props) => {
 					)
 				})}
 		</div>
+		</>
 	)
 }

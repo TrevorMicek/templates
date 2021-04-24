@@ -2,7 +2,7 @@ const pricingInfo = {
   tierThree: {
     title: 'BROCHURE',
     pages: '1 page',
-    price: '50',
+    price: '85',
     featureOne: 'Partial Website Solution',
     featureTwo: 'Easy To See Important Info',
     featureThree: 'Centralized Business Info',
@@ -13,7 +13,7 @@ const pricingInfo = {
   tierFour: {
     title: 'ECOMMERCE-LITE',
     pages: '6 pages',
-    price: '249',
+    price: '395',
     featureOne: 'Partial Ecommerce Solution',
     featureTwo: 'Secures Sensitive Data',
     featureThree: 'Up To 100 items',

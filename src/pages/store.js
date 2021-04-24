@@ -70,13 +70,16 @@ const App = () => {
             case '../../':
                 return <HomeButton linkUrl={linkUrl} geturl={getUrl} title="Continue Shopping" onClick={() => handleClick('../../')} />
         }
-    }
+    }  
+  
     const CartWrapper = () => (
         <div className="homeButtonWrapper">
- {switchButton()}
- <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
+    {switchButton()}
+    
+    <Cart create={createCart} title={props.title} homeButton={CartButton} button={getUrl} />
  </div>
     )
+  
     return (
         <>
         
