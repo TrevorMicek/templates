@@ -15,7 +15,7 @@ const pricingInfo = {
   tierTwo: {
     title: 'ECOMMERCE',
     pages: '6 pages',
-    price: '550',
+    price: '615',
     featureOne: 'Full Ecommerce Solution',
     featureTwo: 'Secures Sensitive Data',
     featureThree: 'Easily Scalable',
