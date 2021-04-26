@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import styles from '../../components/layout/secondaryHeader.module.css';
+import styles from '../../layout/secondaryHeader.module.css';
 const Header = (props) => (
 
 

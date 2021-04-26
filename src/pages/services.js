@@ -3,16 +3,16 @@ import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/layout/seo"
 
-import Header from '../components/layout/Header'
+
 import styles from '../styles/ServicesPage/mainStyles.module.css';
 import info from '../data/servicesPage/pageData';
 import SecondSectionTitle from '../components/commonComps/MainSectionTitle'
 import standard from '../data/servicesPage/standard';
 import ecom from '../data/servicesPage/ecom';
-import Package from './servicesPage/package';
+import Package from '../components/pages/servicesPage/package';
 import pricing from '../data/servicesPage/starter';
 import ecomPricing from '../data/servicesPage/ecomPricing'
-import Benefit from './servicesPage/TopBenefits';
+import Benefit from '../components/pages/servicesPage/TopBenefits';
 import BenefitData from '../data/servicesPage/BenefitData';
 import CreateComponent from '../components/commonComps/createComponent'
 import wrapperStyles from '../styles/FrontPage/wrapper.module.css'

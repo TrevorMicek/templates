@@ -31,7 +31,6 @@ export default (props) => {
     )
 	useEffect(() => {
 		window.scrollTo(0,0)
-		console.log(products)
 	}, [products])
 	function handleClick(e, product_id, productTitle) {
 		e.preventDefault()

@@ -1,6 +1,6 @@
 import  React from 'react';
 
-import styles from '../../styles/AboutPage/mainStyles.module.css'
+import styles from '../../../styles/AboutPage/mainStyles.module.css'
 const Section = (props) => (
   <div>
     <h3 className={styles.FirstTitle}>

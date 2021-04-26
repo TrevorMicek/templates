@@ -1,5 +1,5 @@
 const info = {
-    title: "Starter Packages",
+    title: "Website Packages",
     upfront: "no upfront costs",
     text: "These are better for businesses just starting out, or with a tight budget, while still maintaining a lot of benefits."
 }

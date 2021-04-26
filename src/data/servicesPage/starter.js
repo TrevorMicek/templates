@@ -10,16 +10,19 @@ const pricingInfo = {
     benefitTwo: 'Fits Most Business Info',
     benefitThree: 'Link All Your Assets'
   },
-  tierFour: {
-    title: 'ECOMMERCE-LITE',
-    pages: '6 pages',
-    price: '395',
-    featureOne: 'Partial Ecommerce Solution',
-    featureTwo: 'Secures Sensitive Data',
-    featureThree: 'Up To 100 items',
-    benefitOne: 'Start Selling Online NOW',
-    benefitTwo: 'More Cutomers Find You',
+  
+  tierOne: {
+    title: 'STANDARD',
+    pages: '5 pages',
+    price: '325',
+    featureOne: 'Full Website Solution',
+    featureTwo: 'Easy To Navigate',
+    featureThree: 'Easily Scalable',
+    featureFour: 'Centralized Business Info',
+    benefitOne: 'Better Leads & Conversions',
+    benefitTwo: 'Customers Easily Find You',
     benefitThree: 'Fits All Business Info',
+    benefitFour: 'Link All Your Assets',
   }
 }
 export default pricingInfo;

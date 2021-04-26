@@ -41,7 +41,7 @@ input, select {
 	background-image: linear-gradient(to top left, #990033, #006666 );
 	background-size: cover;
 	color: #fafafa;
-	padding: 10px 10px;
+	padding: 0px 10px;
 }
 .App__nav {
 	width: 100%;
@@ -408,6 +408,7 @@ input, select {
 	max-height: 45vh;
 	display: flex;
 	flex-direction: column;
+	
 }
 
 .Product-wrapper {
@@ -447,7 +448,8 @@ input, select {
 .Product__price {	
 	font-size: 1.5rem;
 	font-weight: 600;
-	
+	position: relative;
+	bottom: 2.5vh;
 }
 .Product__option {
 	display: block;
@@ -481,6 +483,7 @@ input, select {
 	margin: 0vh auto 0;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid red;
 }
 .optionsWrapper{
 	margin: 3vh 5vw;

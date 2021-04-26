@@ -5,7 +5,7 @@ import SEO from "../components/layout/seo"
 
 import styles from '../styles/AboutPage/mainStyles.module.css'
 
-import Section from './aboutPage/aboutSection'
+import Section from '../components/pages/aboutPage/aboutSection'
 import info from '../data/aboutPage/aboutInfo';
 import CreateComponent from '../components/commonComps/createComponent'
 

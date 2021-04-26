@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import styles from '../../styles/ContactPage/loginPage.module.css'
-const xImg = require('../../images/X.svg')
+import styles from '../../../styles/ContactPage/loginPage.module.css'
+const xImg = require('../../../images/X.svg')
 const LoginForm = () => {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')

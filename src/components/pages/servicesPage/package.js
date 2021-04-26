@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import styles from '../../styles/ServicesPage/package.module.css';
+import styles from '../../../styles/ServicesPage/package.module.css';
 import Benefits from './TierBenefits';
 
 const Package = (props) => {

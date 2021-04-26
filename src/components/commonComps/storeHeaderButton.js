@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import '../../pages/app.css'
+import '../../styles/StorePage/app.css'
 const cartImg = require('../../images/cartButton.png')
 const Button = (props) => {
    
