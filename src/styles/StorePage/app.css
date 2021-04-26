@@ -483,7 +483,6 @@ input, select {
 	margin: 0vh auto 0;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
 }
 .optionsWrapper{
 	margin: 3vh 5vw;

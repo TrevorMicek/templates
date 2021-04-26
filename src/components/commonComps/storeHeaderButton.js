@@ -6,10 +6,12 @@ const Button = (props) => {
    
     return (
         <div className="storeNavWrapper">
-        <div className="homeButton">
-            <Link className="linkColor" to={props.linkUrl}  geturl={props.getUrl}>{props.title}</Link>
+        
+            <Link className="linkColor" to={props.linkUrl}  geturl={props.getUrl}>
+                <div className="homeButton">{props.title}</div>
+            </Link>
             
-        </div>
+        
        
         </div>
     )
