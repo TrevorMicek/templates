@@ -175,11 +175,11 @@ input, select {
 .Cart--open {
 	transform: translateX(0);
 	
-	overflow-x: hidden;
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: auto 3vw;
+	margin: auto 2vw;
 }
 .Cart__close {
 	position: relative;
