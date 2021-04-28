@@ -179,7 +179,7 @@ input, select {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: auto 2vw;
+	margin: auto 0vw;
 }
 .Cart__close {
 	position: relative;
@@ -232,9 +232,13 @@ input, select {
 }
 .Cart__line-items {
 	flex: 1 0 auto;
-	margin: 0;
+	margin: 0 auto;
 	padding: 20px;
-	max-width: 85vw;
+	max-width: 80vw;
+	max-height: 25vh;
+	overflow-y: scroll;
+	border: 1px solid lightgray;
+	
 }
 
 .Cart__footer {
@@ -284,7 +288,7 @@ input, select {
 /* LINE ITEMS
   * ============================== */
 .Line-item {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	overflow: hidden;
 	backface-visibility: visible;
 	min-height: 65px;
@@ -292,7 +296,11 @@ input, select {
 	opacity: 1;
 	transition: opacity 0.2s ease-in-out;
 }
-
+.lineItemDiv {
+	
+	margin: 1vh 0;
+	padding-bottom: 1vh;
+}
 .Line-item__img {
 	width: 65px;
 	height: 65px;
@@ -307,6 +315,7 @@ input, select {
 .Line-item__content {
 	width: 100%;
 	padding-left: 75px;
+	
 }
 
 .Line-item__content-row {
