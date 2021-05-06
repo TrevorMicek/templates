@@ -65,6 +65,7 @@
     grid-row-start: fifth;
     grid-column-start: left;
     grid-column-end: right-gutter;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -109,8 +110,15 @@
     overflow: hidden;
 }
  }
+ @media only screen and (min-width: 1000px) {
+    .fifthSection {
+        flex-direction: row;    
+        grid-column-start: left;
+        grid-column-end: right-gutter;
+    }
+     }
  @media only screen and (min-width: 850px) {
-.fifthSection, .seventhSection {
+.seventhSection {
     flex-direction: row;    
     grid-column-start: left;
     grid-column-end: right-gutter;

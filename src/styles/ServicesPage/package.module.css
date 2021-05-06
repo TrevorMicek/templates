@@ -33,6 +33,7 @@
     text-align: center;
     background: white;
     max-width: 300px;
+    
 }
 .pricingTitle > span:nth-child(1) {
     font-size: 1.5rem;
@@ -84,5 +85,13 @@
 @media only screen and (min-width: 500px) {
 .pricingSection > div{
     min-width: 300px;
+
 }
 }
+@media only screen and (min-width: 1000px) {
+    .pricingSection > div{
+        margin: 0 1vw;
+    
+    }
+    }
+    

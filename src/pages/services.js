@@ -62,13 +62,13 @@ const ServicePage = () => (
       <SecondSectionTitle {...info} />
       </section>
       <section className={styles.fourthSection}> 
-      <SecondSectionTitle {...ecom} />
+      <SecondSectionTitle {...standard} />
       </section>
       <section className={styles.fifthSection}> 
       <CreateComponent component={Package} data={ecomPricing} />
       </section>
       <section className={styles.sixthSection}>    
-      <SecondSectionTitle {...standard} />
+      <SecondSectionTitle {...ecom} />
       </section>
       <section className={styles.seventhSection}> 
         <CreateComponent component={Package} data={pricing} />

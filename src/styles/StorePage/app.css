@@ -186,7 +186,7 @@ input, select {
 	
 	position: absolute;
 	right: 9vw;
-	bottom: 20vh;
+	bottom: 21vh;
 	font-size: 35px;
 	color: #999;
 	border: none;
@@ -430,7 +430,7 @@ input, select {
 	z-index: -1;
 }
 .Product > img {
-	margin-bottom: 0;
+	margin-bottom: 2vh;
 }
 .Product__Info {
 	display: flex;
