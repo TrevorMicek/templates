@@ -4,19 +4,20 @@
     line-height: 1.15;
     display: flex;
     justify-content: space-between;
-    height: 15vh;
+    height: 14vh;
     z-index: 5;
     background-color: #fafafa;
     width: 100%;
+    margin-bottom: 1vh;
 }
 .navWrapper > .leftsideNav {
     color: #212121;
     margin: 5vh 1vw 3vh 7vw;
+    z-index: 6;
 }
 .navWrapper > .rightsideNav {
    font-size: .9rem;
    text-align: justify;
-  
 }
 .navList > li {
    text-align: center;
@@ -59,8 +60,6 @@
     min-width: 100%;
     z-index: 5;
     min-height: 100%;
-  
- 
 }
 .dropDown, .hamburger, .mobileNav {
     overflow: hidden;
@@ -84,16 +83,19 @@
     min-width: 100%;
 }
 .mobileListItems {
+    position: absolute;
+    left: 0;
+    top: 0;
     padding-top: 10vh;
     min-height: 80vh;
     background: #fafafa;
+    min-width: 100vw;
   
 }
 .mobileNavList {
     margin: 0;
     padding: 0;
-    z-index: 5;
-
+    margin-top: 5vh;
 }
 .mobileNavList > li {
     text-align: center;
@@ -135,7 +137,6 @@
     position: absolute;
     top: 5vh;
     right: 4vw;
-    
 }
 @media only screen and (min-width: 320px) and (max-width: 410px) {
 .navWrapper > .leftsideNav {
@@ -160,7 +161,7 @@
 @media only screen and (min-width: 768px) {
 .navList > li {
       display: inline-block;
-      z-index: 5;
+      
 }
 .hamburger {
     display: none;

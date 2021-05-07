@@ -32,12 +32,14 @@ const Nav = () => {
         <div className={styles.rightsideNav}>
           {isOpen ?
     <>
+       
     <button className={styles.dropDown}  onClick={toggleOpen} onKeyDown={toggleOpen}>
       <div className={styles.mobileNav}>
           <img src={xImg} alt={"close drop down menu"} width="40px" height="30px" />
         </div>
         </button>
         <div className={styles.mobileListItems}>
+          
           <ul className={styles.mobileNavList}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/services">Services</Link></li>
