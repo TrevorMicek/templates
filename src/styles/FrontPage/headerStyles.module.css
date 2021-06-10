@@ -4,9 +4,11 @@
     bottom: 0;
     right: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 75vh;
-    background: #016e7c ;
+    background: url('../../images/header.svg') ;
+    background-repeat: none;
+    background-size: 100% auto;
     z-index: 2;
     transform: skewY(6deg);
     transform-origin: top-right;
