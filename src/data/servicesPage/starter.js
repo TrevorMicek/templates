@@ -2,7 +2,7 @@ const pricingInfo = {
   tierThree: {
     title: 'BROCHURE',
     pages: '1 page',
-    price: '85',
+    price: '65',
     featureOne: 'Partial Website Solution',
     featureTwo: 'Easy To See Important Info',
     featureThree: 'Centralized Business Info',
@@ -14,7 +14,7 @@ const pricingInfo = {
   tierOne: {
     title: 'STANDARD',
     pages: '5 pages',
-    price: '325',
+    price: '250',
     featureOne: 'Full Website Solution',
     featureTwo: 'Easy To Navigate',
     featureThree: 'Easily Scalable',

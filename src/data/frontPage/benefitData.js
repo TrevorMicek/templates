@@ -8,7 +8,7 @@ const subscriptionIcon = require('../../images/subscription.svg')
 const subscriptionText = () => {
     return (
       <>
-    <span>NO SETUP FEE</span>, <span>$325</span> per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts.
+    <span>NO SETUP FEE</span>, <span>$250</span> per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts.
     </>
     )
   }

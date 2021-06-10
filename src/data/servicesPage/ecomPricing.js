@@ -2,7 +2,7 @@ const pricingInfo = {
   tierOne: {
     title: 'ECOMMERCE STARTER',
     pages: '2 pages',
-    price: '160',
+    price: '125',
     featureOne: 'Partial Ecommerce Solution',
     featureTwo: 'Secures Sensitive Data',
     featureThree: 'Up To 50 items',
@@ -13,7 +13,7 @@ const pricingInfo = {
   tierTwo: {
     title: 'ECOMMERCE-LITE',
     pages: '6 pages',
-    price: '395',
+    price: '305',
     featureOne: 'Partial Ecommerce Solution',
     featureTwo: 'Secures Sensitive Data',
     featureThree: 'Up To 100 items',
@@ -24,7 +24,7 @@ const pricingInfo = {
   tierThree: {
     title: 'ECOMMERCE',
     pages: '6 pages',
-    price: '615',
+    price: '475',
     featureOne: 'Full Ecommerce Solution',
     featureTwo: 'Secures Sensitive Data',
     featureThree: 'Easily Scalable',

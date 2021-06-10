@@ -49,13 +49,11 @@ export default (props) => {
 
 	return (
 	<>
-		
 		<div className="Product-wrapper">
-			
 			{products &&
 				products.map((product, i) => {
 					const image = product.images[0]
-
+			
 					return (
 						<div className="Product" key={product.id + i}>
 							{image ? (

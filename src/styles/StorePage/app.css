@@ -414,18 +414,16 @@ input, select {
   * ============================== */
 .Product {
 	flex: 0 1 31%;
-	margin-bottom: 4vh;
 	min-width: 45vw;
-
+	margin-bottom: 4vh;
 	max-height: 45vh;
 	display: flex;
 	flex-direction: column;
 }
-
 .Product-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content:space-evenly;
 	margin: auto 2vw;
 	z-index: -1;
 }
@@ -495,6 +493,9 @@ input, select {
 	}
 }
 @media only screen and (min-width: 800px) {
+	.Product {
+		margin: 0 2.80vw;
+	}
 	.Product-wrapper {
 		max-width: 775px;
 		margin: 0 auto;
